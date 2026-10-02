@@ -1,5 +1,5 @@
 ---
-title: "12 - Vereinfachungskobold"
+title: "12 – Vereinfachungskobold"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png

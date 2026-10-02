@@ -1,5 +1,5 @@
 ---
-title: "18 - Entscheider"
+title: "18 – Entscheider"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -37,15 +37,13 @@ der Alternativen und ihrer Auswirkungen verbessern. So vorbereitet sollten Sie (
 ## Der richtige Zeitpunkt
 Wann sollten Sie Entscheidungen treffen? So früh wie möglich, um weiterarbeiten zu können? So spät wie möglich, um möglichst viele Informationen sammeln zu können? Timeboxed, d. h., zu einem vorher festgelegten Zeitpunkt?
 
-Alle Varianten haben ihre Fürsprecher, aber Sie selbst müssen für jede Entscheidung mit Relevanz für die Softwarearchitektur einen angemes- senen Zeitpunkt finden – was ja schon eine Entscheidung ist ...
+Alle Varianten haben ihre Fürsprecher, aber Sie selbst müssen für jede Entscheidung mit Relevanz für die Softwarearchitektur einen angemessenen Zeitpunkt finden – was ja schon eine Entscheidung ist ...
 
 >**HINWEIS**
 >Entscheidungen benötigen Mut, manchmal auch Durchsetzungskraft und ein hartes Fell.
 >Trennen Sie zwischen **Mut und Waghalsigkeit**: Eine mutige Entscheidung treffen Sie auf Basis der bestmöglichen Informationen und unter Kenntnis der Risiken.
->Waghalsige Entscheidungen gehören nicht in IT- Projekte!
+>Waghalsige Entscheidungen gehören nicht in IT-Projekte!
 
 ## Verwandte Muster
 Vermeiden Sie Alleingänge und konsultieren stattdessen maßgebliche Stakeholder,
 um sich nicht als [Diktator](/05-diktator) unbeliebt zu machen.
-
-{% include training-dates.html %}

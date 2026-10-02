@@ -1,5 +1,5 @@
 ---
-title: "16 - Die Lektorin"
+title: "16 – Die Lektorin"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -68,6 +68,3 @@ Passive Konstruktionen wirken oft langweilig.
 
 ## Verwandte Muster
 Die Lektorin nutzt [Blicke in den Rückspiegel](/06-blick-in-den-rueckspiegel), um sprachliche Fehler und Unverständlichkeiten zu verbessern.
-
-
-{% include training-dates.html %}

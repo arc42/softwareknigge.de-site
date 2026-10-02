@@ -1,5 +1,5 @@
 ---
-title: "22 - Toolistan"
+title: "22 – Toolistan"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-red.png
@@ -26,5 +26,3 @@ Andere Bewohner von Toolistan besitzen schon seit Menschengedenken einfache Hä
 ## Verwandte Muster
 
 Wie war das mit den Kanonen und den Spatzen? Vorsicht: Viel Werkzeug für wenig System könnte [zu viel des Guten](/07-zuviel-des-guten) und übertrieben sein.
-
-{% include training-dates.html %}

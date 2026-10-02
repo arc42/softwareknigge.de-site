@@ -1,5 +1,5 @@
 ---
-title: "10 - Codeheld"
+title: "10 – Codeheld"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-red.png
@@ -29,6 +29,3 @@ sind unsere persönlichen Laufbahnen in vielen Unternehmen und Branchen mit dra
 Nicht überzeugt? Lektüre zum Thema gibt es zuhauf[^bad-code]
 
 [^bad-code]: [„How to Write Bad Code“](http://www.exmsft.com/~hanss/badcode.htm), oder [„Good Code – Bad Code: An Example“](http://www.programming4scientists.com/2008/09/26/good-code-bad-code-an-example/), oder auch [Roedy Green: „Unmaintainable Code“](http://mindprod.com/jgloss/unmain.html)
-
-
-{% include training-dates.html %}

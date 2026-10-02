@@ -1,5 +1,5 @@
 ---
-title: "33 - Qualitätsverbesserer"
+title: "33 – Qualitätsverbesserer"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -47,7 +47,7 @@ Architektur- und Implementierungsentscheidungen zu machen, also während der Ent
 
 ## Qualität systematisch erreichen
 [Quality-Driven Software Architecture (QDSA)](https://www.innoq.com/de/articles/2012/04/quality-driven-software-architecture/)
-greift die grundsätzliche Idee des (analytischen) ATAM auf und wandelt sie in konstruktives Vor- gehen um. Die Qualitätsziele werden in Form von Szenarien frühzeitig definiert und konkretisiert, im Idealfall als Bestandteil der normalen An- forderungen. Während der Entwicklung bilden sie dann kontinuierlich die Basis der wesentlichen Architektur- und Entwurfsentscheidungen.
+greift die grundsätzliche Idee des (analytischen) ATAM auf und wandelt sie in konstruktives Vorgehen um. Die Qualitätsziele werden in Form von Szenarien frühzeitig definiert und konkretisiert, im Idealfall als Bestandteil der normalen Anforderungen. Während der Entwicklung bilden sie dann kontinuierlich die Basis der wesentlichen Architektur- und Entwurfsentscheidungen.
 
 QDSA basiert in hohem Maße auf der Arbeit von Christine Hofmeister[^hofmeister],
 auch beschrieben in einem
@@ -81,5 +81,3 @@ Mikrobewertungen sind eine preiswerte und pragmatische Art, die Qualität Ihrer
 * Lässt man sie oft genug (timeboxed) arbeiten, so wird sich (auch bei bestehenden Applikationen) systematisch [Fortschritt statt Verschlimmbesserung](/37-fortschritt-statt-verschlimmbesserung) einstellen.
 
 ## Quellen
-
-{% include training-dates.html %}

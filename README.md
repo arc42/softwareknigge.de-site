@@ -72,6 +72,28 @@ Gleiches Verfahren wie auf faq.arc42.org und docs.arc42.org:
 * `_includes/training-dates.html` rendert die Box (deutsche Fassung der
   FAQ-Variante), `_sass/_training-dates.scss` enthält die Styles.
 * Termine werden im Trainings-Repo (`_data/trainings.yml`) gepflegt, nie hier.
+* Auf Musterseiten kommt die Box aus `_includes/post_pagination.html` (nach
+  den Vor/Zurück-Links), auf den Übersichtsseiten aus deren Markdown.
+
+### Anpassungen am Theme
+
+Das Theme (minimal-mistakes 4.21) wird als `remote_theme` geladen. Diese
+Dateien überschreiben bzw. ergänzen es – bei einem Theme-Update prüfen:
+
+| Datei | Zweck |
+|---|---|
+| `_data/ui-text.yml` | deutsche Oberflächentexte (die Datei des Remote-Themes wird nicht geladen) |
+| `_includes/page__hero.html` | Kopfband: dunkle Titel auf hellen Bändern, Bandfarbe, „Negatives Muster · 2 von 14“ |
+| `_includes/post_pagination.html` | Vor/Zurück mit Mustername und „Übersicht“, danach die Trainings-Box |
+| `_includes/page__date.html` | kein „Aktualisiert: <Build-Datum>“ mehr |
+| `_includes/skip-links.html` | Sprunglinks ohne Überschrift, deutsch |
+| `_includes/search/lunr-search-scripts.html`, `assets/js/lunr/*` | deutsche Suche (Stemming, Zusammenfassung als Treffertext) |
+| `_includes/pattern-index.html` | Register der Übersichtsseiten |
+| `_sass/_*.scss` (Import in `assets/css/main.scss`) | Layout, Farben, Box, Footer, Mobil |
+
+Kategoriefarben: positiv `#a0bf80`, negativ `#c6041b`, neutral `#ffd401`
+(`_sass/_hero.scss`). Neue Musterseiten brauchen keine Trainings-Box im
+Markdown; Titel im Format `"NN – Name"` (Halbgeviertstrich).
 
 ## Credits
 

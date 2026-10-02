@@ -1,5 +1,5 @@
 ---
-title: "01 - Proaktive"
+title: "01 – Proaktive"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png

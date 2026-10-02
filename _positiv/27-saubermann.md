@@ -1,5 +1,5 @@
 ---
-title: "27 - Saubermann"
+title: "27 – Saubermann"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -46,7 +46,7 @@ Beginnen wir mit zwei organisatorischen Metriken:
 1. Sie sollten einerseits messen, für welche Bausteine das Entwicklungsteam wie viel Zeit und Aufwand verwendet, und
 2. für Ihre Bausteine die Anzahl der darin gemeldeten Fehler und Probleme kennen.
 
-Relativ hohe Zahlen in einer der beiden Metriken rechtfertigen Umbau- und Verbesserungsmaßnahmen. In üblichen CI- Umgebungen werden diese Werte nicht gemessen – daher müssen Sie als Saubermann hier selbst tätig werden.
+Relativ hohe Zahlen in einer der beiden Metriken rechtfertigen Umbau- und Verbesserungsmaßnahmen. In üblichen CI-Umgebungen werden diese Werte nicht gemessen – daher müssen Sie als Saubermann hier selbst tätig werden.
 
 ## Stoppuhr und Co.
 Als Nächstes messen Sie als Saubermann das Laufzeitverhalten Ihres Systems durch detailliertes Profiling: Messen Sie Laufzeiten einzelner Bausteine, die Häufigkeiten der Aufrufe und deren Speicher- oder Ressourcenverbrauch. Idealerweise messen Sie diese Größen regelmäßig (mindestens wöchentlich) in Last- oder Stresstests.
@@ -63,6 +63,3 @@ viele andere Bausteine betroffen sind.
 
 ## Fazit
 Finden Sie riskanten oder schlechten Code durch eine Kombination technischer und organisatorischer Metriken: Beobachten Sie Abhängigkeiten und Komplexität, Fehlercluster und Laufzeit-/Performancewerte. Korrelieren Sie diese Metriken: Bausteine, die in mehr als einer der Metriken schlecht abschneiden, sollten Sie mit hoher Priorität verbessern (Stichwort: Refactoring).
-
-
-{% include training-dates.html %}

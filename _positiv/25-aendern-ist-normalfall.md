@@ -1,5 +1,5 @@
 ---
-title: "25 - Ändern ist Normalfall"
+title: "25 – Ändern ist Normalfall"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -53,6 +53,3 @@ andere „Legacy“) arbeiten wir den größten Teil unseres Informatiker-, Ent
 [Saubermann](27-saubermann) sind großartige Ansätze für systematische Änderungen.
 * [Schmutzfinken](/28-schmutzfink) sind natürliche Feinde von Änderungen, allerdings auch aller anderen positiv gesonnenen Rollen in der IT.
 * [Fortschritt statt Verschlimmbesserung](37-fortschritt-statt-verschlimmbesserung) zeigt, wie Sie Systeme systematisch verbessern. Siehe auch [aim42](https://aim42.org), eine frei verfügbare Sammlung von Praktiken zur Verbesserung von Software.
-
-
-{% include training-dates.html %}

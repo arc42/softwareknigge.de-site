@@ -1,5 +1,5 @@
 ---
-title: "08 - Multilinguist"
+title: "08 – Multilinguist"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -21,7 +21,7 @@ In erster Linie natürlich mit dem Entwicklungsteam, mit dem sie gemeinsam die 
 
 Darüber hinaus sprechen Architekten mit Beteiligten der Anforderungsanalyse oder den Anwendern. Schließlich kommt recht häufig mal ein Administrator, Operator oder sonstiger „Betreiber“ daher, um Betreibbarkeit, Monitoring und administrative Forderungen zu platzieren.
 
-Und wenn Softwarearchitekten dann geschickt um die sprachlichen Hürden dieser stark heterogenen Stakeholderschaft herumlaviert haben, betritt Mr. Hard-Case-Project- Manager die Szene und verlangt unverzüglich einen Managementreport – natürlich frei von jeglichen störenden technischen Details (neudeutsch heißen diese Superabstraktionen Elevator Pitch – Ihre 30 Sekunden mit dem Boss im Aufzug).
+Und wenn Softwarearchitekten dann geschickt um die sprachlichen Hürden dieser stark heterogenen Stakeholderschaft herumlaviert haben, betritt Mr. Hard-Case-Project-Manager die Szene und verlangt unverzüglich einen Managementreport – natürlich frei von jeglichen störenden technischen Details (neudeutsch heißen diese Superabstraktionen Elevator Pitch – Ihre 30 Sekunden mit dem Boss im Aufzug).
 
 ## Terminus Technicus
 Branchen- oder Rollenslang kennen Sie bestimmt. Ihr freundlicher Hausarzt weist Sie nach kurzer Diagnose auf jede Menge Dinge hin, zu deren detailliertem Verständnis ein jahrelanges Medizinstudium die Voraussetzung bildet.

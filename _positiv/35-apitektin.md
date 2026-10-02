@@ -1,5 +1,5 @@
 ---
-title: "35 - API-tektin"
+title: "35 – API-tektin"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -53,7 +53,7 @@ Zu jeder Schnittstelle gehören jede Menge Detailentscheidungen (u.a. Namensgebu
 
 Entscheidet nur eine Partei, minimiert das den Abstimmungsaufwand. Entscheiden viele Parteien, steigert das den Aufwand, führt aber möglicherweise zu einer höheren Qualität der Entscheidungen, weil mehrere unterschiedliche Gesichtspunkte berücksichtigt werden können. Bedenken Sie: In jedem System gibt es Dutzende von Schnittstellenentscheidungen zu treffen, und jede davon lässt sich auf eine der genannten Arten entscheiden.
 
->Unser dringender Rat: Als API-tektin suchen Sie zuerst die besonders kritischen oder wichtigen Schnittstellen, die auf wesentliche Qualitätsmerkmale des Systems Einfluss nehmen könnten. Dann überlegen Sie für diese **Prio-1**-Schnittstellen, welche Personen oder Rollen an den je- weiligen Entscheidungen mitwirken sollten.
+>Unser dringender Rat: Als API-tektin suchen Sie zuerst die besonders kritischen oder wichtigen Schnittstellen, die auf wesentliche Qualitätsmerkmale des Systems Einfluss nehmen könnten. Dann überlegen Sie für diese **Prio-1**-Schnittstellen, welche Personen oder Rollen an den jeweiligen Entscheidungen mitwirken sollten.
 >Sie müssen dabei neben den rein architektonischen Anforderungen und Gegebenheiten noch Faktoren wie Zeit, Aufwand, Homogenität der Architektur, Umsetzungsgeschwindigkeit oder andere Qualitätsmerkmale berücksichtigen.
 
 ## Warum ist das kompliziert?
@@ -70,7 +70,7 @@ Bis hierhin ist es meist noch überschaubar. Aber dann kommen in schlimmen Fä
 * Verfügbarkeit: Wenn die Schnittstelle niemals ausfallen darf, könnten Sie Redundanz in Software und Hardware einführen, einen Cluster und Load Balancer einsetzen oder weitere teure Maßnahmen starten. Schwierigkeitsgrad: hoch, Kosten: hoch bis sehr hoch
 * Durchsatz, Antwortzeit: Sie können die Implementierung des Providers optimieren, Redundanz (z. B. Caching) einführen, extrem schnelle Hardware oder Netze kaufen. Schwierigkeitsgrad: mittel, Kosten: beliebig
 * Flexibilität: Sie möchten Datenformate flexibel halten, die Provider oder Zugriffskanäle austauschbar gestalten. Theoretisch ist alles möglich, praktisch für Entwurf und Implementierung beliebig aufwendig. Testen wird aber zum Albtraum. Schwierigkeitsgrad: Umsetzung mittel, Test: extrem
-* Versionierung: Sie können entscheiden, ob die Schnittstelle abwärts- kompatibel, source- oder binärkompatibel sein soll, ebenso ob jede Änderung eine neue Version vom Provider erhalten soll. Die Versionskennung kann im Namen der Schnittstelle oder als Metainformation in den Parametern hinterlegt werden. Auch eine Kompatibilität zum OSGi-Standard ist möglich. Schwierigkeitsgrad: hoch, Aufwand: klein bis beliebig.
+* Versionierung: Sie können entscheiden, ob die Schnittstelle abwärtskompatibel, source- oder binärkompatibel sein soll, ebenso ob jede Änderung eine neue Version vom Provider erhalten soll. Die Versionskennung kann im Namen der Schnittstelle oder als Metainformation in den Parametern hinterlegt werden. Auch eine Kompatibilität zum OSGi-Standard ist möglich. Schwierigkeitsgrad: hoch, Aufwand: klein bis beliebig.
 
 Diese Liste können Sie sicherlich noch verlängern :-)
 
@@ -96,6 +96,3 @@ In diesem Sinne: **Möge die Macht der Schnittstellen mit Ihnen sein**!
 
 * Sie sollten wichtige Schnittstellen grundsätzlich [proaktiv](/01-proaktive) angehen.
 * Bei manchen Schnittstellen sind aufgrund der möglicherweise fundamentalen und richtungsweisenden Fragestellungen [Entscheider](/18-entscheider) gefragt.
-
-
-{% include training-dates.html %}

@@ -1,5 +1,5 @@
 ---
-title: "17 - Verschätzer"
+title: "17 – Verschätzer"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-red.png
@@ -22,7 +22,7 @@ Tage._
 
 Entwickler: _Aber...._
 
-Verschätzer: _Still jetzt. Den Rest der Woche kannst du noch schnell die Hard- ware für die Last- und Performancetests aufsetzen. Das schaffst du in einem Tag._
+Verschätzer: _Still jetzt. Den Rest der Woche kannst du noch schnell die Hardware für die Last- und Performancetests aufsetzen. Das schaffst du in einem Tag._
 
 Entwickler: _Aber...._
 
@@ -48,5 +48,3 @@ Annahmen und gehen von idealen Bedingungen aus
 ## Verwandte Muster
 
 Der Verschätzer macht sich als [Diktator](/05-diktator) unbeliebt, indem er eigenmächtig und ohne Rücksprache bestimmt, wie lange etwas dauern darf.
-
-{% include training-dates.html %}

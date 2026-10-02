@@ -1,5 +1,5 @@
 ---
-title: "26 - Fahnder"
+title: "26 – Fahnder"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -38,7 +38,7 @@ Statt also klassisch nur nach Motiv und Gelegenheit zu suchen, müssen wir als 
 Wir haben schon Systeme erlebt (ähm – erlitten), an denen sämtliche dieser Sünden und Vergehen in wechselnden Mengenverhältnissen begangen wurden.
 
 Finden Sie die begangenen Softwareverbrechen eines Systems
-(in IT- Speak: Probleme, Risiken und technische Schulden) durch zwei verschiedene Ansätze: Einerseits durch _Vernehmung_ von Opfern und relevanten Zeugen,
+(in IT-Speak: Probleme, Risiken und technische Schulden) durch zwei verschiedene Ansätze: Einerseits durch _Vernehmung_ von Opfern und relevanten Zeugen,
 andererseits über _Spurensicherung_ am echten System.
 
 
@@ -78,7 +78,3 @@ Fahnder korrelieren mit vielen der positiven Muster in unserem Knigge:
 * Sie vermeiden [Perfektion](/13-perfektionist) , aber vor allem sorgen
 sie dafür, dass Architektur, Sourcecode und auch der Entwicklungsprozess ständig einfacher, überschaubarer und daher wartbarer werden
 (Siehe [Der Vereinfachungskobold](/12-vereinfachungskobold)).
-
-
-
-{% include training-dates.html %}

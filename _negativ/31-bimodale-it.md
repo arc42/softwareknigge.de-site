@@ -1,5 +1,5 @@
 ---
-title: "31 - Bimodale IT"
+title: "31 – Bimodale IT"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-red.png
@@ -47,5 +47,3 @@ Wir drücken Ihnen die Daumen für hoffentlich agile Architekturarbeit ohne **
 ## Quellen
 
 [^bimodal]: [Gartner IT Glossary „Bimodal“](https://www.gartner.com/it-glossary/bimodal/)
-
-{% include training-dates.html %}

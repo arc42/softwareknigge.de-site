@@ -1,5 +1,5 @@
 ---
-title: "24 - Schmökerer"
+title: "24 – Schmökerer"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -20,7 +20,7 @@ Architektonische Allgemeinbildung. Hilfreich, um Ihre technischen Fähigkeiten 
 
 * Reynolds, Garr: **Presentation Zen**. Simple Ideas on Presentation Design and Delivery, 2nd Edition, New Riders, 2011. Ein Kultbuch über die Kunst toller Präsentationen.
 
-* Rechenberg, Peter: **Technisches Schreiben** (nicht nur) für Informatiker, 3. Auflage, Carl Hanser Verlag, 2006. Alleine das Kapitel über „Einfachheit“ verdient es, von jedem schreibenden Menschen gründ- lich gelesen und beachtet zu werden.
+* Rechenberg, Peter: **Technisches Schreiben** (nicht nur) für Informatiker, 3. Auflage, Carl Hanser Verlag, 2006. Alleine das Kapitel über „Einfachheit“ verdient es, von jedem schreibenden Menschen gründlich gelesen und beachtet zu werden.
 
 * Roam, Dan: **The Back of the Napkin.** Solving Problems and Selling Ideas with Pictures“, Portfolio, 2008, zeigt ihnen anhand vieler grafischer Beispiele, wie Sie buchstäblich auf der Rückseite einer Serviette Ihre Ideen anschaulich und überzeugend „rüberbringen“ können. Zum immer mal wieder Anschauen.
 
@@ -40,7 +40,7 @@ Büchern, lesen Sie eins davon!
 Möglicherweise wenig nützlich, aber geeky. Techniklastige Literatur jenseits des Mainstreams, falls Sie sich tagsüber mal wieder zu lange mit Projektplänen, langweiligen Meetings oder Tabellenkalkulation ärgern mussten.
 
 * Tate, Bruce: **Seven Languages in Seven Weeks**. A Pragmatic Guide to Learning Programming Languages“, Pragmatic Programmers, 2010. Falls Sie in ganz andere Paradigmen reinschnuppern möchten und Haskell, Prolog oder Erlang schon immer mal kennen lernen wollten.
-* Seibel, Peter: **Practical Common Lisp**, Apress, 2005. Spannende Lektüre – sofern Sie keine Angst vor Klammern und der Kommandozeile haben. Bis Clojure auf den Markt kam, mein (GS) Lieblings- Programmierbuch.
+* Seibel, Peter: **Practical Common Lisp**, Apress, 2005. Spannende Lektüre – sofern Sie keine Angst vor Klammern und der Kommandozeile haben. Bis Clojure auf den Markt kam, mein (GS) Lieblings-Programmierbuch.
 * Armstrong, Joe: **Programming Erlang**. Software for a Concurrent World, Pragmatic Programmers, 2007. Erlang ist alt – und für paral-lele Verarbeitung sehr vieler Prozesse entworfen. Was früher fast nur zur Treiberprogrammierung für die Backend-Systeme von Telefonnetzen diente, gewinnt heute im Zeitalter hochgradig skalierbarer Webanwendungen neue Bedeutung.
 * Odersky, Martin et al: **Programming in Scala**: A Comprehensive Step-by-step Guide, Artima, 2008. Ein großartiges Buch über Programmieren in einer tollen (aber schweren) Sprache.
 * Olsen, Russ: **Eloquent Ruby**, Addison-Wesley, 2011. Damit Ruby-Code auch nach solchem aussieht.
@@ -61,5 +61,3 @@ Schamlose Eigenwerbung. Wir haben auch andere Bücher geschrieben...
 * Starke, Gernot: **Effektive Softwarearchitekturen**. Ein praktischer Leitfaden, 8. Auflage, Carl Hanser Verlag 2017.
 
 * Starke/Hruschka: **arc42 in Aktion**. Carl-Hanser Verlag 2015
-
-{% include training-dates.html %}

@@ -1,5 +1,5 @@
 ---
-title: "38 - Eine Sache noch"
+title: "38 – Eine Sache noch"
 layout: single
 header:
   overlay_image: /images/header/site-header.png
@@ -76,6 +76,3 @@ Sie müssen lernen, Ihre eigenen Fähigkeiten realistisch einzuschätzen. Wen
 
 ## Lernen
 Schließlich erfordert Ihre anspruchsvolle Aufgabe, dass Sie ständig weiter lernen. Unserer Ansicht nach gehört eine fast unstillbare Neugier zu den Merkmalen der besten Architekten: Sowohl Ihre technischen als auch Ihre kommunikativen und diplomatischen Fähigkeiten benötigen kontinuierliche Weiterentwicklung und Verbesserung. Lernen Sie von Ihren Teams, fragen Sie, lesen Sie, probieren Sie aus. Fragen Sie noch einmal. Regen Sie an, dass in Ihren Projekten regelmäßig Retrospektiven stattfinden, um die Erfahrungen der Mitarbeiter im Team zu verbreiten.
-
-
-{% include training-dates.html %}

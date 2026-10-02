@@ -1,5 +1,5 @@
 ---
-title: "11 - Jongleuse"
+title: "11 – Jongleuse"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -36,7 +36,7 @@ Zu den wichtigen Eigenschaften der Jongleuse als erfolgreiche Softwarearchitekti
 * Beim Entwurf gleichzeitig an Kopplung, Modularisierung, Teamstruktur und Kosten (!) denken
 
 ## Zeitmanagement
-Diese Fülle paralleler Aufgaben bringt die Notwendigkeit eines zielorientierten Zeit- und Selbstmanagements mit sich – denn ungeplantes Ad- hoc-Vorgehen
+Diese Fülle paralleler Aufgaben bringt die Notwendigkeit eines zielorientierten Zeit- und Selbstmanagements mit sich – denn ungeplantes Ad-hoc-Vorgehen
 stürzt auch erfahrene Jongleusen schnell ins Chaos.
 
 

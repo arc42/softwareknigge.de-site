@@ -1,5 +1,5 @@
 ---
-title: "02 - Elfenbeinturm"
+title: "02 – Elfenbeinturm"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-red.png
@@ -39,5 +39,3 @@ Als Kontrapunkt dazu lautet der Spruch der Praktiker _Eat your own Dogfood_: Wen
 Falls sie dabei bewusst und absichtlich handeln, weil sie beispielsweise
 die Abhängigkeit von dieser (ursprünglichen) Funktion verhindern wollen,
 geht das klar. Aber: Auf solche [Codehelden](/10-codeheld) lauert das Not-invented-here-Syndrom.
-
-{% include training-dates.html %}

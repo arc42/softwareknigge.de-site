@@ -8,6 +8,7 @@ p1_count: 2
 target_identity: "url:https://softwareknigge.arc42.org/"
 timestamp: 2026-10-02T09-18-27Z
 slug: softwareknigge-arc42-org
+closed: true
 ---
 # Critique: softwareknigge.arc42.org
 Method: dual-agent (A: design review · B: detector + rendered URL scan). Browser overlay unavailable (Chrome extension disconnected).

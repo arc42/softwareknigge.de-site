@@ -1,5 +1,5 @@
 ---
-title: "29 - Kammerjäger"
+title: "29 – Kammerjäger"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -29,7 +29,7 @@ Nein? Dann wird es Zeit, diese Informationen zu beschaffen. Wir wollen einen kon
 Können Sie sich einen echten Jäger vorstellen, der hektisch durch sein Jagdrevier keucht, laut flucht und alle paar Sekunden die Richtung ändert? Dessen Jagderfolg wird nahe Null bleiben. Daher empfehlen wir Ihnen
 ruhige Chill-out-Musik[^chillout] und entspanntes Zurücklehnen.
 
-Falls Ihnen nette Kollegen jetzt noch einen ordentlichen Espresso (oder grünen Tee) spendieren – um- so bessere Voraussetzungen. Schicken Sie Ihren hektischen Chef auf irgendeine wichtige Managementmission,
+Falls Ihnen nette Kollegen jetzt noch einen ordentlichen Espresso (oder grünen Tee) spendieren – umso bessere Voraussetzungen. Schicken Sie Ihren hektischen Chef auf irgendeine wichtige Managementmission,
 stellen Sie Telefon, Chat- und Twitter-Client aus.
 
 Am besten suchen Sie sich eine gut gelaunte Kollegin zur Unterstützung.
@@ -70,7 +70,7 @@ Das menschliche Unterbewusstsein spielt uns in dieser Hinsicht gerne Streiche: W
 
 Im konkreten Debugging von Quellcode müssen Sie vor dem „Gucken“ oftmals instrumentieren, entweder über Logging, Tracing oder banales System.out.
 
-Wenn Sie Code nicht instrumentieren können, hilft Single- Stepping im Debugger.
+Wenn Sie Code nicht instrumentieren können, hilft Single-Stepping im Debugger.
 
 ## Ganz genau hingucken
 Zum Thema „genau hingucken“ gefällt uns ein Sprichwort aus Sizilien, das wir bei David Agans[^agans] für Sie ausgegraben haben: „Nur der Kochlöffel weiß genau, wie es unten im Kochtopf aussieht!“
@@ -89,6 +89,3 @@ Das Lokalisieren und Entfernen von Fehlern gehört zu unserem Handwerkszeug. De
 Ein paar Grundregeln beherzigt, und schon wird das Kammerjägern zur reinen Freude. Wir alle wissen ja – nach der erfolgreichen Jagd sieht jeder Fehler banal und klein aus – auch wenn wir zwischendurch alle schon mal an Zufälle, Außerirdische oder dunkle Mächte geglaubt haben – weil Bugs sich manchmal sehr kreativ verstecken.
 
 In diesem Sinne, **happy hunting**!
-
-
-{% include training-dates.html %}

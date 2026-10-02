@@ -1,11 +1,11 @@
 ---
-title: "30 - Industrie 4.0"
+title: "30 – Industrie 4.0"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-red.png
 
 permalink: /30-industrie40
-summary: "_Remote is the new local_: Alles vernetzt – Waren, Maschinen, Fabriken, Liefe- ranten, Kunden, Menschen. Bots koordinieren _automagisch_ Entwicklung, Lieferung, Produktion, Bestellung und Abwicklung von Produkten und Dienstleistungen. Hinter dem (eher nichtssagenden Stichwort _Industrie 4.0_ verbirgt sich die nächste Evolutionsstufe unserer ohnehin schon ziemlich elektronifiziert-vernetzten Gesellschaft – die postindustrielle Revolution"
+summary: "_Remote is the new local_: Alles vernetzt – Waren, Maschinen, Fabriken, Lieferanten, Kunden, Menschen. Bots koordinieren _automagisch_ Entwicklung, Lieferung, Produktion, Bestellung und Abwicklung von Produkten und Dienstleistungen. Hinter dem (eher nichtssagenden Stichwort _Industrie 4.0_ verbirgt sich die nächste Evolutionsstufe unserer ohnehin schon ziemlich elektronifiziert-vernetzten Gesellschaft – die postindustrielle Revolution"
 
 excerpt: ""
 classes: wide
@@ -14,7 +14,7 @@ classes: wide
 {% include you-read-an-extract.html %}
 
 
-_Remote is the new local_: Alles vernetzt – Waren, Maschinen, Fabriken, Liefe- ranten, Kunden, Menschen. Bots koordinieren _automagisch_ Entwicklung, Lieferung, Produktion, Bestellung und Abwicklung von Produkten und Dienstleistungen. Hinter dem (eher nichtssagenden Stichwort _Industrie 4.0_ verbirgt sich die nächste Evolutionsstufe unserer ohnehin schon ziemlich elektronifiziert-vernetzten Gesellschaft – die postindustrielle Revolution
+_Remote is the new local_: Alles vernetzt – Waren, Maschinen, Fabriken, Lieferanten, Kunden, Menschen. Bots koordinieren _automagisch_ Entwicklung, Lieferung, Produktion, Bestellung und Abwicklung von Produkten und Dienstleistungen. Hinter dem (eher nichtssagenden Stichwort _Industrie 4.0_ verbirgt sich die nächste Evolutionsstufe unserer ohnehin schon ziemlich elektronifiziert-vernetzten Gesellschaft – die postindustrielle Revolution
 
 ## 4.0: Die Versprechen
 
@@ -50,5 +50,3 @@ Das [Original](https://jaxenter.de/die-zukunft-mit-industrie-4-0-44066)
 dieses Artikels erschien im August 2016 im JavaMagazin.
 
 [^fraunhofer]: Fraunhofer-Gesellschaft: „Produktion und Dienstleistung – Industrie 4.0“: http://www.fraunhofer.de/de/forschung/forschungsfelder/produktion-dienstleistung/ industrie-4-0.html
-
-{% include training-dates.html %}

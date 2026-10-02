@@ -30,5 +30,3 @@ Wir sehen als wesentliches Merkmal guter SoftwarearchitektInnen, dass sie unter 
 Wir glauben fest daran, dass der Unterschied zwischen guten und schlechten Softwarearchitekten hauptsächlich in deren Verhalten begründet liegt, in ihrer Vorgehensweise oder Methodik.
 
 Technologie, Frameworks oder Tools beeinflussen die Qualität von Lösungen erheblich weniger, obwohl Softwarearchitekten sie natürlich kennen und können müssen. Daher haben wir technische Themen auf dieser Website und auch im Buch komplett ausgespart. Wir gehen (optimistisch, aber durch langjährige Beobachtung gestützt) davon aus, dass Softwarearchitekten ihr IT-technisches Handwerkszeug in der Regel ziemlich gut im Griff haben.
-
-{% include training-dates.html %}

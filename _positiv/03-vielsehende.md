@@ -1,5 +1,5 @@
 ---
-title: "03 - Vielsehende"
+title: "03 – Vielsehende"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -56,7 +56,7 @@ bzw. Benutzerrollen zeigt.
 ## In der Mischung liegt die Kraft
 Die Bausteinsicht ist unserer Erfahrung nach die wichtigste Perspektive, so wie für den Regisseur diejenige Kamera, mit der er von der Totalen bis hin zum kleinsten Detail zoomen kann. Dabei genügt durchaus eine hohe Abstraktionsebene, die etwa die Subsysteme oder größten Komponenten zeigt - gepaar mit den verwendete technischen oder querschnittlichen Konzepten.
 
-Oftmals unterstützen die anderen Sichten Architekten dabei, Durchblick im Dickicht komplexer Strukturen zu gewinnen. Wechseln von Perspektiven macht Architek- turen schneller stabil, weil verschiedene Einflussfaktoren besser ans Tageslicht kommen.
+Oftmals unterstützen die anderen Sichten Architekten dabei, Durchblick im Dickicht komplexer Strukturen zu gewinnen. Wechseln von Perspektiven macht Architekturen schneller stabil, weil verschiedene Einflussfaktoren besser ans Tageslicht kommen.
 
 
 ## Verwandte Muster

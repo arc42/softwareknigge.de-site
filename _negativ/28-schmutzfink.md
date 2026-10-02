@@ -1,5 +1,5 @@
 ---
-title: "28 - Schmutzfink"
+title: "28 – Schmutzfink"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-red.png
@@ -43,5 +43,3 @@ Das [Original](https://jaxenter.de/knigge-fur-softwarearchitekten-der-schmutzfin
 erschien im September 2014 im JavaMagazin.
 
 [^cleancode]: Martin, Robert: „Clean Code. A Handbook of Agile Software Craftsmanship“, Prentice Hall, 2008
-
-{% include training-dates.html %}

@@ -1,5 +1,5 @@
 ---
-title: "06 - Blick in den Rückspiegel"
+title: "06 – Blick in den Rückspiegel"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -19,7 +19,7 @@ Als Autofahrer gehört Ihr Blick hauptsächlich nach vorne, in Fahrtrichtung. 
 Softwarearchitekten sollten dazu Bewertungsmethoden nutzen, um ihre Entwurfsentscheidungen regelmäßig gegen gesetzte Qualitätsziele für die Architektur abzuwägen. Sie verlassen sich nicht nur auf ihre Erfahrung und ihr Bauchgefühl! Anhand der Bewertungsergebnisse verbessern sie einerseits ihre Arbeitsergebnisse, andererseits sukzessive ihren Entwurfs- und Entwicklungsprozess.
 
 ## Plan, Do, Check, Act
-Fragen Sie sich als Softwarearchitekt in regelmäßigen Abständen, ob ihre Entscheidungen und Konzepte die gewünschte Wirkung erzielen. Diese einfache Rückkopplungsschleife bildet die Grundlage der meisten iterativen (neudeutsch: agilen) Prozesse. Der Plan-Do-Check-Act- Kreislauf
+Fragen Sie sich als Softwarearchitekt in regelmäßigen Abständen, ob ihre Entscheidungen und Konzepte die gewünschte Wirkung erzielen. Diese einfache Rückkopplungsschleife bildet die Grundlage der meisten iterativen (neudeutsch: agilen) Prozesse. Der Plan-Do-Check-Act-Kreislauf
 (PDCA oder Deming-Kreis[^deming])
 hat den systematischen Rückblick (die Check-Phase) zum System erhoben, aus gutem Grund: Nur Handeln und Entscheiden ohne Reflektion, ohne Rückblick,
 führt leicht zu Zielverfehlung und Aktionismus.

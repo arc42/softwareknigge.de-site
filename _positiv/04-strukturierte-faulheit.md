@@ -1,5 +1,5 @@
 ---
-title: "04 - Strukturierte Faulheit"
+title: "04 – Strukturierte Faulheit"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png

@@ -1,5 +1,5 @@
 ---
-title: "32 - Flexibilisator"
+title: "32 – Flexibilisator"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-red.png
@@ -21,7 +21,7 @@ Wir möchten hier zuerst etwas über mögliche Arten der Flexibilität von S
 kräftiges _Bashing_ von Flexibilisatoren betreiben.
 
 * Flexibilität (Konfigurierbarkeit) zur Laufzeit: Zur Laufzeit der Komponente können unterschiedliche Parameter gesetzt und/oder verändert werden. Beispiele dafür sind konfigurierbare Benutzungsoberflächen (z. B. skinnable UI), konfigurierbare Abläufe, Prozesse, Pfade, Gültigkeitsregeln oder sogar Datenstrukturen.
-* Flexibilität bei der Installation und Inbetriebnahme (Konfigurierbarkeit zum Lade- oder Startzeitpunkt): Die Komponente lässt sich in verschiedenen Umgebungen (z. B. verschiedene Hardware, Betriebs- systeme, Netztopologien o. ä.) in Betrieb nehmen.
+* Flexibilität bei der Installation und Inbetriebnahme (Konfigurierbarkeit zum Lade- oder Startzeitpunkt): Die Komponente lässt sich in verschiedenen Umgebungen (z. B. verschiedene Hardware, Betriebssysteme, Netztopologien o. ä.) in Betrieb nehmen.
 
 * Flexibilität bei Tests: Die Komponente kann in verschiedenen Umgebungen oder Konfigurationen getestet werden. Beispielsweise ist sie unabhängig von konkreter Ressourcenausstattung oder Konfiguration der Testumgebung, oder es können zum Test Mocks oder Stubs für Teilsysteme eingesetzt werden.
 
@@ -30,7 +30,7 @@ kräftiges _Bashing_ von Flexibilisatoren betreiben.
 Es ist die **Laufzeit-Flexibilität**, der wir uns an dieser Stelle primär widmen.
 
 ## Overly Configurable... ORCS
-Wenn der Flexibilisator voll zuschlägt, schenkt er den späteren Nutzern seiner Software eine Menge Freiheit, allerdings setzt er sie gleichzeitig gravierenden Risiken aus. Aber, denkt sich der meist jugendlich-leicht- sinnige Flexibilisator, _no risk, no fun_.
+Wenn der Flexibilisator voll zuschlägt, schenkt er den späteren Nutzern seiner Software eine Menge Freiheit, allerdings setzt er sie gleichzeitig gravierenden Risiken aus. Aber, denkt sich der meist jugendlich-leichtsinnige Flexibilisator, _no risk, no fun_.
 
 Hochgradig generisch oder allgemein verwendbar bedeutet, auf jede Menge Leitplanken zu verzichten, auf (teilweise sinnvolle oder sogar notwendige) Grenzen. Nennen wir die ultraflexiblen Produkte des Flexibilisators mal _übermäßig laufzeitkonfigurierbare Systeme_,
 englisch _Overly Runtime Configurable Systems_, kurz **ORCS**.
@@ -58,5 +58,3 @@ Ultraflexibel und ultrafragil.
 ## Quellen
 
 [^lotr]: [Filmtrilogie „Der Herr der Ringe“](https://de.wikipedia.org/wiki/Der_Herr_der_Ringe_(Filmtrilogie))
-
-{% include training-dates.html %}

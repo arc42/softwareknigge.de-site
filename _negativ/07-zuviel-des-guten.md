@@ -1,5 +1,5 @@
 ---
-title: "07 - Zu viel des Guten"
+title: "07 – Zu viel des Guten"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-red.png
@@ -54,5 +54,3 @@ aufwändig sein.
 ## Verwandte Muster
 
 * [Blick in den Rückspiegel](06-blick-in-den-rueckspiegel) hilft, Angemessenheit zu entscheiden.
-
-{% include training-dates.html %}

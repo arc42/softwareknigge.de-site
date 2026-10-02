@@ -29,3 +29,11 @@
   {%- endif %}
 </nav>
 {%- endif -%}
+{%- comment -%}
+  The training box closes every pattern page, after the way onward — so a
+  pattern ends on "read the next one", not on an offer. Overview pages still
+  include it themselves.
+{%- endcomment -%}
+{%- if page.collection == "positiv" or page.collection == "negativ" or page.collection == "neutral" -%}
+{% include training-dates.html %}
+{%- endif -%}

@@ -1,5 +1,5 @@
 ---
-title: "14 - (technischer) Risikomanager"
+title: "14 – (technischer) Risikomanager"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -41,6 +41,3 @@ Eine Übersicht der technischen Risiken ist die notwendige Voraussetzung, um ge
 ## Verwandte Muster
 * Der technische Risikomanager erkennt Komplexität in Systemen als Risiko und triggert den [Vereinfachungskobold](/12-vereinfachungskobold).
 * Ein hoher Grad an [Ignoranz](/21-ignorant) erhöht oftmals das Risiko – was technischen Risikomanagern sofort auffallen sollte.
-
-
-{% include training-dates.html %}

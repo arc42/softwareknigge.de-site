@@ -1,5 +1,5 @@
 ---
-title: "23 - Edler Ritter"
+title: "23 – Edler Ritter"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -47,7 +47,7 @@ Zu den ritterlichen Tugenden gehören die folgenden[^tugenden]
 |--------|---------|
 |**Verlässlichkeit** |Ihre Auftraggeber können sich bereits von Beginn der Arbeit (sozusagen von Tag Null) an bis hin zur Produktionseinführung auf Sie verlassen.|
 |--------|---------|
-|**Ehre** | Ritter vermeiden es, unehrenhafte Dinge zu tun – beispielsweise schlechte Qualität von Ergebnissen zu liefern. Sie halten sich an die gemeinsame Definition- of-Done und versprechen nichts, was Sie und das Team nicht realistisch einhalten können.|
+|**Ehre** | Ritter vermeiden es, unehrenhafte Dinge zu tun – beispielsweise schlechte Qualität von Ergebnissen zu liefern. Sie halten sich an die gemeinsame Definition-of-Done und versprechen nichts, was Sie und das Team nicht realistisch einhalten können.|
 |--------|---------|
 |**Höflichkeit** | Fähigkeit, mit allen beteiligten Stakeholdern eine sachgerechte Kommunikation aufzubauen.|
 |--------|---------|
@@ -65,5 +65,3 @@ Zu den ritterlichen Tugenden gehören die folgenden[^tugenden]
 ## Verwandte Muster
 
 Maßhaltung gehört zu Ihren ritterlichen Tugenden. Sie sollten Angemessenheit beurteilen und [zu viel des Guten](07-zu-viel-des-guten) vermeiden können.
-
-{% include training-dates.html %}

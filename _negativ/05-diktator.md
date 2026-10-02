@@ -1,5 +1,5 @@
 ---
-title: "05 - Diktator"
+title: "05 – Diktator"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-red.png
@@ -23,12 +23,12 @@ oder eine kleine Gruppe (siehe [_Der Entscheider_](/18-entscheider)) entscheidet
 
 Der _Architator_ hingegen maximiert seine Unbeliebtheit, indem er grundsätzlich ohne Begründung Architekturentscheidung über die Köpfe des (in der Regel erfahrenen und sachkundigen) Entwicklungsteams hinweg trifft. Eben wie ein typischer Diktator.
 
-Dieses Vorgehen basiert aufentsprechenden Machtstrukturen:
+Dieses Vorgehen basiert auf entsprechenden Machtstrukturen:
 Das Management muss den Architator mit den Insignien dieser Macht ausgestattet
 haben, sonst ließen sich so getroffene Entscheidungen niemals durchsetzen.
 
 >**War Story:**
->In einem Projekt fungierte der (Gesamt-)Projektleiter gleichzeitig als tech- nischer Architekt. Er legte, typisch Diktator, ohne Abstimmung mit dem Team eine serviceorientierte Architektur (SOA) auf Basis von XML-Web- Services fest – obwohl eine leichtgewichtige Java-Lösung die Anforderungen der Auftraggeber prima erfüllt hätte.
+>In einem Projekt fungierte der (Gesamt-)Projektleiter gleichzeitig als technischer Architekt. Er legte, typisch Diktator, ohne Abstimmung mit dem Team eine serviceorientierte Architektur (SOA) auf Basis von XML-Web-Services fest – obwohl eine leichtgewichtige Java-Lösung die Anforderungen der Auftraggeber prima erfüllt hätte.
 >Gleichzeitig bestimmte unser Diktator die einzusetzenden Frameworks und Produkte. Das waren hauptsächlich teure und komplexe Monster, die er aus seiner eigenen Vergangenheit kannte.
 Am Ende hatte der Kunde zwar eine Lösung – aber eine viel zu teure. Der Architator hatte einige Freunde weniger. (GS)
 
@@ -41,5 +41,3 @@ Solche Diktatoren:
 ## Verwandte Muster
 
 * [_Der Entscheider_](/18-entscheider)
-
-{% include training-dates.html %}

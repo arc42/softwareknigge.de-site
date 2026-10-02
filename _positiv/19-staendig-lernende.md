@@ -1,5 +1,5 @@
 ---
-title: "19 - Ständig Lernende"
+title: "19 – Ständig Lernende"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -82,5 +82,3 @@ Eine Grundvoraussetzung für das ständige Lernen heißt Neugierde. Das bedeut
 
 ## Verwandte Muster
 Der Trend zum Zweitbuch hat die Informatik erreicht: [Schmökern](/24-schmoekern) hilft beim Lernen.
-
-{% include training-dates.html %}

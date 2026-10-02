@@ -1,5 +1,5 @@
 ---
-title: "21 - Der Ignorant"
+title: "21 – Der Ignorant"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-red.png
@@ -35,5 +35,3 @@ Sicherlich müssen wir grundlegende Fähigkeiten selbst erlernen und üben, o
 ## Verwandte Muster
 
 * Auch im [Elfenbeinturm](/02-elfenbeinturm) ignorieren Menschen die Realität...
-
-{% include training-dates.html %}

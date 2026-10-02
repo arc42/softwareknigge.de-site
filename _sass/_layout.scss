@@ -144,3 +144,28 @@ $home-neutral: #ffd401;
     }
   }
 }
+
+// The training box follows the pager on pattern pages; the pager floats like
+// the theme's page parts, so the box has to clear and float as well.
+.pattern-pager + .subtle-ad {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 2em;
+}
+
+// ---- Browser surfaces --------------------------------------------------------
+// Focus and selection in the site's colours instead of browser defaults.
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #235e70;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: #ffe36b;   // the yellow band, lightened: ink stays 13:1 on it
+  color: #1d1d1b;
+}

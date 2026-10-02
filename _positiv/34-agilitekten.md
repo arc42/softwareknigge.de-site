@@ -1,5 +1,5 @@
 ---
-title: "34 - Agilitekten"
+title: "34 – Agilitekten"
 layout: single
 header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
@@ -47,7 +47,7 @@ die wir alle in der Praxis mehr oder weniger verbreitet wiederfinden.
 Uns gefällt die Variante des 2- oder 3-Teams von "Architekturagenten" am besten,
 dessen Mitwirkgende alle als "Agilitekten" in unserer Sprechweise auftreten können.
 
-[^toth]: Toth, Stefan: „Vorgehensmuster für Softwarearchitektur: Kombinierbare Praktiken in Zeiten von Agile und Lean“, CarlHanser Verlag, 2. Auflage, 2016.
+[^toth]: Toth, Stefan: „Vorgehensmuster für Softwarearchitektur: Kombinierbare Praktiken in Zeiten von Agile und Lean“, Carl Hanser Verlag, 2. Auflage, 2016.
 
 
 ## Verwandte Muster
@@ -56,5 +56,3 @@ dessen Mitwirkgende alle als "Agilitekten" in unserer Sprechweise auftreten kön
 * Sie müssen
     * mit vielen Stakeholdern kommunizieren  ([Multilinguist](08-multilinguist)) sowie
     * Entscheidungen herbeiführen, erläutern und durchsetzen (Kapitel 18: [Entscheider](18-entscheider)).
-
-{% include training-dates.html %}
