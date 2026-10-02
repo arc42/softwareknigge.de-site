@@ -8,9 +8,12 @@
 
 ### Hosting
 
-* Die Website wird über [GitHub Pages](https://pages.github.com) gehostet,
-  direkt aus dem Branch `main` (Pfad `/`) dieses Repositories (`arc42/softwareknigge.de-site`).
-  Jeder Push auf `main` baut und veröffentlicht die Site automatisch.
+* Die Website wird über [GitHub Pages](https://pages.github.com) gehostet
+  (Repository `arc42/softwareknigge.de-site`).
+* Jeder Push auf `main` startet den Workflow
+  `.github/workflows/build-deploy-gh-pages.yml`: er baut die Site mit Jekyll
+  aus genau den Gems in `Gemfile.lock` (wie lokal mit `make dev`) und
+  veröffentlicht sie. Manuell auslösbar per „Run workflow“ im Actions-Tab.
 * Die Subdomain `softwareknigge.arc42.org` ist bei GoDaddy (DNS von `arc42.org`)
   per CNAME-Eintrag auf `arc42.github.io` geroutet.
 * Die Datei `CNAME` im Repository-Root legt die Custom Domain für GitHub Pages fest –
@@ -18,13 +21,40 @@
 
 * home.md is the homepage, it's mapped (via permalink) to "/".
 
-### Lokal bauen
+### Lokale Entwicklung
+
+Voraussetzung: Docker (mit `docker compose`) und `make`. Ruby/Jekyll werden
+nicht lokal installiert, sondern laufen in einem eigenen Dev-Image
+(`softwareknigge-site:latest`, Ruby 3.2, Gems exakt aus `Gemfile.lock`).
 
 ```bash
-docker compose up
+make dev     # Dev-Server mit Live-Reload starten
+make down    # wieder stoppen
+make help    # alle Targets anzeigen
 ```
 
-Danach ist die Site unter <http://localhost:4000> erreichbar.
+`make dev` liefert die Site unter <http://localhost:4280> aus (nicht
+`0.0.0.0:4280` – Firefox verbindet sich dorthin nicht). Der Port ist fest auf
+**4280** gesetzt statt auf Jekylls Default 4000, damit dieser Dev-Server
+parallel zu denen der anderen arc42-Sites laufen kann – siehe
+`raw/port-assignment.md` in meta.arc42.org. Die Portnummer steht an drei
+Stellen, die zusammenpassen müssen: `SITE_PORT` im `Makefile`, Mapping und
+`--port` in `docker-compose.yml`, `EXPOSE`/`CMD` im `Dockerfile`.
+
+Weitere Targets:
+
+| Target         | Zweck                                                              |
+|----------------|--------------------------------------------------------------------|
+| `make build`   | Dev-Image neu bauen                                                |
+| `make install` | Gems ins Image übernehmen, nachdem das `Gemfile` geändert wurde    |
+| `make update`  | Gems auf neueste erlaubte Versionen heben (schreibt `Gemfile.lock`) |
+| `make clean`   | `_site` und die Docker-Cache-Volumes löschen (echter Reset)        |
+| `make shell`   | Shell im Dev-Container öffnen                                      |
+| `make logs`    | Logs des laufenden Containers verfolgen                            |
+| `make check`   | Einfache Plausibilitätsprüfungen                                   |
+
+Passt `Gemfile.lock` nicht mehr zum gebauten Image, bricht der Container beim
+Start mit einem Hinweis ab – dann `make install` oder `make build` ausführen.
 
 ### Kurs-Termine
 

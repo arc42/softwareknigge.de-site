@@ -61,7 +61,11 @@ include:
   - _pages
 exclude:
   - Dockerfile
-  - _docker-compose*
+  - docker-compose.yml
+  - docker
+  - Makefile
+  - README.md
+  - SECURITY.md
   - _manage-site.sh
   - .asset-cache
   - .bundle
@@ -131,6 +135,8 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins
 plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -139,6 +145,8 @@ plugins:
 
 # mimic GitHub Pages with --safe
 whitelist:
+  - jekyll-remote-theme
+  - jekyll-include-cache
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
