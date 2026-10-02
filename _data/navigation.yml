@@ -1,16 +1,19 @@
-
+# Main navigation. Short German labels: the three categories carry the site's
+# colour code (positiv = green, negativ = red, neutral = yellow), and short
+# labels keep more of them visible before the menu collapses on narrow screens.
 main:
-  - title: "Positives..."
+  - title: "Positiv"
     url: /positiv
     description: "Positive Verhaltensmuster"
-  - title: "Negatives..."
+  - title: "Negativ"
     url: /negativ
     description: "Negative Verhaltensmuster"
-  - title: "Neutrales..."
+  - title: "Neutral"
     url: /neutral
+    description: "Neutrale Beobachtungen und Muster"
   - title: "Bücher"
     url: /book
-  - title: "About"
+  - title: "Über uns"
     url: /about
   - title: "Kontakt"
     url: /contact

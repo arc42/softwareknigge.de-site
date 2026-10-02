@@ -1,0 +1,78 @@
+// ============================================================================
+// Pattern pager — markup in _includes/post_pagination.html.
+// Previous pattern · Übersicht · next pattern, each side named. Quiet: hairline
+// rule above, no boxed buttons, link colour only on the titles.
+// ============================================================================
+
+$pg-rule:  #e4dcc6;   // same hairline as the training box and footer
+$pg-muted: #6b665a;   // 5.3:1 on white and on the paper tone
+$pg-link:  #235e70;
+
+.pattern-pager {
+  // The theme floats .page__content and .page__meta; like its own
+  // .pagination, the pager must clear and float too, or it collapses
+  // behind them.
+  clear: both;
+  float: left;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  gap: 1em 1.5em;
+  margin: 2.5em 0 1em;
+  padding-top: 1.25em;
+  border-top: 1px solid $pg-rule;
+  font-size: 0.9em;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover .pattern-pager__title,
+  .pattern-pager__overview:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.pattern-pager__prev,
+.pattern-pager__next {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15em;
+  min-width: 0;
+}
+
+.pattern-pager__next {
+  text-align: right;
+}
+
+.pattern-pager__dir {
+  font-size: 0.85em;
+  color: $pg-muted;
+}
+
+.pattern-pager__title,
+.pattern-pager__overview {
+  font-weight: 600;
+  color: $pg-link;
+  overflow-wrap: anywhere;
+}
+
+.pattern-pager__overview {
+  align-self: end;
+  padding: 0 0.25em;
+}
+
+// Narrow screens: previous and next side by side, overview on its own row.
+@media (max-width: 600px) {
+  .pattern-pager {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pattern-pager__overview {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: center;
+  }
+}

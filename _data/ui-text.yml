@@ -1,0 +1,44 @@
+# German UI strings for the minimal-mistakes theme.
+#
+# The remote theme's own _data/ui-text.yml is not loaded for this site, so
+# every theme string fell back to English ("Previous", "Next", "Enter your
+# search term..."). This is the theme's `de` block (4.21), with the empty
+# entries filled in and a few wordings tightened.
+de:
+  skip_links                 : "Sprunglinks"
+  skip_primary_nav           : "Zur Hauptnavigation springen"
+  skip_content               : "Zum Inhalt springen"
+  skip_footer                : "Zur Fußzeile springen"
+  page                       : "Seite"
+  pagination_previous        : "Vorheriges Muster"
+  pagination_next            : "Nächstes Muster"
+  pagination_overview        : "Übersicht"
+  breadcrumb_home_label      : "Start"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Menü ein-/ausblenden"
+  search_label               : "Suche ein-/ausblenden"
+  toc_label                  : "Auf dieser Seite"
+  ext_link_label             : "Direkter Link"
+  less_than                  : "weniger als"
+  minute_read                : "Minuten Lesezeit"
+  share_on_label             : "Teilen auf"
+  meta_label                 :
+  tags_label                 : "Tags:"
+  categories_label           : "Kategorien:"
+  date_label                 : "Aktualisiert:"
+  comments_label             : "Hinterlassen Sie einen Kommentar"
+  comments_title             : "Kommentare"
+  more_label                 : "Mehr anzeigen"
+  related_label              : "Das könnte Sie auch interessieren"
+  follow_label               : "Folgen:"
+  feed_label                 : "Feed"
+  powered_by                 : "Möglich durch"
+  website_label              : "Webseite"
+  email_label                : "E-Mail"
+  recent_posts               : "Aktuelle Beiträge"
+  undefined_wpm              : "Undefinierter Parameter words_per_minute in _config.yml"
+  loading_label              : "Lade …"
+  search_label_text          : "Muster durchsuchen"
+  search_placeholder_text    : "Suchbegriff eingeben, z. B. Entscheidung"
+  search_algolia_no_results  : "Keine Treffer"
+  results_found              : "Treffer"

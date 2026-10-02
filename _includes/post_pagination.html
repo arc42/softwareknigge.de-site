@@ -1,0 +1,31 @@
+{%- comment -%}
+  Overrides the theme's post_pagination.html. The theme printed bare
+  "Previous" / "Next" and hid the target in a title attribute; here each side
+  names the pattern it leads to, and the middle links back to the category
+  overview (/positiv, /negativ, /neutral), so a reader is never stranded at the
+  end of a pattern. Styles in _sass/_pager.scss.
+{%- endcomment -%}
+{%- assign t = site.data.ui-text[site.locale] -%}
+{%- if page.previous or page.next or page.collection -%}
+<nav class="pattern-pager" aria-label="Muster-Navigation">
+  {%- if page.previous %}
+  <a class="pattern-pager__prev" href="{{ page.previous.url | relative_url }}" rel="prev">
+    <span class="pattern-pager__dir">← {{ t.pagination_previous | default: "Vorheriges Muster" }}</span>
+    <span class="pattern-pager__title">{{ page.previous.title | markdownify | strip_html | strip }}</span>
+  </a>
+  {%- else %}
+  <span class="pattern-pager__prev" aria-hidden="true"></span>
+  {%- endif %}
+  {%- if page.collection and page.collection != "posts" %}
+  <a class="pattern-pager__overview" href="{{ '/' | append: page.collection | relative_url }}">{{ t.pagination_overview | default: "Übersicht" }}</a>
+  {%- endif %}
+  {%- if page.next %}
+  <a class="pattern-pager__next" href="{{ page.next.url | relative_url }}" rel="next">
+    <span class="pattern-pager__dir">{{ t.pagination_next | default: "Nächstes Muster" }} →</span>
+    <span class="pattern-pager__title">{{ page.next.title | markdownify | strip_html | strip }}</span>
+  </a>
+  {%- else %}
+  <span class="pattern-pager__next" aria-hidden="true"></span>
+  {%- endif %}
+</nav>
+{%- endif -%}
