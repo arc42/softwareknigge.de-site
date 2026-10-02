@@ -43,8 +43,10 @@ Der „**Knigge für Softwarearchitekten**“ ist ein [Buch von Peter Hruschka u
 </div>
 
 <figure class="pattern-graph">
-  <a href="/images/pattern-language/Knigge-Pattern-Language-4-Site.png">
-    <img src="/images/pattern-language/Knigge-Pattern-Language-4-Site.png" width="1816" height="1166" alt="Übersicht der Verhaltensmuster als Netz: positive, negative und neutrale Muster mit ihren Beziehungen untereinander">
-  </a>
-  <figcaption>Die Mustersprache: wie die Muster zusammenhängen (grün positiv, rot negativ). <a href="/images/pattern-language/Knigge-Pattern-Language-4-Site.png">Grafik in voller Größe öffnen</a></figcaption>
+  <div class="pattern-graph__scroll" tabindex="0" role="region" aria-label="Mustersprache-Grafik, seitlich scrollbar">
+    <a href="/images/pattern-language/Knigge-Pattern-Language-4-Site.png">
+      <img src="/images/pattern-language/Knigge-Pattern-Language-4-Site.png" width="1816" height="1166" alt="Übersicht der Verhaltensmuster als Netz: positive, negative und neutrale Muster mit ihren Beziehungen untereinander">
+    </a>
+  </div>
+  <figcaption>Die Mustersprache: wie die Muster zusammenhängen (grün positiv, rot negativ). <span class="pattern-graph__hint">Zum Erkunden seitlich wischen, oder die </span><a href="/images/pattern-language/Knigge-Pattern-Language-4-Site.png">Grafik in voller Größe öffnen</a>.</figcaption>
 </figure>

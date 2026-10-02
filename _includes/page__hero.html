@@ -11,6 +11,17 @@
 {%- assign hero_ink = false -%}
 {%- if ink_bands contains hero_file %}{% assign hero_ink = true %}{% endif -%}
 {%- if page.header.ink == true %}{% assign hero_ink = true %}{% elsif page.header.ink == false %}{% assign hero_ink = false %}{% endif -%}
+{%- comment -%}
+  Band colour of each header image (its left edge). On narrow screens the image
+  is pinned bottom-right at a fixed height so the woodcut stays visible, and
+  this colour fills the rest of the band (_sass/_mobile.scss).
+{%- endcomment -%}
+{%- assign band_colors = "site-header.png:#ffd401,softwareknigge-site-header-green.png:#a0bf80,softwareknigge-site-header-red.png:#c6041b,softwareknigge-site-header-search.png:#cccccc,book-header.png:#24244c" | split: "," -%}
+{%- assign band_color = nil -%}
+{%- for bc in band_colors -%}
+  {%- assign kv = bc | split: ":" -%}
+  {%- if kv[0] == hero_file %}{% assign band_color = kv[1] %}{% endif -%}
+{%- endfor -%}
 {% capture overlay_img_path %}{{ page.header.overlay_image | relative_url }}{% endcapture %}
 
 {% if page.header.overlay_filter contains "rgba" %}
@@ -27,8 +38,8 @@
 
 {% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
 
-<div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %}{% if hero_ink %} page__hero--ink{% endif %}"
-  style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %}"
+<div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %}{% if hero_ink %} page__hero--ink{% endif %}{% if band_color %} page__hero--band{% endif %}"
+  style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% elsif band_color %}background-color: {{ band_color }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %}"
 >
   {% if page.header.overlay_color or page.header.overlay_image %}
     <div class="wrapper">

@@ -134,6 +134,7 @@ $home-neutral: #ffd401;
 
   figcaption {
     margin-top: 0.75em;
+    font-family: inherit;   // the theme sets captions in a serif face
     font-size: 0.85em;
     color: $muted;
 

@@ -1,0 +1,77 @@
+// ============================================================================
+// Narrow screens (< 48em, the theme's medium breakpoint)
+// ============================================================================
+
+$narrow: 47.99em;
+
+@media (max-width: $narrow) {
+
+  // ---- Header band: keep the woodcut -----------------------------------------
+  // The theme scales the band image to cover and centres it, which crops the
+  // caricature (right quarter of the image) out of every phone header. Pin the
+  // image bottom-right at a fixed height instead; the band colour, set inline
+  // by _includes/page__hero.html, fills the rest. The title keeps clear of the
+  // drawing and hyphenates long German words.
+  .page__hero--band {
+    background-size: auto 9rem;   // woodcut ~150px wide at this height
+    background-position: right bottom;
+    min-height: 9rem;
+  }
+
+  .page__hero--band .wrapper {
+    padding-right: calc(9rem * 1.15 + 0.5em);   // woodcut is ~1.05x its height wide, plus margin
+  }
+
+  .page__hero--band .page__title {
+    font-size: 1.5em;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .page__hero--band .page__lead,
+  .page__hero--band .pattern-position {
+    font-size: 0.9em;
+  }
+
+  // ---- Navigation: all three categories in view ------------------------------
+  // The greedy nav moves whatever does not fit into the menu; at phone width
+  // that hid "Neutral". A smaller logo and tighter link spacing make room.
+  .greedy-nav .site-title img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .greedy-nav .visible-links a {
+    margin: 0 0.55rem;
+  }
+
+  .search__toggle {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  // ---- Pattern graph: scroll sideways at a readable size ---------------------
+  .pattern-graph__scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+
+  .pattern-graph__scroll img {
+    width: 1300px;           // labels ~11px, the smallest still readable size
+    max-width: none;
+  }
+}
+
+// The swipe hint only makes sense where the graph scrolls.
+@media (min-width: 48em) {
+  .pattern-graph__hint {
+    display: none;
+  }
+}
+
+.pattern-graph__scroll:focus-visible {
+  outline: 2px solid #235e70;
+  outline-offset: 4px;
+}
