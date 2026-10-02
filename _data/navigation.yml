@@ -11,7 +11,7 @@ main:
   - title: "Neutral"
     url: /neutral
     description: "Neutrale Beobachtungen und Muster"
-  - title: "Bücher"
+  - title: "Das Buch"
     url: /book
   - title: "Über uns"
     url: /about

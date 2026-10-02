@@ -25,8 +25,6 @@ google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 # Social Sharing
-twitter:
-  username               : gernotstarke
   # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -52,7 +50,6 @@ author:
   github           : gernotstarke
   google_plus      :
   stack_overflow   :
-  twitter          : gernotstarke
   xing             : gernotstarke
 
 # Reading Files
