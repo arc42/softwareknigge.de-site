@@ -1,6 +1,6 @@
 # Website für "Knigge für Softwarearchitekten"
 
-> currently available on [softwareknigge.de](https://softwareknigge.de)
+> currently available on [softwareknigge.arc42.org](https://softwareknigge.arc42.org)
 
 
 
@@ -8,17 +8,28 @@
 
 ### Hosting
 
-* Die Website wird über [Netlify](https://netlify.com) gehostet
-* Die Domäne liegt bei HostEurope und wird per A-Record DNS-Eintrag
-auf die Nameserver von Netlify geroutet
+* Die Website wird über [GitHub Pages](https://pages.github.com) gehostet,
+  direkt aus dem Branch `main` (Pfad `/`) dieses Repositories (`arc42/softwareknigge.de-site`).
+  Jeder Push auf `main` baut und veröffentlicht die Site automatisch.
+* Die Subdomain `softwareknigge.arc42.org` ist bei GoDaddy (DNS von `arc42.org`)
+  per CNAME-Eintrag auf `arc42.github.io` geroutet.
+* Die Datei `CNAME` im Repository-Root legt die Custom Domain für GitHub Pages fest –
+  nicht löschen!
 
 * home.md is the homepage, it's mapped (via permalink) to "/".
 
-### Checkout
-Das Repository enthält ein "git-submodule" (`subtle-ads`), um die Termine der folgenden
-arc42-Kurse anzuzeigen.
+### Lokal bauen
 
-Stellen Sie beim Checkout sicher, dass dieses Submodule mit ausgecheckt wird.
+```bash
+docker compose up
+```
+
+Danach ist die Site unter <http://localhost:4000> erreichbar.
+
+### Kurs-Termine
+
+Die Termine der folgenden arc42-Kurse (`_includes/subtle-ads/subtle-ads.html`)
+werden zur Laufzeit per htmx von einem externen Backend geladen.
 
 ## Credits
 
