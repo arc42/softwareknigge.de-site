@@ -23,13 +23,12 @@ Sie lernen, wie man durch Erfolgsmuster ([positive...](/positiv)) bessere System
 („Anti-Patterns“, [negative...](/negativ)) vermeidet. Einige
 [neutrale](/neutral) Beobachtungen runden das Ganze ab.
 
-### Gute Architekt(Inn)en bauen gute Systeme
+## Gute Architekt(Inn)en bauen gute Systeme
 Wir sehen als wesentliches Merkmal guter SoftwarearchitektInnen, dass sie unter den jeweiligen Umständen die bestmöglichen Systeme konstruieren und deren Entwicklung begleiten. Systeme, die verständlich, langlebig, wartbar, funktional, performant und sicher sind. Systeme, die robust auf Fehler reagieren und ihre jeweiligen Stakeholder positiv erstaunen, statt zu nerven. Kurz gesagt: Gute ArchitektInnen liefern hohe Qualität.
 
-### Gutes Verhalten macht gute Architekten
+## Gutes Verhalten macht gute Architekten
 Wir glauben fest daran, dass der Unterschied zwischen guten und schlechten Softwarearchitekten hauptsächlich in deren Verhalten begründet liegt, in ihrer Vorgehensweise oder Methodik.
 
 Technologie, Frameworks oder Tools beeinflussen die Qualität von Lösungen erheblich weniger, obwohl Softwarearchitekten sie natürlich kennen und können müssen. Daher haben wir technische Themen auf dieser Website und auch im Buch komplett ausgespart. Wir gehen (optimistisch, aber durch langjährige Beobachtung gestützt) davon aus, dass Softwarearchitekten ihr IT-technisches Handwerkszeug in der Regel ziemlich gut im Griff haben.
 
-### Hinweis
 {% include training-dates.html %}

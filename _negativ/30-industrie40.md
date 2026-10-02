@@ -16,7 +16,7 @@ classes: wide
 
 _Remote is the new local_: Alles vernetzt – Waren, Maschinen, Fabriken, Liefe- ranten, Kunden, Menschen. Bots koordinieren _automagisch_ Entwicklung, Lieferung, Produktion, Bestellung und Abwicklung von Produkten und Dienstleistungen. Hinter dem (eher nichtssagenden Stichwort _Industrie 4.0_ verbirgt sich die nächste Evolutionsstufe unserer ohnehin schon ziemlich elektronifiziert-vernetzten Gesellschaft – die postindustrielle Revolution
 
-### 4.0: Die Versprechen
+## 4.0: Die Versprechen
 
 "_Industrie 4.0_ steht für die intelligente Vernetzung von Produktentwicklung, Produktion, Logistik und Kunden[^fraunhofer]."
 
@@ -24,7 +24,7 @@ Der Kunde konfiguriert im Web ein Produkt – und diese Konfiguration wird direk
 
 Genauer gesagt: „Industrie 4.0 [bedeutet die] Vernetzung von autonomen, sich situativ selbst steuernden, sich selbst konfigurierenden, wissensbasierten, sensorgestützten und räumlich verteilten Produktionsressourcen (Produktionsmaschinen, Roboter, Förder- und Lagersysteme, Betriebsmittel) inklusive deren Planungs- und Steuerungssysteme.“[^fraunhofer]
 
-### 4.0: Die Risiken
+## 4.0: Die Risiken
 
 Als Softwerker wissen Sie nur zu gut um die _Herausforderungen_ (und faktisch oft: _Probleme_) vernetzter Systeme:
 
@@ -41,7 +41,7 @@ Verwaltungskräfte gerät – wir sagen nur _**Neuland**_.
 Technische „Kleinigkeiten“ wie Latenz, Deadlocks, Parallelität und
 Datenintegrität wollen wir hier aufgrund der Kürze dieses Kapitels mal ignorieren.
 
-### Quellen
+## Quellen
 
 Lesen Sie mal [Blackout](http://www.blackout-das-buch.de/buch.html). Das macht
 vor Industrie 4.0 so richtig Angst.
@@ -51,5 +51,4 @@ dieses Artikels erschien im August 2016 im JavaMagazin.
 
 [^fraunhofer]: Fraunhofer-Gesellschaft: „Produktion und Dienstleistung – Industrie 4.0“: http://www.fraunhofer.de/de/forschung/forschungsfelder/produktion-dienstleistung/ industrie-4-0.html
 
-### Hinweis
 {% include training-dates.html %}

@@ -14,7 +14,7 @@ classes: wide
 {% include you-read-an-extract.html %}
 
 
->#### War Story
+>**War Story**
 > In der Nacht vor Übergabe des Systems an den Auftraggeber: Einsam hockt er mit gekrümmtem Rücken und verbissenem Blick vor dem Bildschirm. Er, mit Quellcode und Compiler allein in der Finsternis. Noch schnell ein Feature programmiert, ein paar  Optimierungen und zwei, drei Bugs gefixt, es ist ja erst zwei Uhr, noch Zeit genug bis Sonnenaufgang.
 Gegen fünf Uhr am Morgen erfolgt dann mit letzter Kraft der finale Commit – und dann ab nach Hause. Getestet hatte der Codeheld ja gestern schon.
 >Sie können sich denken, dass diese Geschichte kein glückliches Ende gefunden hat ... (GS)
@@ -31,5 +31,4 @@ Nicht überzeugt? Lektüre zum Thema gibt es zuhauf[^bad-code]
 [^bad-code]: [„How to Write Bad Code“](http://www.exmsft.com/~hanss/badcode.htm), oder [„Good Code – Bad Code: An Example“](http://www.programming4scientists.com/2008/09/26/good-code-bad-code-an-example/), oder auch [Roedy Green: „Unmaintainable Code“](http://mindprod.com/jgloss/unmain.html)
 
 
-### Hinweis
 {% include training-dates.html %}

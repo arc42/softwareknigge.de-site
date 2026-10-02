@@ -1,0 +1,18 @@
+// ============================================================================
+// Content headings
+// Page content starts at h2 (the hero carries the page's h1), so the headings
+// follow h1 -> h2 -> h3 for screen readers. They used to start at h3; these
+// rules keep the sizes they had then, and drop the theme's h2 underline.
+// ============================================================================
+
+.page__content {
+  h2 {
+    font-size: 1.125em;   // theme h3
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  h3 {
+    font-size: 1.0625em;  // theme h4
+  }
+}

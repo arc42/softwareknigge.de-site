@@ -18,10 +18,10 @@ Schlechter Code stinkt, verursacht Unwohlsein, Kopfschmerzen und eine Menge ande
 Schlechter oder riskanter Code, das bedeutet unverständliche, ungeschickte, umständliche Programmierung, überschüssige Komplexität, verletzte Konventionen oder Idiome, Missbrauch der Programmiersprache oder deren falscher Einsatz.
 Und, Sie haben es schon vermutet, keine automatisierten Testfälle. Anti-Clean-Code, sozusagen. Falls Sie Ihr eigenes System jetzt schon wiedererkennen – willkommen im Club.
 
-### Erst mal suchen
+## Erst mal suchen
 Dummerweise gibt es in manchen Systemen riesige Mengen von schlechtem Code, sodass der freundliche Saubermann erst suchen sollte, welche Stellen er bereinigen muss.
 
-### Kategorien des Code-Grauens
+## Kategorien des Code-Grauens
 Im Wesentlichen kennen wir folgende Kategorien schlechten Quellcodes:
 
 * Code, der zur Laufzeit des Systems Schmerzen oder Probleme verursacht, beispielsweise durch schlechte Performance oder übermäßigen Ressourcenverbrauch.
@@ -35,7 +35,7 @@ Zwei Aufgaben hat der Saubermann damit: Schmutz (d. h. schlechten oder riskanten
 
 [^feathers]: Feathers, Michael: „Working Effectively with Legacy Code“, Prentice Hall, 2005. Ein großartiges Buch, das meiner (Gernots) Meinung nach jeder lesen sollte, der Software ändert.
 
-### Verschmutzung messen
+## Verschmutzung messen
 Schlechten Code finden Sie am besten durch geeignete Metriken oder ähnliche
 Analysemethoden. Dabei sollten Sie eine Mischung aus organisatorischen Metriken, Laufzeitmessungen sowie statischen (Code-)Metriken kombinieren.
 
@@ -48,12 +48,12 @@ Beginnen wir mit zwei organisatorischen Metriken:
 
 Relativ hohe Zahlen in einer der beiden Metriken rechtfertigen Umbau- und Verbesserungsmaßnahmen. In üblichen CI- Umgebungen werden diese Werte nicht gemessen – daher müssen Sie als Saubermann hier selbst tätig werden.
 
-### Stoppuhr und Co.
+## Stoppuhr und Co.
 Als Nächstes messen Sie als Saubermann das Laufzeitverhalten Ihres Systems durch detailliertes Profiling: Messen Sie Laufzeiten einzelner Bausteine, die Häufigkeiten der Aufrufe und deren Speicher- oder Ressourcenverbrauch. Idealerweise messen Sie diese Größen regelmäßig (mindestens wöchentlich) in Last- oder Stresstests.
 
 Auch hieraus können Sie „Reinigungsbedarf“ ableiten: Säubern Sie Bausteine, die besonders häufig aufgerufen werden, besonders lange Zeit oder viel Speicher benötigen.
 
-### Höhe der Verantwortung
+## Höhe der Verantwortung
 Kommen wir zu einem weiteren Aspekt der statischen Codeanalyse: Zur Identifikation von riskantem Code empfehlen wir Ihnen insbesondere die Messung der
 _afferenten Kopplung_. Sie gibt die Anzahl der eingehenden Abhängigkeiten an, also derjenigen Bausteine, die vom jeweils vermessenen Baustein abhängig sind. Anders ausgedrückt misst sie die Höhe der „Verantwortung“ eines Bausteins.
 
@@ -61,9 +61,8 @@ Hohe afferente Kopplung bedeutet, dass im Fehler- oder Problemfall sehr
 viele andere Bausteine betroffen sind.
 
 
-### Fazit
+## Fazit
 Finden Sie riskanten oder schlechten Code durch eine Kombination technischer und organisatorischer Metriken: Beobachten Sie Abhängigkeiten und Komplexität, Fehlercluster und Laufzeit-/Performancewerte. Korrelieren Sie diese Metriken: Bausteine, die in mehr als einer der Metriken schlecht abschneiden, sollten Sie mit hoher Priorität verbessern (Stichwort: Refactoring).
 
 
-### Hinweis
 {% include training-dates.html %}

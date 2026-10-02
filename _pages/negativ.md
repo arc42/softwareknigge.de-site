@@ -16,11 +16,10 @@ der [gedruckten Version](https://www.amazon.de/Knigge-f%C3%BCr-Softwarearchitekt
 
 {% for negativ in site.negativ %}
 
-### [{{ negativ.title }}]({{ negativ.url }})
+## [{{ negativ.title }}]({{ negativ.url }})
 
 {{ negativ.summary }}
 
 {% endfor %}
 
-### Hinweis
 {% include training-dates.html %}

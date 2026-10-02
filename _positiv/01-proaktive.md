@@ -20,7 +20,7 @@ einleiten zu können. Sie übernehmen die Initiative, starten notwendige Aktiv
 
 Anstatt passiv oder reaktiv abzuwarten, bis jemand anderes mit einer ungelösten Aufgabe zu ihnen kommt, gehen Proaktive diese Aufgaben selbstständig an.
 
-### Verbesserungsmöglichkeiten suchen
+## Verbesserungsmöglichkeiten suchen
 Softwarearchitekten suchen ständig aktiv und an allen ihnen zugänglichen
 Stellen nach Verbesserungsmöglichkeiten – ohne explizite
 Aufforderung von außen.
@@ -30,20 +30,20 @@ Sie schauen dabei deutlich über den Tellerrand ihres eigenen Arbeitsbereichs h
 Konkret übernehmen Softwarearchitekten proaktiv Aufgaben in Anforderungsanalyse und -management, im Build- und Testmanagement so- wie im Risikomanagement.
 Manchmal unternehmen sie Ausflüge in die Chefetagen, um den Managern die technische Lösung zu erklären oder Schwächen im Projektmanagement zu kompensieren.
 
-### Annahmen und Voraussetzungen klären
+## Annahmen und Voraussetzungen klären
 Gute Softwarearchitekten klären von sich aus jegliche (ansonsten versteckte oder implizite) Annahmen oder Voraussetzungen auf. Entwurf und Implementierung der technischen Lösung sollten auf Tatsachen beruhen, nicht nur auf Vermutungen, Mutmaßungen und Betriebsblindheit.
 
-### Auf andere zugehen
+## Auf andere zugehen
 Proaktive Softwarearchitekten suchen von sich aus den regelmäßigen Kontakt zu anderen Stakeholdern im Projekt. Nicht, weil sie gerne grünen Tee trinken, sondern weil sie (richtig, aktiv!) Rückmeldung einholen und geben wollen.
 
 Genau das Gegenteil von _Abwarten und Tee trinken_: Initiativ Eindrücke und Meinungen der anderen erfragen, nach Hindernissen, erkannten Problemen oder Risiken suchen.
 
-### Verwandte Muster
+## Verwandte Muster
 
 Der Proaktive nutzt den [Blick in den Rückspiegel](06-blick-in-den-rueckspiegel): Als proaktiver, vorausschauender Softwarearchitekt suchen Sie Risiken,
 bevor sie eintreten können.
 
-### Quellen
+## Quellen
 
 Das [Original](https://jaxenter.de/knigge-fur-softwarearchitekten-2-8072) dieses
 Musters entstammt der allerersten Folge der Knigge-Kolumne im JavaMagazin.

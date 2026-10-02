@@ -77,17 +77,8 @@ training:
 
 {% include feature_row id="aim42" type="right" %}
 
-{% include feature_row id="buecher" type="left" %}
+{% include feature_row id="isaqb" type="left" %}
 
-{% include feature_row id="isaqb" type="right" %}
+{% include feature_row id="training" type="right" %}
 
-{% include feature_row id="training" type="left" %}
-
-{% include feature_row id="lebenslauf" type="center" %}
-
-<hr>
-Site zuletzt generiert am {{ site.time }}.
-<hr>
-
-### Hinweis
 {% include training-dates.html %}

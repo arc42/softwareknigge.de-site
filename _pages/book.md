@@ -12,7 +12,7 @@ classes: wide
 
 ## 2018: Knigge, 3. Auflage
 
-![](/images/books/knigge3.jpg){: .align-left}
+![Cover: Knigge für Softwarearchitekten, 3. Auflage (2018)](/images/books/knigge3.jpg){: .align-left}
 
 Schon wieder sind rund ein Dutzend Folgen der Knigge-Kolumne vorrüber -
 und wir haben die besten der neuen Teile in die dritte Auflage des Knigge-Buches übernommen.
@@ -26,8 +26,8 @@ als Farbe an.
 <hr/>
 
 
-### 2014: Knigge, reloaded
-![](/images/books/knigge-reloaded.jpg){: .align-right}
+## 2014: Knigge, reloaded
+![Cover: Knigge für Softwarearchitekten – Reloaded (2014)](/images/books/knigge-reloaded.jpg){: .align-right}
 
 Gernot Starke und Peter Hruschka: Knigge für Softwarearchitekten - reloaded. 2. Auflage, 2014
 
@@ -38,8 +38,8 @@ aufgenommen.
 
 <hr/>
 
-### Knigge (1)
-![](/images/books/knigge1.jpg){: .align-left}
+## Knigge (1)
+![Cover: Knigge für Softwarearchitekten, 1. Auflage](/images/books/knigge1.jpg){: .align-left}
 
 Gernot Starke und Peter Hruschka: Knigge für Softwarearchitekten, 1. Auflage, 2012.
 
@@ -51,8 +51,8 @@ In diesem Buch zeigen wir Ihnen unterhaltsame und praxisgerechte Wege zu bessere
 Sie finden typische Verhaltensmuster von Softwarearchitekten, gute und schlechte. Aus Erfolgsmuster lernen Sie, bessere Systeme zu konstruieren und effektiver zu arbeiten. Aus den „Anti-Patterns“ leiten Sie Abhilfen gegen schlechte Architekturmanieren ab. Ein besonderes Augenmerk liegt auf der Evolution und der Änderung von Systemen.
 
 
-### 2016: arc42 by Example
-![](/images/books/arc42-by-example.png){: .align-right}
+## 2016: arc42 by Example
+![Cover: arc42 by Example](/images/books/arc42-by-example.png){: .align-right}
 
 200 Seiten, eBook (auf Englisch), veröffentlicht bei [Leanpub](https://leanpub.com/arc42byexample).
 Verfügbar in verschiedenen Formaten (u.a. pdf, epub, kindle).
@@ -72,8 +72,8 @@ Gerne genutzt, um die Einführung von arc42 in Teams oder Projekten zu unterstü
 
 <hr/>
 
-### 2016: arc42 in Aktion
-![](/images/books/arc42-in-aktion.jpg){: .align-left}
+## 2016: arc42 in Aktion
+![Cover: arc42 in Aktion](/images/books/arc42-in-aktion.jpg){: .align-left}
 
 Praktische Tipps zur Architekturdokumentation, von Gernot Starke und Peter Hruschka. Carl-Hanser Verlag, 2016. 190 Seiten, flexibler Einband.
 
@@ -85,8 +85,8 @@ mit moderatem bis kleinem Aufwand nützliche Dokumentation erstellen und pflegen
 
 <hr/>
 
-### 2016: Communicating Software Architectures
-![](/images/books/arc42-in-practice.jpg){: .align-right}
+## 2016: Communicating Software Architectures
+![Cover: Communicating Software Architectures with arc42](/images/books/arc42-in-practice.jpg){: .align-right}
 
 250 Seiten, eBook (auf Englisch), Gernot Starke unter Mitwirkung von Peter Hruschka. Veröffentlicht bei [Leanpub](https://leanpub.com/arc42inpractice).
 Verfügbar in verschiedenen Formaten (u.a. pdf, epub, kindle).
@@ -99,9 +99,9 @@ Das Buch ist "ongoing work" und bekommt ab-und-zu Updates.
 <hr/>
 
 
-### Glossary of Software Architecture Terminology
+## Glossary of Software Architecture Terminology
 
-![](/images/books/isaqb-glossary-2016.jpg){: .align-left}
+![Cover: Glossary of Software Architecture Terminology](/images/books/isaqb-glossary-2016.jpg){: .align-left}
 
 Seit 2015 pflege ich (unterstützt von mehreren anderen Personen) ein frei verfügbares
 Glossar von Begriffen rund um Softwarearchitektur - insbesondere aus dem Kontext
@@ -120,5 +120,4 @@ Den gesamte Erlös aus dem Verkauf dieses Buches spenden die Autoren der
 
 <hr/>
 
-### Hinweis
 {% include training-dates.html %}

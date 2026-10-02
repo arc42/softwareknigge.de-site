@@ -18,7 +18,7 @@ classes: wide
 
 Ändern und erweitern unter Zeitdruck, das ist (traurige) Normalität für viele Softwerker. Ständig zwingen uns widrige Umstände oder dunkle Mächte dazu, mit zu wenigen Informationen oder zu wenig Zeit neue Features oder auch notwendige Änderungen suboptimal umzusetzen. Wir möchten gerne besser arbeiten, aber nur selten geben uns die _dunklen Mächte_ die Chance dazu.
 
-### Dimensionen der Verbesserung
+## Dimensionen der Verbesserung
 Bevor wir Ihnen Auswege aus dieser Misere verraten, wollen wir Ihnen die beiden Dimensionen aufzeigen, auf die es bei allen Verbesserungen ankommt. Meistens wollen wir ein System im Laufe der Zeit durch zusätzliche fachliche Funktionalität verbessern, die Performanz steigern, die Benutzerfreundlichkeit erhöhen, etc. Wir nennen das **äußere Qualitäten verbessern**, weil man dem Produkt diese Eigenschaften quasi von außen „ansehen“ kann.
 
 Alternativ könnten wir daran arbeiten, die **innere Qualität** unserer Systeme systematisch zu verbessern: dafür sorgen, dass der Source Code sauber gehalten
@@ -35,7 +35,7 @@ Die Komplexität steigt, es bleibt keine Zeit fürs Refactoring, technische Sc
 
 Wenn die innere Qualität abnimmt, dann wird Ihr Management schnell feststellen, dass die Kosten pro geliefertem Feature von Release zu Release drastisch steigen. Wir können nicht mehr so produktiv arbeiten wie früher, das Leben als Entwickler/-in wird ständig schwerer.
 
-### Wir kennen (viele) Ursachen
+## Wir kennen (viele) Ursachen
 Dabei wissen wir (Softwerker-innen) doch ziemlich genau, welche typischen Fehler
 auf lange Sicht zu solchen desolaten Systemen führen, die wir im Team dann nur noch mit Schwierigkeiten erweitern (oder am Leben erhalten) können. Aus unserer Sicht sind dabei folgende Themen besonders gravierend:
 
@@ -58,7 +58,7 @@ diese Veränderungen auf mögliche Nebenwirkungen überprüfen, ist das gut.
 goldene Wasserhähne... liegt oft an den oben genannten schlechten Anforderungen.
 
 
-### Systematisch verbessern
+## Systematisch verbessern
 Für das systematische Verbessern gibt es seit einiger Zeit einen systematischen
 und frei verfügbaren (open-source) Ansatz:
 [aim42, die Architecture Improvement Method](https://aim42.org).
@@ -71,7 +71,7 @@ aim42 kommt aus der Praxis und verwendet eine Vielzahl etablierter und erprobter
 * [aim42](https://aim42.org) schafft einen Überblick über bestehende Probleme eines Systems und die zugehörigen Lösungsoptionen. Sowohl Probleme als auch Lösungen bewertet aim42 in betriebswirtschaftlichen Größen wie Geld und/oder Zeit.
 * Da [aim42](https://aim42.org) unter einer liberalen Open-Source-Lizenz veröffentlicht wird, dürfen Sie es frei verwenden, auch für den kommerziellen Einsatz.
 
-### Das Vorgehen
+## Das Vorgehen
 Verbessern Sie iterativ, trennen Sie dabei die Erkennung von Problemen oder Risiken (= Analyse) von ihrer Bewertung (= Evaluierung) sowie ihrer Behebung (= Improvement).
 
 Halten Sie sich an folgende einfache Schritte:
@@ -89,16 +89,16 @@ lösen oder beheben. Zwischen Maßnahmen und Problemen respektive Ursachen best
 
 5. Die Gegenüberstellung von den Kosten der Maßnahmen und den Kosten des Problems gibt wertvolle Entscheidungshilfe für Budget- oder fachlich Verantwortliche. Damit müssen Softwarearchitekten endlich nicht mehr mit den schwer vermittelbaren inneren Qualitäten, Kopplung, Kohäsion oder Implementierungsdetails argumentieren, sondern können in „Businesssprache“ argumentieren.
 
-### Verbessern funktioniert iterativ
+## Verbessern funktioniert iterativ
 Bewertungen von Problemen und Maßnahmen können sich über die Zeit ändern, wie sich in modernen Entwicklungsprozessen auch die Prioritäten von beispielsweise Anfor- derungen oder Zielen über die Zeit ändern können. Eine regelmäßige (iterative) Überprüfung der Issue List und des Improvement Backlog stellen deren Aktualität sicher.
 
->### Systematische Verbesserung
+>**Systematische Verbesserung**
 >Der iSAQB e.V. schließt mit dem Modul „IMPROVE“ eine Lücke in der
 klassischen Aus- und Weiterbildung für Softwarearchitekten; IMPROVE bietet einen kompakten Einstieg in die systematische Verbesserung unter realen Randbedingungen (knappe Budgets und enge Zeitvorgaben). Sie lernen, systematisch Systeme zu analysieren, Probleme, Risiken und Aufwände unter wirtschaftlichen Aspekten zu bewerten sowie Ideen, Strategien und Taktiken für evolutionäre Weiterentwicklungen, Modernisierungen und Verbesserungen zu entwickeln, zu planen und zielgerichtet umzusetzen.
 
 
 
-### Verwandte Muster
+## Verwandte Muster
 
 * [Qualitätsverbesserer](/33-qualitaetsverbesserer) möchten unbedingt verbessern
 * [Ändern ist der Normalfall](/25-aendern-ist-normalfall)
@@ -106,5 +106,4 @@ klassischen Aus- und Weiterbildung für Softwarearchitekten; IMPROVE bietet ein
 
 [^wikipedia]:  [Wiktionary zu Verschlimmbesserung](https://de.wiktionary.org/wiki/Verschlimmbesserung)
 
-### Hinweis
 {% include training-dates.html %}

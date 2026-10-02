@@ -25,13 +25,13 @@ Einsatz. Wirklich und ohne Kleingedrucktes.
 * arc42 sorgt für bessere Software- und Systemarchitekturen (wenn wir bessere Verkäufer wären, hätten wir diesen Satz an den Anfang gestellt!)
 * Für arc42 finden Sie ausgiebige [Dokumentation](https://docs.arc42.org), mehr als 120 beantwortete Fragen in den [FAQ](https://faq.arc42.org).
 
-### Die Grundidee
+## Die Grundidee
 Eine feste Struktur für alle Ergebnisse, Dokumente, Modelle und Entscheidungen, die im Rahmen Ihrer Softwarearchitektur entstehen.
 
 Durch diese feste Struktur (Template, Gliederungsvorlage) finden alle Beteiligten leicht die gewünschten Informationen - beziehungsweise eine passende Stelle,
 an der sie solche Informationen ablegen können.
 
-### Die Vogelperspektive
+## Die Vogelperspektive
 Softwarearchitekturen jeglicher Ausprägung enthalten vier Arten von Informationen:
 1. Anforderungsbezogene Informationen
 2. Strukturen des Systems
@@ -47,7 +47,7 @@ In den meisten Fällen können Sie ein Arbeitsergebnis, ein Diagramm oder eine
 >Für jedes gibt’s in arc42 einen festen Platz – sodass andere
 Stakeholder diese Ergebnisse leicht wieder finden oder weiter bearbeiten können.
 
-### Die Details
+## Die Details
 arc42 unterteilt diese vier Arten von Architekturinformation in insgesamt 12
 Teile (in einem Dokument wären das Kapitel, in einem Wiki Seiten oder Teilbäume).
 
@@ -68,17 +68,16 @@ Teilweise bereits in der Lösungsstrategie (Abschnitt 4) erläutert.
 11. **Risiken und technische Schulden**: Wichtige technische oder strukturelle Risiken.
 12. **Glossar**
 
-### Verwandte Muster
+## Verwandte Muster
 
 * [Vielsehende](/03-vielsehende) nutzen mehrere der Perspektiven oder Sichten,
 die arc42 anbietet.
 * Auch die [Jongleuse](/11-jongleuse) profitiert von den unterschiedlichen "Fächern" im arc42 Schrank - weil Sie damit ggfs. unterschiedliche Stakeholderinteressen repräsentieren kann.
 
-### Quellen
+## Quellen
 * ausgiebige [Dokumentation](https://docs.arc42.org) der einzelnen Teile, mit vielen Tipps
 * mehr als 120 beantwortete Fragen in den [FAQ](https://faq.arc42.org)
 * [Praktische Beispiele als eBook](http://leanpub.com/arc42byexample)
 * Die [deutsche Homepage von arc42](https://arc42.de) enthält auch Hinweise auf Trainings und Schulungen rund um arc42 und Softwarearchitektur.
 
-### Hinweis
 {% include training-dates.html %}

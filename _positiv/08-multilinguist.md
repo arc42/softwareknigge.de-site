@@ -23,7 +23,7 @@ Darüber hinaus sprechen Architekten mit Beteiligten der Anforderungsanalyse od
 
 Und wenn Softwarearchitekten dann geschickt um die sprachlichen Hürden dieser stark heterogenen Stakeholderschaft herumlaviert haben, betritt Mr. Hard-Case-Project- Manager die Szene und verlangt unverzüglich einen Managementreport – natürlich frei von jeglichen störenden technischen Details (neudeutsch heißen diese Superabstraktionen Elevator Pitch – Ihre 30 Sekunden mit dem Boss im Aufzug).
 
-### Terminus Technicus
+## Terminus Technicus
 Branchen- oder Rollenslang kennen Sie bestimmt. Ihr freundlicher Hausarzt weist Sie nach kurzer Diagnose auf jede Menge Dinge hin, zu deren detailliertem Verständnis ein jahrelanges Medizinstudium die Voraussetzung bildet.
 
 So wie die Mediziner verfügen viele Branchen über ihre typischen Vokabulare und Redensarten (angeblich treiben die Juristen dieses Spiel zur Perfektion – leider versteht sie niemand anderes mehr – sodass wir das niemals würdigen können).
@@ -37,9 +37,9 @@ Wir Techniker, fließend in Geek Speak, Java und TLAs sind ohnehin außerhalb un
 ![](/images/08-stakeholder.png)
 
 
-### Verwandte Muster
+## Verwandte Muster
 
 Sie lernen durch einen [Blick in den Rückspiegel](/06-blick-in-den-rueckspiegel)
 die Sprachen Ihrer Stakeholder besser zu verstehen.
 
-### Quellen
+## Quellen

@@ -24,7 +24,7 @@ Bis an die Zähne bewaffnet mit methodischer, technischer und auch fachlicher �
 
 Dort lauern Gefahren in allen Ecken: Gemeine Querulanten verüben hinterlistige Angriffe auf das Team und Ihre kostbare Lösung. Heimlich eingeschleust verbreitet sich schlechter Quellcode wie eine Seuche, die Ihre Entwickler verblendet.
 
-### Leid ertragen
+## Leid ertragen
 Vom Himmel regnet es unzureichende Anforderungen, die die Sinne Ihrer Kunden vernebeln und sie nach goldenen Wasserhähnen rufen lassen.
 
 _Eilet herbei, edler Ritter: Kämpfet mit Wort, Schild und eurer gesamten „Ausrüstung“ gegen die Stimmen der unsichtbaren Sirenen, die solch schlimme Dinge vom Team fordern!_
@@ -35,7 +35,7 @@ Weiterhin müssen Sie die Umsetzung der Lösungsideen kontinuierlich begleiten
 
 Schließlich sorgen Sie dafür, notfalls unter Leid und Schmerz, dass Sie angemessene, korrekte und verständliche Dokumentation zu Ihrer Architektur bekommen. Als Ritter möchten Sie doch am Lagerfeuer immer die strikte Wahrheit verkünden und sich dabei nicht nur auf Ihr vom Projektstress geplagtes Hirn verlassen müssen.
 
-### Ritterliche Tugenden
+## Ritterliche Tugenden
 Zu den ritterlichen Tugenden gehören die folgenden[^tugenden]
  – wir haben uns angemaßt, unsere softwarebezogenen Interpretationen zu ergänzen:
 
@@ -62,9 +62,8 @@ Zu den ritterlichen Tugenden gehören die folgenden[^tugenden]
 |**Dienstbereitschaft** | Wenden Sie sich gegen Unrecht, das von anderen Stakeholdern verübt wird.|
 |--------|---------|
 
-### Verwandte Muster
+## Verwandte Muster
 
 Maßhaltung gehört zu Ihren ritterlichen Tugenden. Sie sollten Angemessenheit beurteilen und [zu viel des Guten](07-zu-viel-des-guten) vermeiden können.
 
-### Hinweis
 {% include training-dates.html %}

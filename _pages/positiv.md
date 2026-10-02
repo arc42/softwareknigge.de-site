@@ -16,11 +16,10 @@ Die Nummern vor den Titeln beziehen sich auf die Kapitel der
 
 {% for positiv in site.positiv %}
 
-### [{{ positiv.title }}]({{ positiv.url }})
+## [{{ positiv.title }}]({{ positiv.url }})
 
 {{ positiv.summary }}
 
 {% endfor %}
 
-### Hinweis
 {% include training-dates.html %}

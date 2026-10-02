@@ -15,14 +15,14 @@ classes: wide
 
 Unserer Einschätzung nach werden Schnittstellen oft als Angelegenheiten dritter Klasse behandelt. Technologie auswählen, Features bauen und Bugs fixen gehen vor. Wir wünschen Ihnen und uns die API-tektin, die den Schnittstellen auf die Sprünge hilft.
 
-### Was ist eine Schnittstelle
+## Was ist eine Schnittstelle
 Der einfachste Fall: Sie haben einen Consumer und einen Provider. Der Consumer benötigt irgendetwas vom Provider, seien es Rechen- oder Abfrageergebnisse, Daten oder Dateien, Messwerte von Sensoren oder Statusinformationen, also eine digitale Antwort auf eine ebenso digitale Frage.
 
 Sie können diesen einfachen Fall durch Fragen von Zeitverhalten (Sync/Async) oder Antwortverhalten (Request/Response, Fire-and-Forget, Single-Consumer/Multiple-Consumer etc.) noch verkomplizieren. A
 
 Schauen wir auf den einfachsten Fall: Ein Consumer muss die Anfrage irgendwie an den Provider übermitteln. Oft geschieht das über einen Funktions- oder Methodenaufruf mit Parametern und Rückgabewert. Viele der üblichen Interaktionen zwischen Consumern und Providern können wir auf solch einfache Aufrufe zurückführen. Zusammenarbeit zwischen Bausteinen (über Schnittstellen) ist die Grundlage von Modularisierung und Komponentenbildung und kommt in Systemen aller Art an beliebig vielen Stellen vor. Damit ist der Schnittstellenentwurf ein alltägliches Allerweltsproblem.
 
-### Wer entscheidet über Schnittstellen
+## Wer entscheidet über Schnittstellen
 Überlegen wir, welche der Typen von Personen (Stakeholder) eigentlich an solchen Entscheidungen beteiligt sind?
 
 Die folgende Abbildung zeigt diese Situation – völlig verallgemeinert –
@@ -56,7 +56,7 @@ Entscheidet nur eine Partei, minimiert das den Abstimmungsaufwand. Entscheiden v
 >Unser dringender Rat: Als API-tektin suchen Sie zuerst die besonders kritischen oder wichtigen Schnittstellen, die auf wesentliche Qualitätsmerkmale des Systems Einfluss nehmen könnten. Dann überlegen Sie für diese **Prio-1**-Schnittstellen, welche Personen oder Rollen an den je- weiligen Entscheidungen mitwirken sollten.
 >Sie müssen dabei neben den rein architektonischen Anforderungen und Gegebenheiten noch Faktoren wie Zeit, Aufwand, Homogenität der Architektur, Umsetzungsgeschwindigkeit oder andere Qualitätsmerkmale berücksichtigen.
 
-### Warum ist das kompliziert?
+## Warum ist das kompliziert?
 Neben den in der Realität gar nicht so banalen Fragen nach den Namen von Schnittstellen und Parametern taucht hier auch sofort die Frage nach der Fehler-
 und Ausnahmebehandlung auf. In der Praxis beansprucht die Behandlung von Fehler- und Sonderfällen oft 80 Prozent des gesamten Aufwands.
 
@@ -74,7 +74,7 @@ Bis hierhin ist es meist noch überschaubar. Aber dann kommen in schlimmen Fä
 
 Diese Liste können Sie sicherlich noch verlängern :-)
 
-### APIs in der Praxis
+## APIs in der Praxis
 Einige Themen liegen uns nach langjähriger Beschäftigung mit Schnittstellen noch am Herzen. Diese möchten wir Ihnen ungeordnet mitgeben:
 
 * Externe Schnittstellen sind viel schlimmer als interne Schnittstellen, weil wir auf die Außenwelt normalerweise kaum Einfluss haben, auf unsere inneren Komponenten aber schon.
@@ -82,7 +82,7 @@ Einige Themen liegen uns nach langjähriger Beschäftigung mit Schnittstellen 
 
 * Das Thema API-Management ist zum Managementhype geworden, bei dem viele namhafte Softwarehersteller mitspielen. Wir geben erst gar keine Links an: IBM, SAP, Microsoft, CA, Software AG, HP, Intel und andere spielen mit. Big Money, big hype.
 
-### Fazit
+## Fazit
 Schnittstellen Ihres Systems, interne wie auch externe, können über Erfolg und Misserfolg kräftig mitentscheiden. Widmen Sie ihnen angemessene Aufmerksamkeit und erheben Sie API-Design zu einem der wesentlichen Themen in Architektur- und Entwicklungsdiskussionen.
 
 Kümmern Sie sich als API-tektin um die wesentlichen Schnittstellen. Manche können Sie durchaus an die Consumer- oder Providerteams delegieren. Aber bei einigen werden Sie selbst mitbestimmen müssen. API-tektin mag wie ein schwieriger Job klingen, aber Sie können damit für viel bessere Systeme sorgen.
@@ -92,11 +92,10 @@ In diesem Sinne: **Möge die Macht der Schnittstellen mit Ihnen sein**!
 
 [^pact]: Eine schöne Einführung in Consumer-Driven und PACT von Ron Holshausen: „[Pact 101 – Getting started with Pact and Consumer Driven Contact Testing](https://dius.com.au/2016/02/03/microservices-pact)
 
-### Verwandte Muster
+## Verwandte Muster
 
 * Sie sollten wichtige Schnittstellen grundsätzlich [proaktiv](/01-proaktive) angehen.
 * Bei manchen Schnittstellen sind aufgrund der möglicherweise fundamentalen und richtungsweisenden Fragestellungen [Entscheider](/18-entscheider) gefragt.
 
 
-### Hinweis
 {% include training-dates.html %}

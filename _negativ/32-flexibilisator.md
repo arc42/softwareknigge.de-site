@@ -16,7 +16,7 @@ classes: wide
 
 Kennen Sie diesen Drang nach Verallgemeinerung, den tiefen Wunsch etwas Großes zu schaffen? Der _Flexibilisator_ findet den ultimativen Kick, wenn er über den beschränkten Spezialfall der aktuellen User-Story hinaus quasi ein zeitloses Denkmal der Flexibilität erschaffen kann.
 
-### Flexibilität
+## Flexibilität
 Wir möchten hier zuerst etwas über mögliche Arten der Flexibilität von Software klarstellen, auf einige Vor- und Nachteile davon eingehen und anschließend
 kräftiges _Bashing_ von Flexibilisatoren betreiben.
 
@@ -29,7 +29,7 @@ kräftiges _Bashing_ von Flexibilisatoren betreiben.
 
 Es ist die **Laufzeit-Flexibilität**, der wir uns an dieser Stelle primär widmen.
 
-### Overly Configurable... ORCS
+## Overly Configurable... ORCS
 Wenn der Flexibilisator voll zuschlägt, schenkt er den späteren Nutzern seiner Software eine Menge Freiheit, allerdings setzt er sie gleichzeitig gravierenden Risiken aus. Aber, denkt sich der meist jugendlich-leicht- sinnige Flexibilisator, _no risk, no fun_.
 
 Hochgradig generisch oder allgemein verwendbar bedeutet, auf jede Menge Leitplanken zu verzichten, auf (teilweise sinnvolle oder sogar notwendige) Grenzen. Nennen wir die ultraflexiblen Produkte des Flexibilisators mal _übermäßig laufzeitkonfigurierbare Systeme_,
@@ -37,7 +37,7 @@ englisch _Overly Runtime Configurable Systems_, kurz **ORCS**.
 
 Diese Abkürzung weckt doch hoffentlich auch bei Ihnen Assoziationen zum Filmepos Herr der Ringe[^lotr].
 
-### Woher kommen ORCS?
+## Woher kommen ORCS?
 Bekommen normale Entwicklungsteams halbwegs vernünftige Anforderungen,
 so entsteht (hoffentlich) klar strukturierte Software, die eben genau diese Anforderungen erfüllt.
 
@@ -49,15 +49,14 @@ _Oeuvre_ zu produzieren – ein nach allen Seiten offenes Wunderding der Softwar
 
 Ultraflexibel und ultrafragil.
 
-### Verwandte Muster
+## Verwandte Muster
 
 * Der Flexibilisator ist ein konkretes Beispiel für [Zuviel des Guten](07-zuviel-des-guten).
 
 * Falls Sie zu übermässiger Flexibilität tendieren, lesen Sie den [Vereinfachungskobold](12-vereinfachungskobold).
 
-### Quellen
+## Quellen
 
 [^lotr]: [Filmtrilogie „Der Herr der Ringe“](https://de.wikipedia.org/wiki/Der_Herr_der_Ringe_(Filmtrilogie))
 
-### Hinweis
 {% include training-dates.html %}

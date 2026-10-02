@@ -21,7 +21,7 @@ Der iSAQB definiert für die Grundlagenausbildung für Softwarearchitekten ein
 
 ![Struktur des iSAQB Foundation Lehrplan](/images/19-isaqb-foundation-struktur.png)
 
-### Breite und Tiefe
+## Breite und Tiefe
 Wir empfehlen Ihnen, bei Ihrer Aus- und Weiterbildung ein T-ähnliches Modell zu verfolgen, dargestellt in folgender Abbildung.
 
 ![T-Shaped Kompetenzmodell](/images/19-t-shape.jpg)
@@ -35,7 +35,7 @@ Elisabeth Heinemann[^heinemann] erläutert. Scott Ambler[^ambler] hat es als �
 [^heinemann]: Heinemann, Elisabeth: „Jenseits der Programmierung. Mit T-Shaping erfolgreich in die IT-Karriere starten“, Carl Hanser Verlag, 2010
 [^ambler]: Scott Ambler: [„The Generalizing Specialist“](https://www.agilemodeling.com/essays/generalizingSpecialists.htm)
 
-### Programmieren
+## Programmieren
 Offensichtlich die grundlegendste aller Grundlagen überhaupt. Mehrsprachigkeit gereicht Ihnen zum Vorteil. Ziemlich gut finden wir folgenden Mix:
 
 * C, um die Niederungen von Speicherverwaltung und Pointern zu erleiden.
@@ -44,14 +44,14 @@ Offensichtlich die grundlegendste aller Grundlagen überhaupt. Mehrsprachigkeit
 * Eine deklarative Sprache wie Prolog, Erlang oder eine Regelsprache wie JBoss-Drools.
 * Eine Skriptsprache wie Perl, Python oder Groovy, um deren Einsatzmöglichkeiten abschätzen zu können. (ok - niemand sollte Perl im gleichen Atemzug nennen wir die anderen beiden wirklich schönen Sprachen, mit denen Sie großartig auch größere Systeme schaffen können... was wir bei Perl anzweifeln, weil wir so schlecht mit regulären Ausdrücken sind)
 
-### Abstrahieren und Modellieren
+## Abstrahieren und Modellieren
 Die Fähigkeit, im Chaos Struktur und Ordnung zu erkennen, und diese Ordnung verständlich darzustellen und zu vermitteln, sollten Sie üben, üben und nochmals üben.
 
 Hierzu zählen wir diverse Grundlagen des Software-Engineerings, beispielsweise die Trennung von Verantwortlichkeiten (_Separation of Concerns_),
 die Bildung und Definition klarer Schnittstellen, das Information-Hiding sowie
 Prinzipien wie lose Kopplung, hohe Kohäsion und Einfachheit.
 
-### Technische Konzepte
+## Technische Konzepte
 Neben der reinen Programmierung sollten Sie diverse typische Konzepte und deren Umsetzung kennen. Wir zählen mal wieder ohne Anspruch der Vollständigkeit einige unserer Lieblingsbeispiele auf:
 
 * Persistenz und Datenspeicherung, SQL, NoSQL, Dateisysteme und Co.
@@ -69,19 +69,18 @@ Neben der reinen Programmierung sollten Sie diverse typische Konzepte und deren 
 Interessante Dinge - die Sie bis ans Ende aller Tage intensiv beschäftigen können...
 
 
-### Sonstiges Handwerkszeug
+## Sonstiges Handwerkszeug
 
 * Entwicklungsumgebungen, Editoren und Debugger haben Sie sicherlich schon beim Programmieren kennen und lieben gelernt. Für professionelles Arbeiten benötigen Sie Versionsverwaltung (Subversion, Git, Mercurial & Co), Buildmanagement (make, ant, maven), sowie eine grundsolide Testautomatisierung (für Unit-, System- und Lasttests).
 * Der Himmel möge es Ihnen ersparen, aber es könnte durchaus geschehen, dass Sie als Softwarearchitekt gleichzeitig in die Rolle des technischen Managers kommen oder gar des technischen Projektleiters. Für solche Fälle wappnen Sie sich mit den Grundlagen von Projekt- und Risikomanagement und einer Prise Betriebswirtschaft.
 * Wenn Sie noch ein paar Grundlagen agiler Vorgehensweisen (Scrum, Kanban) sowie
 möglicher Rollen (Product-Owner, Scrum-Master)
 
-### Voraussetzung: Ständige Neugier
+## Voraussetzung: Ständige Neugier
 Eine Grundvoraussetzung für das ständige Lernen heißt Neugierde. Das bedeutet Interesse daran, neue Ansätze, Technologien oder Methoden zu erlernen und mit eigener Erfahrung zu vergleichen. Ohne diese Bereitschaft, ständig zu lernen, nimmt der Wert von Architektenwissen und fähigkeiten mit der Zeit immer mehr ab. Sie kennen ja die kurzen Halbwertszeiten vieler Themen in der IT.
 
 
-### Verwandte Muster
+## Verwandte Muster
 Der Trend zum Zweitbuch hat die Informatik erreicht: [Schmökern](/24-schmoekern) hilft beim Lernen.
 
-### Hinweis
 {% include training-dates.html %}

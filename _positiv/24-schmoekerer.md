@@ -15,7 +15,7 @@ classes: wide
 
 Gerne möchten wir Ihnen noch ein paar weitere Tipps für nützliche, unterhaltsame oder coole Softwarearchitektenliteratur geben - in den Kategorien AAB, FMASFAU, MWNAG, EPAHL und SCHAMLEW – die Sie sicherlich schon kennen.
 
-### AAB
+## AAB
 Architektonische Allgemeinbildung. Hilfreich, um Ihre technischen Fähigkeiten abzurunden.
 
 * Reynolds, Garr: **Presentation Zen**. Simple Ideas on Presentation Design and Delivery, 2nd Edition, New Riders, 2011. Ein Kultbuch über die Kunst toller Präsentationen.
@@ -27,7 +27,7 @@ Architektonische Allgemeinbildung. Hilfreich, um Ihre technischen Fähigkeiten 
 * Spolsky, Joel: **Joel on Software**, Apress, 2004. Ein Praktiker, der begnadet schreiben kann. Gesammelte Beiträge seines erfolgreichen Blogs. Immer mal wieder reinschauen. Joel hat unter anderem bei Microsoft maßgeblich Excel mitentwickelt,
 anschliessend StackOverflow erfunden, und danach noch Trello.
 
-### FMASFAU
+## FMASFAU
 Für manche Architekturen super, für andere unbrauchbar – je nachdem, an welchem System Sie gerade arbeiten.
 
 * Hohpe, Gregor; Woolf, Bobby **Enterprise Integration Patterns**, Addison-Wesley, 2003. Bitte lesen Sie dieses Buch, bevor Sie zwei oder mehr Systeme (asynchron) miteinander verbinden. Bahnbrechend – und immer noch aktuell!
@@ -36,7 +36,7 @@ Büchern, lesen Sie eins davon!
 * Rechtin, Eberhardt; Maier, Mark: **The Art of Systems Architecting**, CRC Press, 1997. Ein Blick über den Tellerrand von Software – ein Klassiker über Hardware/Softwaresysteme.
 * Nygard, Michael: „Release It! Design and Deploy Production-Ready Software“, Pragmatic Programmers, 2nd Edition 2018. Lesen Sie Nygard, bevor Sie Software in produktiven Betrieb übergeben oder große Benutzerzahlen auf Ihre Systeme loslassen. Ernüchternd und erschreckend zu lesen, was alles schiefgehen kann.
 
-### MWNAG
+## MWNAG
 Möglicherweise wenig nützlich, aber geeky. Techniklastige Literatur jenseits des Mainstreams, falls Sie sich tagsüber mal wieder zu lange mit Projektplänen, langweiligen Meetings oder Tabellenkalkulation ärgern mussten.
 
 * Tate, Bruce: **Seven Languages in Seven Weeks**. A Pragmatic Guide to Learning Programming Languages“, Pragmatic Programmers, 2010. Falls Sie in ganz andere Paradigmen reinschnuppern möchten und Haskell, Prolog oder Erlang schon immer mal kennen lernen wollten.
@@ -46,13 +46,13 @@ Möglicherweise wenig nützlich, aber geeky. Techniklastige Literatur jenseits
 * Olsen, Russ: **Eloquent Ruby**, Addison-Wesley, 2011. Damit Ruby-Code auch nach solchem aussieht.
 * Crockford, Douglas: **JavaScript. The Good Parts**, O’Reilly, 2008. Erklärt die prototypbasierte Vererbung für diejenigen unter uns, die bisher nur die klassenbasierte kannten.
 
-### EPAHL
+## EPAHL
 Etwas philosophisch, aber höchst lesenswert.
 
 * Brooks, Frederick . P.: **The Design of Design**. Essays from a Computer Scientist, Pearson, 2010. Der Altmeister zeigt durch viele Interviews mit Designern wie auch durch eigene Erfahrungen, dass mutige Designentscheidungen zu besseren Ergebnissen führen (können).
 * Lidwell, William et al: **Universal Principals of Design**. Revised and Updated, Rockport, 2010. Nicht nur wegen der brillanten Aufmachung lesenswert. Lernen Sie mehr als 100 Wege, Benutzbarkeit zu verbessern, attraktiver zu gestalten und bessere Entscheidungen zu treffen.
 
-### SCHAMLEW
+## SCHAMLEW
 Schamlose Eigenwerbung. Wir haben auch andere Bücher geschrieben...
 
 * DeMarco, Tom et al.: **Adrenalin-Junkies und Formular-Zombies**, Carl Hanser Verlag, 2007. Über 80 typische Verhaltensmuster – leicht verdaulich, versprochen!
@@ -62,5 +62,4 @@ Schamlose Eigenwerbung. Wir haben auch andere Bücher geschrieben...
 
 * Starke/Hruschka: **arc42 in Aktion**. Carl-Hanser Verlag 2015
 
-### Hinweis
 {% include training-dates.html %}

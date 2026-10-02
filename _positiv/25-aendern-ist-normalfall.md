@@ -30,7 +30,7 @@ Die Frage könnte auch lauten: Warum beauftragen die Eigentümer von Software 
 
 Bei den ersten sieben Gründen spielen Geld und Zeit eine tragende Rolle. Die Art, wie wir als Entwickler Änderungen umsetzen, wird dabei sehr stark durch finanzielle oder zeitliche Randbedingungen bestimmt (sprich: Wir arbeiten praktisch immer unter Zeitdruck). Lediglich bei intrinsisch motivierten Änderungen könnten Entwickler ohne Blick auf die Uhr Software ändern.
 
-### Theoretisch ist Änderung leicht
+## Theoretisch ist Änderung leicht
 Wenn ein eingespieltes, sachkundiges und motiviertes Team nach konsistenten, expliziten Anforderungen und unter Nutzung effizienter Technologien ein System domänen- und testgetrieben entwickelt, konzeptionell durchgängig arbeitet und dazu angemessen dokumentiert, dann ist dieses System (zumindest von diesem Team) leicht änderbar.
 
 Keine Leichen im Keller, keine unschönen Altlasten, keine störenden
@@ -39,14 +39,14 @@ Risiken – welch eine wunderbare Situation zur Änderung von Software ...
 
 In über zwanzig Jahren Berufspraxis haben wir dieses Softwareschlaraffenland leider (extrem) selten angetroffen. Entweder wir sind vom Pech verfolgt oder in der Praxis funktioniert Softwareentwicklung _suboptimal_ :-( mit dem Resultat schlecht strukturierter, übermäßig komplexer und unverständlicher Systeme, deren Wartung und Pflege sehr viel Mühe bereitet.
 
-### Änderung als Normalfall
+## Änderung als Normalfall
 An solchen Systemen (zu denen einige Entwickler despektierlich „Altlasten“ sagen,
 andere „Legacy“) arbeiten wir den größten Teil unseres Informatiker-, Entwickler- oder Architektenlebens, unter so verschiedenen Bezeichnungen wie Änderung, Erweiterung, Pflege, Wartung, Evolution oder Sanierung.
 
 > Daher wagen wir die These, dass für Entwicklungsteams die Fähigkeit, Software zu ändern, langfristig wichtiger ist, als Software komplett neu zu konstruieren und zu bauen.
 
 
-### Verwandte Muster
+## Verwandte Muster
 
 * Änderungen und [Perfektionisten](13-perfektionist) passen schlecht zusammen, da es für Perfektion meistens kein Budget gibt.
 * [Fahnder](/26-fahnder), [Kammerjäger](/29-kammerjaeger) und
@@ -55,5 +55,4 @@ andere „Legacy“) arbeiten wir den größten Teil unseres Informatiker-, Ent
 * [Fortschritt statt Verschlimmbesserung](37-fortschritt-statt-verschlimmbesserung) zeigt, wie Sie Systeme systematisch verbessern. Siehe auch [aim42](https://aim42.org), eine frei verfügbare Sammlung von Praktiken zur Verbesserung von Software.
 
 
-### Hinweis
 {% include training-dates.html %}

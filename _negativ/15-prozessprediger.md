@@ -24,15 +24,14 @@ Die Beschreibungen umfassen oftmals hunderte von Seiten. Die Prozessprediger ver
 
 Sie predigen ebetsmühlenartig den Teams das Mantra: _HEADV-HEADV-HEADV_ (Haltet Euch An Diese Vorschriften). Es gibt Prozessverantwortliche, Quality Gates und, zumindest gerüchteweise, rituelle Bestrafungen von Prozessverweigerern.
 
-### Warum gibt es keinen Aufstand?
+## Warum gibt es keinen Aufstand?
 Schuld daran sind die Prozessprediger. Sie machen uns jeden Tag von der Kanzel aus klar, dass wir in der Hölle schmoren werden, wenn wir es wagen werden, vom Vorgehensmodell abzuweichen...
 
 In so manchem Unternehmen fällt es leichter, unter Einhaltung des Vorgehensmodells zu scheitern, als das Risiko auf sich zu nehmen, vom Standardvorgehen abzuweichen. Wenn man scheitert, ist „es“ Schuld, nicht ich!
 
 
-### Verwandte Muster
+## Verwandte Muster
 
 Prozessprediger verabscheuen [strukturierte Faulheit](/04-strukturierte-faulheit).
 
-### Hinweis
 {% include training-dates.html %}

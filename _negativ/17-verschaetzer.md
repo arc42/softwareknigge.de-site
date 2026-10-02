@@ -15,7 +15,7 @@ classes: wide
 
 
 
-### Dialog mit einem Verschätzer:
+## Dialog mit einem Verschätzer:
 
 Verschätzer: _Um die Komponente FooBar zu programmieren, brauchst du 4
 Tage._
@@ -31,7 +31,7 @@ Verschätzer: _Mit dem neuen Blabla-Framework, das wir ab heute einsetzen, scha
 Entwickler: (flüstert) _Jaja, red’ du nur..._
 
 
-### Zahlen bieten (vermeintliche) Sicherheit
+## Zahlen bieten (vermeintliche) Sicherheit
 
 Projektleiter, Auftraggeber oder sonstige Manager fordern von Softwarearchitekten oftmals Zahlen ein: Schätzungen, Bewertungen oder sonstige quantitative Aussagen zu allen möglichen Themen. Meist geht es dabei um erwartete Aufwände, aber auch um mögliche Antwortzeiten, Verfügbarkeiten und/oder Kosten.
 
@@ -39,15 +39,14 @@ Verschätzer antworten freimütig, schnell und vermeintlich präzise auf alle
 
 Verantwortungsbewusste Softwarearchitekten legen ihre Unsicherheiten bei Schätzungen offen. Sie benennen Risiken und begründen, warum manche Teile von Schätzungen unsicher sind.
 
-### Verschätzer erzeugen Stress
+## Verschätzer erzeugen Stress
 Falls Verschätzer im Auftrag der Projektleitung Entwicklungsaufwände schätzen, kann das bei den betroffenen Entwicklern gehörigen Stress auslösen: Verschätzer ignorieren technische oder fachliche Details, treffen grob vereinfachte
 Annahmen und gehen von idealen Bedingungen aus
 (_und glauben an den Weihnachtsmann_).
 
 
-### Verwandte Muster
+## Verwandte Muster
 
 Der Verschätzer macht sich als [Diktator](/05-diktator) unbeliebt, indem er eigenmächtig und ohne Rücksprache bestimmt, wie lange etwas dauern darf.
 
-### Hinweis
 {% include training-dates.html %}

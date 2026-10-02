@@ -17,7 +17,7 @@ Sicher kennen Sie Murphy: Ein Fehler tritt immer dann auf, wenn Sie es am wenigs
 
 In jedem Projekt oder System drohen solche „Murphy-Effekte“, egal mit welcher Technologie, Infrastruktur oder Organisationsform Sie arbeiten. Erfolgreiche ArchitektInnen gehen ganz bewusst mit Murphy (= Risiken) um. Zwischen „Yes, we can“ und „Das haben wir schon immer so gemacht“ finden sie einen angemessenen Weg.
 
-### Architekten = Berater der Managements
+## Architekten = Berater der Managements
 
 Was haben Softwarearchitekten mit Risikomanagement zu tun? Diese
 Aufgabe erfüllen doch die Projektleitung, oder? Wir sehen das auch so –
@@ -25,11 +25,11 @@ aber Softwarearchitekten müssen die technischen und architektonischen _Murphy-
 
 Softwarearchitekten sollten das Management auf technische Risiken aufmerksam machen und bezüglich des Umgangs mit ihnen beraten.
 
-### Risiken durch Bewertung finden
+## Risiken durch Bewertung finden
 Ein Risiko (= _Murphy-Drohung_) ist ein potenzielles Problem. Und ein Problem ist ein eingetretenes Risiko. Wie finden Sie jedoch die Risiken in Ihrer Architektur? Im Muster
 [_Blick in den Rückspiegel_](/06-blick-in-den-rueckspiegel) haben wir Ihnen systematische Architekturbewertung ans Herz gelegt. Sie bringt vor allem Risiken (und Chancen!) Ihrer Architektur ans Tageslicht. Integrieren Sie also qualitative Bewertung, etwa mit ATAM, zur Offenlegung von Stärken und Schwächen, Chancen und Risiken in Ihre Arbeit als Softwarearchitekt.
 
-### Was tun mit Risiken?
+## Was tun mit Risiken?
 Eine Übersicht der technischen Risiken ist die notwendige Voraussetzung, um gezielt mit ihnen umgehen zu können. Sie können grundsätzlich eine der folgenden vier Möglichkeiten für jedes Risiko ergreifen:
 
 * Vermeiden (Risk Avoidance)
@@ -38,10 +38,9 @@ Eine Übersicht der technischen Risiken ist die notwendige Voraussetzung, um ge
 * Ignorieren (Waghalsigkeit)
 
 
-### Verwandte Muster
+## Verwandte Muster
 * Der technische Risikomanager erkennt Komplexität in Systemen als Risiko und triggert den [Vereinfachungskobold](/12-vereinfachungskobold).
 * Ein hoher Grad an [Ignoranz](/21-ignorant) erhöht oftmals das Risiko – was technischen Risikomanagern sofort auffallen sollte.
 
 
-### Hinweis
 {% include training-dates.html %}

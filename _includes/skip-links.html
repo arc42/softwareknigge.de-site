@@ -1,0 +1,12 @@
+{%- comment -%}
+  Overrides the theme's skip-links.html: a labelled <nav> instead of an h2, so
+  the page's heading outline starts at the h1. German defaults, because the
+  remote theme's _data/ui-text.yml is not loaded for this site.
+{%- endcomment -%}
+<nav class="skip-links" aria-label="{{ site.data.ui-text[site.locale].skip_links | default: 'Sprunglinks' }}">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">{{ site.data.ui-text[site.locale].skip_primary_nav | default: 'Zur Hauptnavigation springen' }}</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">{{ site.data.ui-text[site.locale].skip_content | default: 'Zum Inhalt springen' }}</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">{{ site.data.ui-text[site.locale].skip_footer | default: 'Zur Fußzeile springen' }}</a></li>
+  </ul>
+</nav>
