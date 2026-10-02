@@ -1,0 +1,35 @@
+{%- comment -%}
+  The pattern-language graph on the homepage, clickable.
+
+  The picture stays the exported PNG (pixel-identical to the book's diagram);
+  each box gets a real link laid over it, positioned in percent of the image
+  (_data/pattern_graph.yml), so the links scale with the image without any
+  script. Links inside an <img>-embedded SVG never work, and the old SVG
+  export in _includes/ shows a pre-2018-12 layout, so neither was used.
+
+  Each link's accessible name comes from the pattern page itself
+  ("20 – Kommunikatorin, positives Muster"). Styles in _sass/_pattern-graph.scss.
+{%- endcomment -%}
+{%- assign img = "/images/pattern-language/Knigge-Pattern-Language-4-Site.png" | relative_url -%}
+{%- assign cat_labels = "positiv:positives Muster,negativ:negatives Muster,neutral:neutrales Muster" | split: "," -%}
+<figure class="pattern-graph">
+  <div class="pattern-graph__scroll">
+    <div class="pattern-graph__canvas">
+      <img src="{{ img }}" width="1816" height="1166" alt="Übersicht der Verhaltensmuster als Netz: positive, negative und neutrale Muster mit ihren Beziehungen untereinander. Jedes Muster ist ein Link.">
+      <nav class="pattern-graph__links" aria-label="Muster in der Grafik">
+        {%- for box in site.data.pattern_graph.boxes -%}
+          {%- assign doc = nil -%}
+          {%- assign cat = "" -%}
+          {%- for cl in cat_labels -%}
+            {%- assign kv = cl | split: ":" -%}
+            {%- assign cname = kv[0] -%}
+            {%- assign found = site[cname] | where: "url", box.url | first -%}
+            {%- if found %}{% assign doc = found %}{% assign cat = kv[1] %}{% endif -%}
+          {%- endfor %}
+        <a class="pattern-graph__node" href="{{ box.url | relative_url }}" style="left:{{ box.x }}%;top:{{ box.y }}%;width:{{ box.w }}%;height:{{ box.h }}%"><span class="screen-reader-text">{% if doc %}{{ doc.title }}, {{ cat }}{% else %}{{ box.label }}{% endif %}</span></a>
+        {%- endfor %}
+      </nav>
+    </div>
+  </div>
+  <figcaption>Die Mustersprache: wie die Muster zusammenhängen (grün positiv, rot negativ). Klicken Sie auf ein Muster, um es zu lesen.<span class="pattern-graph__hint"> Zum Erkunden seitlich wischen.</span> <a href="{{ img }}">Grafik in voller Größe öffnen</a>.</figcaption>
+</figure>
