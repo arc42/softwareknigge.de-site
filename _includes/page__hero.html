@@ -39,6 +39,19 @@
           {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
         {% endif %}
       </h1>
+      {%- comment -%} Position of a pattern in its category, e.g. "Negatives Muster · 2 von 14":
+          tells a reader arriving from search where they are. Below the title, not above it. {%- endcomment -%}
+      {%- assign cue_labels = "positiv:Positives Muster,negativ:Negatives Muster,neutral:Neutrales Muster" | split: "," -%}
+      {%- for cl in cue_labels -%}
+        {%- assign kv = cl | split: ":" -%}
+        {%- if page.collection == kv[0] -%}
+          {%- assign cue_docs = site[page.collection] -%}
+          {%- for d in cue_docs -%}
+            {%- if d.url == page.url %}{% assign cue_pos = forloop.index %}{% endif -%}
+          {%- endfor %}
+      <p class="pattern-position"><a href="{{ '/' | append: page.collection | relative_url }}">{{ kv[1] }}</a> · {{ cue_pos }} von {{ cue_docs.size }}</p>
+        {%- endif -%}
+      {%- endfor %}
       {% if page.tagline %}
         <p class="page__lead">{{ page.tagline | markdownify | remove: "<p>" | remove: "</p>" }}</p>
       {% elsif page.header.show_overlay_excerpt != false and page.excerpt %}

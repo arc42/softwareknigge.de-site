@@ -1,0 +1,29 @@
+{%- comment -%}
+  The register on the overview pages (/positiv, /negativ, /neutral): like a
+  book's table of contents, chapter numbers in their own column, title and
+  summary on the text edge. The number is taken off the title ("05 - Diktator"
+  -> "05" + "Diktator"); a title without "NN - " (e.g. "Gute Systeme...") gets
+  an empty number cell. Usage: {% include pattern-index.html items=site.positiv %}
+  Styles in _sass/_pattern-index.scss.
+{%- endcomment -%}
+<ol class="pattern-index">
+  {%- for item in include.items %}
+  {%- assign parts = item.title | split: " - " -%}
+  {%- assign head = parts.first | strip -%}
+  {%- assign head_digits = head | replace: "0","" | replace: "1","" | replace: "2","" | replace: "3","" | replace: "4","" | replace: "5","" | replace: "6","" | replace: "7","" | replace: "8","" | replace: "9","" -%}
+  {%- if parts.size > 1 and head_digits == "" -%}
+    {%- assign nr = head -%}
+    {%- assign name = item.title | remove_first: head | remove_first: " - " | strip -%}
+  {%- else -%}
+    {%- assign nr = "" -%}
+    {%- assign name = item.title -%}
+  {%- endif %}
+  <li class="pattern-index__item">
+    <span class="pattern-index__nr" aria-hidden="true">{{ nr }}</span>
+    <h2 class="pattern-index__title"><a href="{{ item.url | relative_url }}">{% if nr != "" %}<span class="screen-reader-text">{{ nr }} – </span>{% endif %}{{ name }}</a></h2>
+    {%- if item.summary %}
+    <p class="pattern-index__summary">{{ item.summary | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ol>

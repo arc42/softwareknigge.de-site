@@ -1,0 +1,145 @@
+// ============================================================================
+// Page structure — one left edge, one reading measure.
+//
+// The theme reserves a sidebar column on single-layout pages (200–300px from
+// 64em up) even when there is no sidebar, which pushed the text 344px away
+// from the logo and the hero title and stretched lines to ~95–100 characters.
+// Here the column is released and the text set to a book measure (~70
+// characters at every root size the theme uses), left-aligned on the same edge
+// as the masthead logo and the hero title.
+// ============================================================================
+
+$measure: 36em;
+$muted:   #6b665a;
+
+@media (min-width: 64em) {
+  .layout--single .page {
+    float: none;
+    width: auto;
+    padding-right: 0;
+  }
+}
+
+.layout--single .page__inner-wrap {
+  max-width: $measure;
+}
+
+// The training box spans the measure instead of stopping short of it.
+.layout--single .subtle-ad {
+  max-width: none;
+}
+
+// ---- Pattern pages ----------------------------------------------------------
+
+// Category and position under the hero title (_includes/page__hero.html).
+.page__hero--overlay .pattern-position {
+  margin: 0.4em 0 0;
+  font-size: 0.95em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+  a,
+  a:visited {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+}
+
+.page__hero--ink .pattern-position {
+  color: #1d1d1b;
+  text-shadow: none;
+}
+
+// "Dies ist ein (unvollständiger) Auszug …" — a quiet note with room below,
+// instead of small print flush against the opening paragraph.
+.page__content .extract-note {
+  margin: 0 0 1.75em;
+  font-size: 0.8em;
+  color: $muted;
+
+  a,
+  a:visited {
+    color: inherit;
+  }
+}
+
+// ---- Homepage (_pages/00-home.md, body class "home") ------------------------
+
+$home-positiv: #a0bf80;
+$home-negativ: #c6041b;
+$home-neutral: #ffd401;
+
+// The three categories are the way in; each column carries its band colour.
+.home .feature__item {
+  border-top: 4px solid transparent;
+  padding-top: 1em;
+}
+
+.home .feature__item:nth-child(1) { border-top-color: $home-positiv; }
+.home .feature__item:nth-child(2) { border-top-color: $home-negativ; }
+.home .feature__item:nth-child(3) { border-top-color: $home-neutral; }
+
+.home .archive__item-title {
+  margin-top: 0.25em;
+}
+
+// Side by side (theme floats them from 37.5em): equal-height columns with
+// the buttons on one baseline, however long each description is.
+@media (min-width: 37.5em) {
+  .home .feature__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home .feature__item,
+  .home .feature__item .archive__item,
+  .home .feature__item .archive__item-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home .feature__item .archive__item,
+  .home .feature__item .archive__item-body {
+    flex: 1;
+  }
+
+  .home .feature__item .archive__item-excerpt {
+    flex: 1;
+  }
+}
+
+// Text starts on the coloured rule's edge, not 1.7% inside it.
+.home .feature__item .archive__item-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.home-intro {
+  max-width: $measure;
+  margin: 1em 0 2.5em;
+}
+
+.pattern-graph {
+  margin: 0 0 3em;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    margin-top: 0.75em;
+    font-size: 0.85em;
+    color: $muted;
+
+    a,
+    a:visited {
+      color: #235e70;
+    }
+  }
+}

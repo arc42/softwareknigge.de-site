@@ -1,0 +1,60 @@
+// ============================================================================
+// Register — the pattern list on /positiv, /negativ, /neutral
+// (_includes/pattern-index.html). A table of contents: chapter numbers in a
+// muted column, title and summary on the text edge, hairlines between entries.
+// ============================================================================
+
+$pi-rule:  #e4dcc6;
+$pi-muted: #6b665a;
+$pi-ink:   #1d1d1b;
+
+.page__content ol.pattern-index {
+  margin: 2em 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page__content .pattern-index__item {
+  display: grid;
+  grid-template-columns: 2.4em minmax(0, 1fr);
+  column-gap: 0.75em;
+  margin: 0;
+  padding: 1.1em 0 1.2em;
+  border-top: 1px solid $pi-rule;
+
+  &:last-child {
+    border-bottom: 1px solid $pi-rule;
+  }
+}
+
+.pattern-index__nr {
+  grid-row: 1 / span 2;
+  font-size: 1.125em;          // same size as the title, so they share a baseline
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+  color: $pi-muted;
+}
+
+.page__content h2.pattern-index__title {
+  grid-column: 2;
+  margin: 0 0 0.3em;
+  font-size: 1.125em;
+  line-height: 1.4;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.page__content .pattern-index__summary {
+  grid-column: 2;
+  margin: 0;
+  font-size: 0.92em;
+  line-height: 1.55;
+}
