@@ -1,0 +1,57 @@
+// ============================================================================
+// Category colours
+// The header bands (images/header/*.png) carry the site's one colour code:
+// green = positive patterns, red = negative, yellow = neutral and the general
+// pages. The homepage buttons repeat it, so a category has the same colour
+// wherever it appears. Titles are dark on the light bands and white on the
+// dark ones (contrast: ink on green 8.2:1, on yellow 11.8:1; white on red
+// 6.1:1, on navy 14.7:1).
+// ============================================================================
+
+$band-positiv: #a0bf80;
+$band-negativ: #c6041b;
+$band-neutral: #ffd401;
+$ink:          #1d1d1b;   // the woodcut's black
+
+// Light bands: page__hero--ink is set in _includes/page__hero.html.
+.page__hero--ink .page__title,
+.page__hero--ink .page__lead {
+  color: $ink;
+  text-shadow: none;
+}
+
+// Homepage feature buttons (btn_class in _pages/00-home.md).
+.btn--positiv,
+.btn--negativ,
+.btn--neutral {
+  border: 0;
+  font-weight: 600;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+.btn--positiv {
+  background-color: $band-positiv;
+  color: $ink;
+
+  &:visited { color: $ink; }
+  &:hover   { background-color: darken($band-positiv, 8%); color: $ink; }
+}
+
+.btn--negativ {
+  background-color: $band-negativ;
+  color: #fff;
+
+  &:visited { color: #fff; }
+  &:hover   { background-color: darken($band-negativ, 8%); color: #fff; }
+}
+
+.btn--neutral {
+  background-color: $band-neutral;
+  color: $ink;
+
+  &:visited { color: $ink; }
+  &:hover   { background-color: darken($band-neutral, 8%); color: $ink; }
+}
