@@ -1,24 +1,29 @@
-<div class="page__footer-follow">
-<ul class="social-icons">
-    {% if site.twitter.username %}
-      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-    {% endif %}
+{%- comment -%}
+  The site footer, modelled on docs.arc42.org-site's _includes/site-footer.html
+  so all arc42 sites close the same way: INNOQ mark, a middot-separated link
+  list in a real <nav>, and a maintainer line. Labels are German, this site
+  being German; the licence line is left out because the Knigge content is not
+  CC-licensed (see README). minimal-mistakes wraps this include in
+  <div class="page__footer"><footer>, so .page__footer plays the role of
+  docs' .site-footer; styles in _sass/_footer.scss.
+{%- endcomment -%}
+<div class="footer-inner">
+  <p class="footer-icons">
+    <a href="https://www.innoq.com" target="_blank" rel="noopener noreferrer nofollow">
+      <img class="supported-by-innoq" src="{{ '/assets/images/brand/supported-by-innoq.svg' | relative_url }}" alt="Supported by INNOQ" width="110" height="24">
+    </a>
+  </p>
 
-    {% if site.author.github %}
-      <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
+  <nav class="footer-links" aria-label="Site">
+    <a href="https://status.arc42.org">Status</a>
+    <a href="{{ '/imprint' | relative_url }}">Impressum + Datenschutz</a>
+    <a href="{{ '/contact/' | relative_url }}">Kontakt</a>
+    <a href="https://github.com/{{ site.repository }}" target="_blank" rel="noopener noreferrer nofollow">GitHub</a>
+  </nav>
 
-    <li><a href="https://www.youtube.com/arc42-video/"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
-
-    <li><a href="https://arc42.de"><i class="far fa-grin" aria-hidden="true"></i> arc42</a></li>
-
-    <li><a href="{{ '/imprint' | absolute_url }}"><i class="fas fa-fw fa-gavel" style="color:Tomato" aria-hidden="true"></i> Impressum & Datenschutz</a></li>
-
-</ul>
-</div>
-
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} Dr. Gernot Starke (mit Peter Hruschka). Powered by
-  <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br/>
-  Supported by <a href="https://INNOQ.com"><b>INNOQ</b></a> and <a href="https://arc42.de">arc42</a>.
-
+  <p class="footer-maintainer">
+    Erstellt von <a target="_blank" rel="noopener noreferrer nofollow" href="https://gernotstarke.de">Gernot Starke</a>
+    und Peter Hruschka.
+    Supported by <a href="https://kroener-starke.ch/projekte/" target="_blank" rel="noopener noreferrer">Kröner &amp; Starke</a>.
+  </p>
 </div>

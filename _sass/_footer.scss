@@ -1,0 +1,97 @@
+// ============================================================================
+// Footer — ported from docs.arc42.org-site's _sass/_footer.scss (plus its
+// .supported-by-innoq / p.footer-icons rules from _utilities.scss), with the
+// docs tokens as Sass variables because minimal-mistakes has none.
+// Markup: _includes/footer.html, inside the theme's .page__footer wrapper.
+// ============================================================================
+
+$ft-surface-1: #f2f5f8;   // tinted chrome panel
+$ft-deep:      #0e4f80;   // footer rule
+$ft-signal-dk: #115e94;   // links, 6.29:1 on $ft-surface-1
+$ft-muted:     #5e6975;   // maintainer line, 5.11:1 on $ft-surface-1
+$ft-shell-max: 1400px;
+
+// Reset the theme's footer chrome; the band is ours.
+.page__footer {
+  margin-top: 3em;
+  background: $ft-surface-1;
+  border-top: 3px solid $ft-deep;
+  color: $ft-muted;
+
+  footer {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.footer-inner {
+  max-width: $ft-shell-max;
+  margin: 0 auto;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px 32px;
+  font-size: 0.92rem;
+}
+
+p.footer-icons {
+  margin: 0;
+}
+
+.supported-by-innoq {
+  width: 110px;
+  height: auto;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.page__footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+
+  a {
+    color: $ft-signal-dk;
+    text-decoration: none;
+  }
+
+  // Middot separators; pseudo-content, so screen readers only hear the links.
+  a + a::before {
+    content: "\00B7";
+    margin-right: 12px;
+    color: $ft-muted;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.footer-maintainer {
+  flex-basis: 100%;
+  margin: 0;
+  padding-top: 8px;
+  font-size: 0.82rem;
+  color: $ft-muted;
+
+  a {
+    color: $ft-signal-dk;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-inner {
+    padding: 24px 16px;
+    gap: 16px;
+  }
+
+  .supported-by-innoq {
+    width: 90px;
+  }
+}
