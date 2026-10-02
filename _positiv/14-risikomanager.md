@@ -44,4 +44,4 @@ Eine Übersicht der technischen Risiken ist die notwendige Voraussetzung, um ge
 
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

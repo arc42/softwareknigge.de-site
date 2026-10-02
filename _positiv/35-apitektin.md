@@ -99,4 +99,4 @@ In diesem Sinne: **Möge die Macht der Schnittstellen mit Ihnen sein**!
 
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

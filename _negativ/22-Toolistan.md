@@ -28,4 +28,4 @@ Andere Bewohner von Toolistan besitzen schon seit Menschengedenken einfache Hä
 Wie war das mit den Kanonen und den Spatzen? Vorsicht: Viel Werkzeug für wenig System könnte [zu viel des Guten](/07-zuviel-des-guten) und übertrieben sein.
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

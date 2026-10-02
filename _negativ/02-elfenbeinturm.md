@@ -41,4 +41,4 @@ die Abhängigkeit von dieser (ursprünglichen) Funktion verhindern wollen,
 geht das klar. Aber: Auf solche [Codehelden](/10-codeheld) lauert das Not-invented-here-Syndrom.
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

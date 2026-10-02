@@ -90,4 +90,4 @@ Site zuletzt generiert am {{ site.time }}.
 <hr>
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

@@ -63,4 +63,4 @@ Schamlose Eigenwerbung. Wir haben auch andere Bücher geschrieben...
 * Starke/Hruschka: **arc42 in Aktion**. Carl-Hanser Verlag 2015
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

@@ -20,4 +20,4 @@ classes: wide
 ### Quellen
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

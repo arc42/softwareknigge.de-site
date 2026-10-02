@@ -107,4 +107,4 @@ klassischen Aus- und Weiterbildung für Softwarearchitekten; IMPROVE bietet ein
 [^wikipedia]:  [Wiktionary zu Verschlimmbesserung](https://de.wiktionary.org/wiki/Verschlimmbesserung)
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

@@ -45,4 +45,4 @@ erschien im September 2014 im JavaMagazin.
 [^cleancode]: Martin, Robert: „Clean Code. A Handbook of Agile Software Craftsmanship“, Prentice Hall, 2008
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

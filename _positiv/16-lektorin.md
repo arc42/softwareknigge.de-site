@@ -71,4 +71,4 @@ Die Lektorin nutzt [Blicke in den Rückspiegel](/06-blick-in-den-rueckspiegel),
 
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

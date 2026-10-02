@@ -58,4 +58,4 @@ dessen Mitwirkgende alle als "Agilitekten" in unserer Sprechweise auftreten kön
     * Entscheidungen herbeiführen, erläutern und durchsetzen (Kapitel 18: [Entscheider](18-entscheider)).
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

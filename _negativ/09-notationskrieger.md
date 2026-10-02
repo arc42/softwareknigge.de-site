@@ -36,4 +36,4 @@ eine Unterart des Notationskriegers. Diese Formular-Zombies meinen, dass man dur
 * Sie stören die [Kommunikatorin](/20-kommunikatorin) durch ihre Sturheit und Ignoranz.
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

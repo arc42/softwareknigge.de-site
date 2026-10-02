@@ -1,0 +1,110 @@
+{%- comment -%}
+  The arc42 training box: offer plus a mini-timeline of the next dates,
+  rendered at build time from _data/trainings.json — the expiry-filtered copy of
+  https://trainings.arc42.org/api/trainings.json that
+  .github/workflows/refresh-trainings.yml commits weekly (and on demand).
+  No htmx, no runtime fetch: the dates are in the HTML.
+
+  German adaptation of faq.arc42.org-site's _includes/training-dates.html —
+  same rendering rules, keep the two aligned:
+  · strictly chronological across ALL courses, capped at the next 5 dates;
+    the link to trainings.arc42.org covers the rest
+  · expiry-filtered again here (belt and braces over the workflow's filter),
+    so a stale data file degrades to fewer dates, never to ended courses
+  · cancelled and full dates never render; waitlist renders with a marker
+  · every date carries a visible DE/EN badge
+  · course links go to the German info page (url), this site being German
+  · zero upcoming dates degrades to the date-free offer
+
+  The sort walks all dates once, collecting "start|course_index|date_index"
+  strings: Liquid cannot sort across nested arrays, but it can sort strings, and
+  ISO dates sort lexicographically. Liquid's %b is English, hence `months`.
+{%- endcomment -%}
+{%- assign today = 'now' | date: '%Y-%m-%d' -%}
+{%- assign months = "Jan,Feb,Mär,Apr,Mai,Jun,Jul,Aug,Sep,Okt,Nov,Dez" | split: "," -%}
+{%- assign keys = "" | split: "" -%}
+{%- for course in site.data.trainings.courses -%}
+  {%- for d in course.dates -%}
+    {%- if d.end >= today and d.status != 'cancelled' and d.status != 'full' -%}
+      {%- capture key -%}{{ d.start }}|{{ forloop.parentloop.index0 }}|{{ forloop.index0 }}{%- endcapture -%}
+      {%- assign keys = keys | push: key -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- assign keys = keys | sort -%}
+
+{%- comment -%}
+  Most classes are taught by the two authors of this Knigge, but not all — so
+  the intro says "meist", and every date whose trainers differ from that
+  baseline names them on its row.
+{%- endcomment -%}
+{%- assign baseline_duo = "Peter Hruschka, Gernot Starke" -%}
+<aside class="subtle-ad" aria-label="Trainings vom arc42-Team">
+    <h4>Lieber praktisch lernen?</h4>
+    <p>
+        Praxisnahe Trainings zu Softwarearchitektur, meist mit Peter Hruschka
+        und Gernot Starke, den Autoren dieses Knigge (Termine mit anderen
+        Trainern sind gekennzeichnet) – und solide Vorbereitung auf die
+        <a rel="noopener noreferrer nofollow" target="_blank" href="https://www.isaqb.org">iSAQB</a>-Zertifizierungen.
+    </p>
+    {%- if keys.size > 0 %}
+    <p class="training-dates__label" id="training-dates-label">Nächste Termine</p>
+    <ul class="training-dates" aria-labelledby="training-dates-label">
+        {%- for key in keys limit: 5 %}
+        {%- assign parts = key | split: '|' -%}
+        {%- assign ci = parts[1] | plus: 0 -%}
+        {%- assign di = parts[2] | plus: 0 -%}
+        {%- assign course = site.data.trainings.courses[ci] -%}
+        {%- assign d = course.dates[di] -%}
+        {%- assign sm = d.start | date: "%-m" | minus: 1 -%}
+        {%- assign em = d.end | date: "%-m" | minus: 1 -%}
+        {%- capture when -%}
+            {%- if sm == em -%}
+                {{- d.start | date: "%-d." }}&#8211;{{ d.end | date: "%-d." }}&nbsp;{{ months[em] }}&nbsp;{{ d.end | date: "%Y" -}}
+            {%- else -%}
+                {{- d.start | date: "%-d." }}&nbsp;{{ months[sm] }}&#8211;{{ d.end | date: "%-d." }}&nbsp;{{ months[em] }}&nbsp;{{ d.end | date: "%Y" -}}
+            {%- endif -%}
+        {%- endcapture -%}
+        {%- comment -%}
+          The gloss: the feed's title has the form "LABEL: explanation"; what
+          follows the first ": " explains labels like Req4Arc or ADOC. Without
+          a colon, fall back to the course's certification.
+        {%- endcomment -%}
+        {%- assign title_head = course.title | split: ": " | first -%}
+        {%- assign slug = course.title | remove_first: title_head | remove_first: ": " -%}
+        {%- if slug == "" and course.certification -%}
+          {%- capture slug -%}Vorbereitung auf {{ course.certification }}{%- endcapture -%}
+        {%- endif -%}
+        <li class="training-dates__row">
+            <a class="training-dates__when" rel="noopener noreferrer nofollow" target="_blank" href="{{ d.url }}">{{ when }}</a>
+            <b class="training-dates__lang" title="{% if d.language == 'de' %}auf Deutsch{% else %}auf Englisch{% endif %}">{{ d.language | upcase }}</b>
+            <span class="training-dates__what">
+                <a class="training-dates__course" rel="noopener noreferrer nofollow" target="_blank" href="{{ course.url | default: course.url_en }}">{{ course.short_title }}</a>
+                <span class="training-dates__where">&middot; {% if d.format == "online" %}online{% else %}{{ d.city }}{% endif %}</span>
+                {%- if d.status == "waitlist" %} <span class="training-dates__waitlist">Warteliste</span>{% endif %}
+                {%- assign trainers = d.trainers | default: course.trainers -%}
+                {%- assign trainers_key = trainers | join: ", " -%}
+                {%- capture gloss -%}
+                    {%- if slug != "" %}{{ slug }}{% endif -%}
+                    {%- if trainers_key != baseline_duo and trainers_key != "" -%}
+                        {%- if slug != "" %} &middot; {% endif -%}mit {{ trainers | join: " &amp; " }}
+                    {%- endif -%}
+                {%- endcapture -%}
+                {%- if gloss != "" %}<span class="training-dates__slug">{{ gloss }}</span>{% endif %}
+            </span>
+        </li>
+        {%- endfor %}
+    </ul>
+    {%- assign gm = site.data.trainings.generated | date: "%-m" | minus: 1 %}
+    <p class="training-dates__more">
+        Alle Kurse und Termine:
+        <a rel="noopener noreferrer nofollow" target="_blank" href="https://trainings.arc42.org">trainings.arc42.org</a>
+        <span class="training-dates__asof">&middot; Stand {{ site.data.trainings.generated | date: "%-d." }}&nbsp;{{ months[gm] }}&nbsp;{{ site.data.trainings.generated | date: "%Y" }}</span>
+    </p>
+    {%- else %}
+    <p>
+        Aktuelle Termine und Themen finden Sie auf
+        <a rel="noopener noreferrer nofollow" target="_blank" href="https://trainings.arc42.org">trainings.arc42.org</a>.
+    </p>
+    {%- endif %}
+</aside>

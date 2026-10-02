@@ -49,4 +49,4 @@ Wir drücken Ihnen die Daumen für hoffentlich agile Architekturarbeit ohne **
 [^bimodal]: [Gartner IT Glossary „Bimodal“](https://www.gartner.com/it-glossary/bimodal/)
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

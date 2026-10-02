@@ -66,4 +66,4 @@ Finden Sie riskanten oder schlechten Code durch eine Kombination technischer und
 
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

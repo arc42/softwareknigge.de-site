@@ -32,4 +32,4 @@ Nicht überzeugt? Lektüre zum Thema gibt es zuhauf[^bad-code]
 
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

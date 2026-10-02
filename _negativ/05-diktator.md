@@ -43,4 +43,4 @@ Solche Diktatoren:
 * [_Der Entscheider_](/18-entscheider)
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

@@ -81,4 +81,4 @@ die arc42 anbietet.
 * Die [deutsche Homepage von arc42](https://arc42.de) enthält auch Hinweise auf Trainings und Schulungen rund um arc42 und Softwarearchitektur.
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

@@ -58,8 +58,20 @@ Start mit einem Hinweis ab – dann `make install` oder `make build` ausführen.
 
 ### Kurs-Termine
 
-Die Termine der folgenden arc42-Kurse (`_includes/subtle-ads/subtle-ads.html`)
-werden zur Laufzeit per htmx von einem externen Backend geladen.
+Die Box mit den nächsten fünf arc42-Trainingsterminen (unter den Mustern und
+auf den Übersichts-, Buch- und About-Seiten) wird beim Build aus
+`_data/trainings.json` erzeugt – kein Laden zur Laufzeit, die Termine stehen im HTML.
+Gleiches Verfahren wie auf faq.arc42.org und docs.arc42.org:
+
+* `_data/trainings.json` ist eine Kopie von
+  <https://trainings.arc42.org/api/trainings.json> ohne abgelaufene Termine.
+* `.github/workflows/refresh-trainings.yml` aktualisiert sie montags um
+  06:17 UTC, manuell per „Run workflow“ oder per `trainings-updated`-Dispatch
+  aus dem Trainings-Repo. Ein Commit erfolgt nur, wenn sich Termine geändert
+  haben; danach wird der Pages-Deploy angestoßen.
+* `_includes/training-dates.html` rendert die Box (deutsche Fassung der
+  FAQ-Variante), `_sass/_training-dates.scss` enthält die Styles.
+* Termine werden im Trainings-Repo (`_data/trainings.yml`) gepflegt, nie hier.
 
 ## Credits
 

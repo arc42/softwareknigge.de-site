@@ -49,4 +49,4 @@ Vermeiden Sie Alleingänge und konsultieren stattdessen maßgebliche Stakeholde
 um sich nicht als [Diktator](/05-diktator) unbeliebt zu machen.
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

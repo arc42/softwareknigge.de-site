@@ -37,4 +37,4 @@ Sicherlich müssen wir grundlegende Fähigkeiten selbst erlernen und üben, o
 * Auch im [Elfenbeinturm](/02-elfenbeinturm) ignorieren Menschen die Realität...
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

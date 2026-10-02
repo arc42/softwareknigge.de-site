@@ -23,4 +23,4 @@ Die Nummern vor den Titeln beziehen sich auf die Kapitel der
 {% endfor %}
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

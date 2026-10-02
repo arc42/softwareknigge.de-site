@@ -56,4 +56,4 @@ andere „Legacy“) arbeiten wir den größten Teil unseres Informatiker-, Ent
 
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

@@ -67,4 +67,4 @@ Zu den ritterlichen Tugenden gehören die folgenden[^tugenden]
 Maßhaltung gehört zu Ihren ritterlichen Tugenden. Sie sollten Angemessenheit beurteilen und [zu viel des Guten](07-zu-viel-des-guten) vermeiden können.
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

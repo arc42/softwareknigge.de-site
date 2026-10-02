@@ -50,4 +50,4 @@ Annahmen und gehen von idealen Bedingungen aus
 Der Verschätzer macht sich als [Diktator](/05-diktator) unbeliebt, indem er eigenmächtig und ohne Rücksprache bestimmt, wie lange etwas dauern darf.
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

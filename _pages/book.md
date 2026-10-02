@@ -121,4 +121,4 @@ Den gesamte Erlös aus dem Verkauf dieses Buches spenden die Autoren der
 <hr/>
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

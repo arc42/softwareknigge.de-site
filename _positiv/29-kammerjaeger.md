@@ -92,4 +92,4 @@ In diesem Sinne, **happy hunting**!
 
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

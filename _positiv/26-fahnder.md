@@ -82,4 +82,4 @@ sie dafür, dass Architektur, Sourcecode und auch der Entwicklungsprozess stä
 
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

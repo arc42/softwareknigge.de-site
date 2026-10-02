@@ -1,0 +1,94 @@
+name: Refresh training dates
+# Consumer side of the training-dates architecture: trainings.arc42.org publishes
+# /api/trainings.json (schema-validated in its own CI); this workflow pulls it,
+# drops expired dates, and commits to _data/trainings.json, from which
+# _includes/training-dates.html renders the training box on the overview, book and about pages.
+# Copied from faq.arc42.org-site's refresh-trainings.yml — keep the two aligned.
+on:
+  schedule:
+    - cron: "17 6 * * 1"   # Mondays 06:17 UTC, staggered after the other arc42 sites (04:17–05:47)
+  workflow_dispatch:
+  repository_dispatch:
+    types: [trainings-updated]   # pushed by trainings.arc42.org-site right after the feed republishes
+permissions:
+  contents: write
+  actions: write   # to start the Pages deploy below; the commit alone does not
+jobs:
+  refresh:
+    if: github.repository == 'arc42/softwareknigge.de-site'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch trainings.json
+        run: |
+          curl --fail --silent --show-error --location \
+            --output /tmp/trainings.json \
+            https://trainings.arc42.org/api/trainings.json
+      - name: Validate payload (a CDN error page arrives as 200 - check content)
+        run: |
+          jq -e '.courses | length > 0' /tmp/trainings.json
+          jq -e '[.courses[].dates[]? | select(.language == null or .start == null or .end == null or .code == null)] | length == 0' /tmp/trainings.json
+          jq -e '.generated | type == "string"' /tmp/trainings.json
+      - name: Update _data/trainings.json when courses changed
+        id: update
+        run: |
+          # Store the EXPIRY-FILTERED payload, not the raw fetch. The stored file is
+          # what we diff against next run, so a date that merely expires between runs
+          # (no upstream edit at all) still makes the filtered payload differ from what's
+          # committed - turning "time passing" into a content change that triggers a
+          # commit + Pages rebuild, instead of silently advertising an ended course.
+          jq --arg today "$(date -u +%Y-%m-%d)" \
+            '.courses[].dates |= map(select(.end >= $today))' \
+            /tmp/trainings.json > /tmp/filtered.json
+          jq -S 'del(.generated)' /tmp/filtered.json > /tmp/new.json
+          jq -S 'del(.generated)' _data/trainings.json > /tmp/old.json || echo '{}' > /tmp/old.json
+          if cmp -s /tmp/new.json /tmp/old.json; then
+            echo "No content change (ignoring 'generated' timestamp)"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          jq . /tmp/filtered.json > _data/trainings.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/trainings.json
+
+          # Describe what actually moved, so the history is readable without
+          # diffing every commit. The generator gets today's date as a parameter
+          # because it has to tell "this date expired" from "this date was
+          # withdrawn", and a pinned date is what makes that testable
+          # (.github/scripts/test-commit-message.sh).
+          #
+          # Publishing matters, a nice subject line does not: this repo once went
+          # a week without a Pages build because one step failed. So every failure
+          # mode of the generator - bad jq, unexpected payload, missing file, no
+          # output - falls back to the old generic message instead of aborting the
+          # step. `|| true` inside the substitution keeps the runner's `set -e`
+          # (GitHub runs this with `bash -e`) from killing the job on a non-zero
+          # exit, and the emptiness check covers the rest.
+          fallback="chore: refresh training dates from trainings.arc42.org"
+          message=$(jq -n -r --arg today "$(date -u +%Y-%m-%d)" \
+            --slurpfile old /tmp/old.json \
+            --slurpfile new /tmp/new.json \
+            -f .github/trainings-commit-message.jq 2>/tmp/commit-message.err || true)
+          if [ -z "$(printf '%s' "$message" | tr -d '[:space:]')" ]; then
+            echo "Commit-message generator produced nothing - using the generic subject:"
+            cat /tmp/commit-message.err || true
+            message="$fallback"
+          fi
+
+          printf '%s\n' "$message" | git commit -F - || git commit -m "$fallback"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Trigger the Pages deploy
+        # This site is built by a workflow (Pages build_type: workflow), and the
+        # push above is made with GITHUB_TOKEN, which by GitHub's design fires no
+        # `on: push` trigger. Without this step the refreshed data sits committed
+        # on main but unpublished: that is how faq.arc42.org kept advertising a
+        # withdrawn Req4Arc date for a week in September 2026 while its
+        # _data/trainings.json was already correct. The three sibling consumers
+        # use the legacy Pages builder, which does rebuild on a bot push, so they
+        # need no equivalent step.
+        if: steps.update.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run build-deploy-gh-pages.yml --ref main

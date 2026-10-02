@@ -35,4 +35,4 @@ Die Kommunikatorin nutzt die Fähigkeiten einer [Lektorin](/16-lektorin), um du
 
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

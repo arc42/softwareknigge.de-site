@@ -47,4 +47,4 @@ Das er scheint uns in den meisten Fällen als zu viel Arbeit.
 * Der Perfektionist kann in [Toolistan](/22-toolistan) wochenlang über noch bessere Werkzeuge diskutieren, ohne das eigentliche System zu verbessern.
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

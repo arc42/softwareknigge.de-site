@@ -83,4 +83,4 @@ Mikrobewertungen sind eine preiswerte und pragmatische Art, die Qualität Ihrer
 ### Quellen
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

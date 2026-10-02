@@ -23,4 +23,4 @@ der [gedruckten Version](https://www.amazon.de/Knigge-f%C3%BCr-Softwarearchitekt
 {% endfor %}
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}

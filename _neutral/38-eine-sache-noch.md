@@ -79,4 +79,4 @@ Schließlich erfordert Ihre anspruchsvolle Aufgabe, dass Sie ständig weiter le
 
 
 ### Hinweis
-{% include subtle-ads/subtle-ads.html %}
+{% include training-dates.html %}
