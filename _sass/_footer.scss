@@ -1,21 +1,21 @@
 // ============================================================================
-// Footer — ported from docs.arc42.org-site's _sass/_footer.scss (plus its
-// .supported-by-innoq / p.footer-icons rules from _utilities.scss), with the
-// docs tokens as Sass variables because minimal-mistakes has none.
+// Footer — structure from docs.arc42.org-site's footer (INNOQ mark, link
+// list, maintainer line); colours are this site's own: the warm paper and
+// hairline of the training box instead of docs' blue band.
 // Markup: _includes/footer.html, inside the theme's .page__footer wrapper.
 // ============================================================================
 
-$ft-surface-1: #f2f5f8;   // tinted chrome panel
-$ft-deep:      #0e4f80;   // footer rule
-$ft-signal-dk: #115e94;   // links, 6.29:1 on $ft-surface-1
-$ft-muted:     #5e6975;   // maintainer line, 5.11:1 on $ft-surface-1
+$ft-paper:     #faf7ee;   // same paper as the training box
+$ft-rule:      #e4dcc6;
+$ft-link:      #235e70;   // 6.7:1 on $ft-paper
+$ft-muted:     #6b665a;   // 5.3:1 on $ft-paper
 $ft-shell-max: 1400px;
 
 // Reset the theme's footer chrome; the band is ours.
 .page__footer {
   margin-top: 3em;
-  background: $ft-surface-1;
-  border-top: 3px solid $ft-deep;
+  background: $ft-paper;
+  border-top: 1px solid $ft-rule;
   color: $ft-muted;
 
   footer {
@@ -55,15 +55,18 @@ p.footer-icons {
   align-items: baseline;
   gap: 12px;
 
-  a {
-    color: $ft-signal-dk;
+  a,
+  a:visited {
+    color: $ft-link;
     text-decoration: none;
   }
 
-  // Middot separators; pseudo-content, so screen readers only hear the links.
-  a + a::before {
+  // Middot separators after each link but the last, so a wrapped line always
+  // starts with a link, never with a stray "·". Pseudo-content: screen
+  // readers only hear the links.
+  a:not(:last-child)::after {
     content: "\00B7";
-    margin-right: 12px;
+    margin-left: 12px;
     color: $ft-muted;
   }
 
@@ -80,8 +83,9 @@ p.footer-icons {
   font-size: 0.82rem;
   color: $ft-muted;
 
-  a {
-    color: $ft-signal-dk;
+  a,
+  a:visited {
+    color: $ft-link;
   }
 }
 

@@ -1,126 +1,120 @@
 // ============================================================================
 // TRAINING BOX
 // Markup: _includes/training-dates.html, rendered at build time from
-// _data/trainings.json. Ported from faq.arc42.org-site's _sass/_utilities.scss
-// (.subtle-ad and .training-dates__*) so the box looks the same on all arc42
-// sites. The FAQ's CSS custom properties become Sass variables here, because
-// the minimal-mistakes theme defines no such tokens.
+// _data/trainings.json. Structure and rendering rules follow the box on
+// faq.arc42.org and docs.arc42.org; the look is this site's own: a warm paper
+// note with a hairline, in the page's ink and link colours, so it reads as an
+// aside under the pattern and not as a fourth accent colour.
+//
+// Contrast on $td-paper: ink 15.8:1, text 9.6:1, link 6.7:1, muted 5.3:1.
 // ============================================================================
 
-$td-maroon:    #8a2e2e;   // sponsor/training blocks only, never editorial
-$td-maroon-bg: #fcefef;
-$td-ink:       #232b29;
-$td-muted:     #5a6a65;
-$td-radius:    4px;
-$td-mono:      ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+$td-paper:   #faf7ee;   // a breath of the yellow band, nearly white
+$td-rule:    #e4dcc6;
+$td-ink:     #1d1d1b;   // the woodcut's black, as in _hero.scss
+$td-text:    #3d4144;   // theme body text
+$td-link:    #235e70;   // theme link hover shade; #2f7d95 is 4.4:1 on paper
+$td-muted:   #6b665a;
+$td-radius:  4px;
 
 .subtle-ad {
-  max-width: 34em;
-  margin: 2em 0;
-  padding: 1em 1.25em;
+  max-width: 36em;
+  margin: 3em 0 1em;
+  padding: 1.1em 1.35em 1.2em;
 
-  background-color: $td-maroon-bg;
-  border: 1px solid $td-maroon;
+  background-color: $td-paper;
+  border: 1px solid $td-rule;
   border-radius: $td-radius;
-  box-shadow: 3px 3px 0 0 $td-maroon;
 
   font-size: 0.85em;
-  color: $td-ink;
+  color: $td-text;
   line-height: 1.5;
 
-  // Honest labelling: a small kicker naming who is behind the note.
-  &::before {
-    display: block;
-    margin-bottom: 0.4em;
-
-    content: "vom arc42-Team";
-    font-size: 0.72em;
-    font-weight: 700;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: $td-maroon;
-  }
-
   .subtle-ad__title {
-    margin: 0 0 0.3em;
-    font-size: 1.1em;
+    margin: 0 0 0.35em;
+    padding: 0;
+    border: 0;
+    font-size: 1.15em;
+    font-weight: 600;
     line-height: 1.3;
-    color: $td-maroon;
+    color: $td-ink;
   }
 
   p {
-    margin: 0.3em 0;
+    margin: 0.35em 0;
 
     &:last-child {
       margin-bottom: 0;
     }
   }
 
-  a {
-    color: $td-maroon;
-    font-weight: 600;
+  a,
+  a:visited {
+    color: $td-link;
     text-decoration: none;
+  }
 
-    &:hover {
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
+  a:hover {
+    color: $td-ink;
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 }
 
-// ---- Training dates strip: one rail, a node per date, chronological --------
+// ---- Training dates strip: one hairline rail, a node per date ---------------
 
 .training-dates__label {
-  margin: 0.9em 0 0.35em;
-  font-size: 0.72em;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: $td-maroon;
+  margin: 1em 0 0.4em;
+  font-weight: 600;
+  color: $td-ink;
 }
 
 .subtle-ad ul.training-dates {
-  margin: 0 0 0.6em 0.2em;
-  padding: 0.1em 0 0.1em 1em;
+  margin: 0 0 0.8em 4px;
+  padding: 0 0 0 16px;
   list-style: none;
-  border-left: 1px solid $td-maroon;
+  border-left: 1px solid $td-rule;
 }
 
 .training-dates__row {
   position: relative;
-  margin: 0.4em 0;
+  margin: 0.5em 0;
 
-  // The node, centred on the rail: 1em list padding + half the 1px rail +
-  // half the 7px dot.
+  // The node, centred on the 1px rail: 16px list padding + half the rail +
+  // half the 5px dot. Pixels, not em, so it cannot drift with font size.
   &::before {
     content: "";
     position: absolute;
-    left: calc(-1em - 4px);
-    top: 0.4em;
-    width: 7px;
-    height: 7px;
+    left: -19px;
+    top: 0.55em;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
-    background: $td-maroon;
+    background: $td-muted;
   }
 }
 
-.training-dates__when {
-  font-family: $td-mono;
-  font-size: 0.88em;
+// Dates are data: same face as the text, tabular figures so they align.
+.subtle-ad .training-dates__when {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
 
 .training-dates__lang {
   display: inline-block;
-  margin: 0 0.1em;
-  padding: 0 5px;
-  border: 1px solid $td-maroon;
-  border-radius: $td-radius;
-  font-family: $td-mono;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: $td-maroon;
+  margin: 0 0.15em;
+  padding: 0 0.35em;
+  border: 1px solid $td-rule;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: $td-muted;
+}
+
+.subtle-ad .training-dates__course {
+  font-weight: 600;
 }
 
 .training-dates__where {
@@ -131,19 +125,19 @@ $td-mono:      ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospa
 .training-dates__slug {
   display: block;
   margin-top: 1px;
-  font-size: 0.9em;
+  font-size: 0.92em;
   color: $td-muted;
 }
 
+// Said in words, not by colour; >= 12px.
 .training-dates__waitlist {
-  font-size: 0.75em;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $td-maroon;
+  margin-left: 0.2em;
+  font-size: 0.92em;
+  font-style: italic;
+  color: $td-muted;
 }
 
 .training-dates__asof {
-  font-size: 0.82em;
+  font-size: 0.92em;
   color: $td-muted;
 }
