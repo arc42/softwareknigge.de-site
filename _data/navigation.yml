@@ -15,5 +15,3 @@ main:
     url: /book
   - title: "Über uns"
     url: /about
-  - title: "Kontakt"
-    url: /contact
