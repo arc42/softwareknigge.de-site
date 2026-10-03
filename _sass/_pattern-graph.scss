@@ -1,0 +1,75 @@
+// ============================================================================
+// Pattern-language graph on the homepage — markup in _includes/pattern-graph.html.
+// The PNG with one link per box laid over it, positioned in percent.
+// ============================================================================
+
+$pg-ink:   #1d1d1b;
+$pg-link:  #235e70;
+$pg-muted: #6b665a;
+
+.pattern-graph {
+  margin: 0 0 3em;
+
+  figcaption {
+    margin-top: 0.75em;
+    font-family: inherit;   // the theme sets captions in a serif face
+    font-size: 0.85em;
+    color: $pg-muted;
+
+    a,
+    a:visited {
+      color: $pg-link;
+    }
+  }
+}
+
+.pattern-graph__canvas {
+  position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.pattern-graph__node {
+  position: absolute;
+  display: block;
+  border-radius: 8px;
+  transition: box-shadow 0.15s ease-out, background-color 0.15s ease-out;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 0 2px $pg-ink, 0 4px 10px rgba(0, 0, 0, 0.18);
+  }
+
+  &:focus-visible {
+    outline: 3px solid $pg-link;
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+// Phones: the graph keeps a readable size and scrolls sideways; links scale
+// with the canvas, so they stay on their boxes.
+@media (max-width: 47.99em) {
+  .pattern-graph__scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+
+  .pattern-graph__canvas {
+    width: 1300px;           // labels ~11px, the smallest still readable size
+  }
+}
+
+@media (min-width: 48em) {
+  .pattern-graph__hint {
+    display: none;
+  }
+}

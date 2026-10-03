@@ -51,27 +51,4 @@ $narrow: 47.99em;
     margin-right: 0.5rem;
   }
 
-  // ---- Pattern graph: scroll sideways at a readable size ---------------------
-  .pattern-graph__scroll {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior-x: contain;
-  }
-
-  .pattern-graph__scroll img {
-    width: 1300px;           // labels ~11px, the smallest still readable size
-    max-width: none;
-  }
-}
-
-// The swipe hint only makes sense where the graph scrolls.
-@media (min-width: 48em) {
-  .pattern-graph__hint {
-    display: none;
-  }
-}
-
-.pattern-graph__scroll:focus-visible {
-  outline: 2px solid #235e70;
-  outline-offset: 4px;
 }
