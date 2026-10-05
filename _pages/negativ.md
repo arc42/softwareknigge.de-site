@@ -7,6 +7,7 @@ header:
 
 classes: wide
 
+search_body: false   # the body lists every pattern; see search.json
 ---
 
 Hier finden Sie die {{ site.negativ.size }} negativen Muster in der Übersicht.

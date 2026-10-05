@@ -8,6 +8,7 @@ header:
 
 classes: wide
 
+search_body: false   # the body lists every pattern; see search.json
 ---
 Hier finden Sie die {{ site.neutral.size }} neutralen Beobachtungen und Muster in der Übersicht.
 Die Nummern beziehen sich auf die Kapitel der

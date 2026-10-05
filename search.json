@@ -1,0 +1,60 @@
+---
+layout: none
+sitemap: false
+---
+{%- comment -%}
+  The search index, one record per pattern plus one per real page, built by
+  Liquid at build time — no plugin, no Node step. assets/js/search.js fetches
+  it on first focus of the search field and builds the lunr index in the
+  browser (44 patterns index in a few milliseconds).
+
+  Replaces the theme's lunr-store.js, which shipped the whole corpus as a
+  script on EVERY page and built the index on every page load, searched or not.
+
+  FIELDS
+    type     "positiv", "negativ", "neutral" (the collection) or "page". The
+             masthead panel groups and colours rows on it, in the order of
+             GROUPS in assets/js/search.js. A type missing there renders nowhere.
+    summary  The pattern's one-paragraph summary: the /search/ page shows it as
+             the hit's text, and it is weighted between title and body.
+    content  The body, minus the "Dies ist ein (unvollständiger) Auszug …" note
+             that opens every pattern — indexed, it made every excerpt the same.
+
+  `search: false` keeps a document out entirely. `search_body: false` indexes
+  the title only — for the three category pages, whose bodies list every
+  pattern's summary: indexed, every query would also return the list page.
+{%- endcomment -%}
+[
+{%- assign sep = '' -%}
+{%- assign types = "positiv,negativ,neutral" | split: "," -%}
+{%- for type in types -%}
+  {%- assign docs = site[type] | where_exp: 'doc', 'doc.search != false' -%}
+  {%- for doc in docs -%}
+    {%- assign text = doc.content | replace: "</p>", " </p>" | replace: "</h2>", " </h2>"
+          | replace: "</h3>", " </h3>" | replace: "</li>", " </li>" | strip_html
+          | replace: "Dies ist ein (unvollständiger) Auszug aus dem", ""
+          | replace: "gedruckten Buch.", "" -%}
+{{ sep }}{
+  "url": {{ doc.url | relative_url | jsonify }},
+  "type": {{ type | jsonify }},
+  "title": {{ doc.title | jsonify }},
+  "summary": {{ doc.summary | default: "" | markdownify | strip_html | normalize_whitespace | strip | jsonify }},
+  "content": {{ text | normalize_whitespace | strip | jsonify }}
+}
+    {%- assign sep = ',' -%}
+  {%- endfor -%}
+{%- endfor -%}
+
+{%- for page in site.pages -%}
+  {%- if page.title and page.search != false and page.url != '/404.html' -%}
+{{ sep }}{
+  "url": {{ page.url | relative_url | jsonify }},
+  "type": "page",
+  "title": {{ page.title | jsonify }},
+  "summary": "",
+  "content": {% if page.search_body == false %}""{% else %}{{ page.content | strip_html | normalize_whitespace | strip | jsonify }}{% endif %}
+}
+    {%- assign sep = ',' -%}
+  {%- endif -%}
+{%- endfor -%}
+]

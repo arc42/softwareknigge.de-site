@@ -1,0 +1,369 @@
+// ============================================================================
+// Search — the masthead combobox and the /search/ results page.
+// Behaviour in assets/js/search.js, markup in _includes/masthead.html and
+// _pages/search.md, index in search.json.
+//
+// `.arc42-search` is the arc42 family component (arc42.de, examples.arc42.org);
+// the class names follow theirs so the sites stay diffable. Colours are this
+// site's: the three category colours from _sass/_hero.scss mark the groups,
+// the way arc42.de gives each result type its own marker hue.
+//
+// Colour pairs (WCAG 2.x contrast):
+//   $ink    on #fff         16.9:1   (suggestion titles, typed text)
+//   $muted  on #fff          5.7:1   (group labels, placeholder, legend)
+//   $muted  on $sr-wash      5.0:1   (the shortcut chip in the field)
+//   $ink    on $sr-wash      14.7:1   (highlighted suggestion)
+//   $ink    on $sr-mark      13.2:1   (matched letters)
+// The category markers are decorative: the group label names the category.
+// ============================================================================
+
+$sr-line:   #d9d6cf;   // borders and rules
+$sr-wash:   #f2efe8;   // highlighted row, kbd chips
+$sr-mark:   #ffe36b;   // the yellow band, lightened (as in _layout.scss)
+$sr-focus:  #235e70;   // the link colour of the pattern graph
+
+// The masthead row: logo + nav on the left, the field on the right. The
+// theme already makes this a flex row; the nav takes what the field leaves.
+.masthead__menu {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.arc42-search {
+  position: relative;
+  display: flex;
+  flex: 0 1 15rem;
+  align-items: center;
+  align-self: center;
+  gap: 0.4rem;
+  min-width: 0;
+  min-height: 44px;             // the whole pill is the target, not the input
+  margin-left: 1rem;
+  padding: 0 0.75rem;
+  border: 1px solid $sr-line;
+  border-radius: 999px;
+  background: #fff;
+  color: $muted;
+  font-family: $sans-serif;
+
+  // The ring goes on the pill, not on the borderless input inside it.
+  &:focus-within {
+    border-color: $sr-focus;
+    outline: 3px solid rgba($sr-focus, 0.35);
+    outline-offset: 1px;
+  }
+
+  &__icon {
+    flex: 0 0 auto;
+  }
+
+  &__input {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0.5rem 0;
+    font-size: 0.9375rem;
+    color: $ink;
+    background: none;
+    border: 0;
+    box-shadow: none;
+
+    &::placeholder {
+      color: $muted;
+      opacity: 1;                 // Firefox dims placeholders by default
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;           // the theme draws one on every focused input
+    }
+
+    // Safari draws its own clear button and magnifier.
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button { -webkit-appearance: none; }
+  }
+
+  // Empty until the JS fills it in: a hint for a shortcut that never got
+  // installed is worse than none. Hidden where nobody holds a keyboard.
+  &__hint {
+    flex: 0 0 auto;
+    padding: 1px 5px;
+    font-family: $sans-serif;
+    font-size: 0.6875rem;
+    letter-spacing: 0.04em;
+    color: $muted;
+    background: $sr-wash;
+    border: 1px solid $sr-line;
+    border-radius: 4px;
+    white-space: nowrap;
+
+    &:empty { display: none; }
+
+    @media (max-width: 47.99em), (hover: none) {
+      display: none;
+    }
+  }
+
+  // ---- The suggestion panel ------------------------------------------------
+  &__panel {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    width: min(28rem, calc(100vw - 2rem));
+    max-height: min(65vh, 32rem);
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid $sr-line;
+    border-radius: 6px;
+    box-shadow: 0 6px 20px rgba(29, 29, 27, 0.18);
+    text-align: left;
+
+    &[hidden] { display: none; }
+  }
+
+  // The rows scroll; the legend below stays outside so it never scrolls away.
+  &__scroll {
+    flex: 1 1 auto;
+    min-height: 0;                // let the flex child shrink, or it never scrolls
+    overflow-y: auto;
+  }
+
+  &__group + &__group {
+    border-top: 1px solid $sr-line;
+  }
+
+  // The group label doubles as the colour legend: its swatch is the colour of
+  // the markers on the rows below it.
+  &__group-label {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0;
+    padding: 0.7rem 1rem 0.2rem;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $muted;
+
+    &::before {
+      content: "";
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 50%;
+      background: var(--sr-cat, #{$sr-line});
+      box-shadow: inset 0 0 0 1px rgba(29, 29, 27, 0.25);   // the yellow on white
+    }
+  }
+
+  &__group--positiv { --sr-cat: #{$band-positiv}; }
+  &__group--negativ { --sr-cat: #{$band-negativ}; }
+  &__group--neutral { --sr-cat: #{$band-neutral}; }
+  &__group--page    { --sr-cat: #{$sr-line}; }
+
+  &__row {
+    position: relative;
+    display: block;
+    padding: 0.4rem 1rem 0.4rem 1.6rem;
+    color: $ink;
+    text-decoration: none;
+
+    &:visited { color: $ink; }
+
+    // The category marker, in the group's colour.
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      width: 3px;
+      height: 1.1em;
+      transform: translateY(-50%);
+      background: var(--sr-cat, #{$sr-line});
+      border-radius: 2px;
+    }
+
+    // Keyboard highlight and pointer hover are one state, so they look alike.
+    // aria-selected is the source of truth; :hover mirrors it.
+    &[aria-selected="true"],
+    &:hover {
+      background: $sr-wash;
+      color: $ink;
+      text-decoration: none;
+
+      &::before { width: 5px; }
+    }
+  }
+
+  // One line, ellipsised: a suggestion row is scanned, not read.
+  &__row-title {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.9375rem;
+    line-height: 1.35;
+  }
+
+  // "Alle 23 Treffer für … anzeigen" — an action, not a hit: no marker, and
+  // the counts carry the weight.
+  &__row--all {
+    padding-left: 1rem;
+
+    &::before { display: none; }
+
+    .arc42-search__row-title {
+      font-size: 0.8125rem;
+      color: $muted;
+
+      strong { color: $ink; }
+    }
+  }
+
+  &__empty {
+    margin: 0;
+    padding: 1rem;
+    font-size: 0.9375rem;
+    color: $muted;
+
+    strong { color: $ink; }
+  }
+
+  // The key legend.
+  &__footer {
+    flex: 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.9rem;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid $sr-line;
+    font-size: 0.75rem;
+    color: $muted;
+
+    kbd {
+      padding: 1px 5px;
+      background: $sr-wash;
+      border: 1px solid $sr-line;
+      border-radius: 4px;
+      color: $ink;
+      font-family: $monospace;
+      font-size: 0.6875rem;
+      line-height: 1;
+    }
+
+    // A chord means nothing on a touch screen.
+    @media (hover: none) { display: none; }
+  }
+
+  // Phones: logo and the three category links fill the bar (see _mobile.scss),
+  // so the field takes a row of its own under them, and the panel its width.
+  @media (max-width: 47.99em) {
+    flex: 1 1 100%;
+    order: 3;
+    margin: 0.5rem 0 0;
+
+    &__panel { left: 0; right: 0; width: auto; }
+  }
+}
+
+@media (max-width: 47.99em) {
+  .masthead__inner-wrap { flex-wrap: wrap; }
+}
+
+// ---- /search/ ----------------------------------------------------------------
+
+.searchpage {
+  max-width: $measure;
+
+  // The theme gives every <form> a grey box with padding; this one is a field.
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+
+  &__label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $muted;
+  }
+
+  &__input {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.0625rem;
+    color: $ink;
+    border: 1px solid $sr-line;
+    border-radius: 6px;
+  }
+
+  &__count {
+    margin: 1.25em 0 0;
+    font-size: 0.875em;
+    color: $muted;
+
+    &:empty { display: none; }
+  }
+
+  &__results {
+    margin: 1.25em 0 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+// One hit: the category in its colour, the title, the text that matched.
+// Scoped under .searchpage to outrank the theme's `.page__content h2` and
+// `.page__content p` margins, which otherwise spread one hit over a screen.
+.searchpage .search-hit {
+  margin: 0;
+  padding: 1.1em 0 1.1em 1em;
+  border-left: 4px solid var(--sr-cat, #{$sr-line});
+
+  & + .search-hit { border-top: 1px solid $sr-line; }
+
+  &--positiv { --sr-cat: #{$band-positiv}; }
+  &--negativ { --sr-cat: #{$band-negativ}; }
+  &--neutral { --sr-cat: #{$band-neutral}; }
+
+  &__where {
+    margin: 0 0 0.2em;
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $muted;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1.15em;
+  }
+
+  &__text {
+    margin: 0.35em 0 0;
+    font-size: 0.95em;
+  }
+}
+
+// The matched words, by weight and a wash — colour alone may not carry meaning.
+.arc42-search mark,
+.searchpage .search-hit mark {
+  padding: 0 1px;
+  background: $sr-mark;
+  color: $ink;
+  font-weight: 700;
+  border-radius: 2px;
+}

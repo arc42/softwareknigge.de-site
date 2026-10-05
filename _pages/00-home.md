@@ -3,6 +3,7 @@ title: Knigge für Softwarearchitekten
 layout: splash
 classes: home
 permalink: /
+search: false
 header:
   overlay_image: /images/header/site-header.png
 excerpt: "**Typisches Verhalten in der IT**"
@@ -28,8 +29,9 @@ feature_row:
     btn_label: "mehr lesen"
     btn_class: "btn--neutral"
 
-
 ---
+
+{% include pattern-graph.html %}
 
 {% include feature_row %}
 
@@ -41,5 +43,3 @@ Damit machen Sie sich im täglichen Leben beliebt und können Eindruck schinden.
 Der „**Knigge für Softwarearchitekten**“ ist ein [Buch von Peter Hruschka und Gernot Starke](https://www.amazon.de/Knigge-für-Softwarearchitekten-Peter-Hruschka/dp/3868028064), das 38 _Muster_ für gutes und schlechtes Verhalten identifiziert und Teams und Personen in der Softwareentwicklung damit einen Spiegel vorhält.
 
 </div>
-
-{% include pattern-graph.html %}

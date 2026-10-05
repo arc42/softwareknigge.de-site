@@ -3,8 +3,16 @@
 
 remote_theme: "mmistakes/minimal-mistakes@4.21.0"
 
-search             : true
-search_full_content: true
+# The theme's search stays OFF: it is a full-screen overlay that built the
+# lunr index on every page load. The masthead field (_includes/masthead.html)
+# and /search/ run on assets/js/search.js over /search.json instead, loaded
+# below; the index is fetched only when someone starts searching.
+search             : false
+
+# After the theme's main.min.js. lunr first: search.js reads window.lunr.
+after_footer_scripts:
+  - /assets/lib/lunr/lunr.min.js
+  - /assets/js/search.js
 
 # Site Settings
 locale          : "de"

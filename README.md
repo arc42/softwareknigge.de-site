@@ -87,7 +87,7 @@ Dateien überschreiben bzw. ergänzen es – bei einem Theme-Update prüfen:
 | `_includes/post_pagination.html` | Vor/Zurück mit Mustername und „Übersicht“, danach die Trainings-Box |
 | `_includes/page__date.html` | kein „Aktualisiert: <Build-Datum>“ mehr |
 | `_includes/skip-links.html` | Sprunglinks ohne Überschrift, deutsch |
-| `_includes/search/lunr-search-scripts.html`, `assets/js/lunr/*` | deutsche Suche (Stemming, Zusammenfassung als Treffertext) |
+| `_includes/masthead.html`, `assets/js/search.js`, `search.json`, `_pages/search.md`, `_sass/_search.scss` | Suche: Feld in der Kopfleiste mit Vorschlägen beim Tippen (lunr 2.3.9 in `assets/lib/lunr/`, Index erst beim ersten Fokus geladen), gruppiert nach Kategorie, Tastatur ↑↓ / ↵ / ⌘⏎ (alle Treffer) / Esc, ⌘K bzw. Strg-K springt ins Feld; `/search/` zeigt alle Treffer. Portiert von examples.arc42.org. Die Theme-Suche (`search: true`) bleibt aus. `search: false` im Front Matter nimmt eine Seite aus dem Index, `search_body: false` indexiert nur ihren Titel. |
 | `_includes/pattern-index.html` | Register der Übersichtsseiten |
 | `_includes/pattern-graph.html`, `_data/pattern_graph.yml` | klickbare Muster-Grafik auf der Startseite: PNG plus ein Link je Kasten (Positionen in Prozent, aus dem PNG vermessen) |
 | `_sass/_*.scss` (Import in `assets/css/main.scss`) | Layout, Farben, Box, Footer, Mobil |
