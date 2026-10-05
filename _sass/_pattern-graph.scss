@@ -73,3 +73,26 @@ $pg-muted: #6b665a;
     display: none;
   }
 }
+
+// Full-size view (/mustersprache/): native image width, centred in the whole
+// window rather than the page column, scrolling sideways when it doesn't fit.
+.pattern-graph--full {
+  .pattern-graph__scroll {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+
+  .pattern-graph__canvas {
+    width: 1816px;
+    margin: 0 auto;
+  }
+}
+
+// 100vw counts a classic (Windows) scrollbar too; keep that sliver from
+// scrolling the whole page sideways. Body class from the page's front matter.
+body.graph-full {
+  overflow-x: clip;
+}

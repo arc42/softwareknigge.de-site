@@ -9,10 +9,14 @@
 
   Each link's accessible name comes from the pattern page itself
   ("20 – Kommunikatorin, positives Muster"). Styles in _sass/_pattern-graph.scss.
+
+  With full=true (page /mustersprache/) the graph is shown at its native size,
+  scrolling sideways where the window is narrower, and the caption links back
+  to the homepage instead of to the full-size view.
 {%- endcomment -%}
 {%- assign img = "/images/pattern-language/Knigge-Pattern-Language-4-Site.png" | relative_url -%}
 {%- assign cat_labels = "positiv:positives Muster,negativ:negatives Muster,neutral:neutrales Muster" | split: "," -%}
-<figure class="pattern-graph">
+<figure class="pattern-graph{% if include.full %} pattern-graph--full{% endif %}">
   <div class="pattern-graph__scroll">
     <div class="pattern-graph__canvas">
       <img src="{{ img }}" width="1816" height="1166" alt="Übersicht der Verhaltensmuster als Netz: positive, negative und neutrale Muster mit ihren Beziehungen untereinander. Jedes Muster ist ein Link.">
@@ -31,5 +35,5 @@
       </nav>
     </div>
   </div>
-  <figcaption>Die Mustersprache: wie die Muster zusammenhängen (grün positiv, rot negativ). Klicken Sie auf ein Muster, um es zu lesen.<span class="pattern-graph__hint"> Zum Erkunden seitlich wischen.</span> <a href="{{ img }}">Grafik in voller Größe öffnen</a>.</figcaption>
+  <figcaption>Die Mustersprache: wie die Muster zusammenhängen (grün positiv, rot negativ). Klicken Sie auf ein Muster, um es zu lesen.<span class="pattern-graph__hint"> Zum Erkunden seitlich wischen.</span> {% if include.full %}<a href="{{ '/' | relative_url }}">Zurück zur Startseite</a>{% else %}<a href="{{ '/mustersprache/' | relative_url }}">Grafik in voller Größe öffnen</a>{% endif %}.</figcaption>
 </figure>
