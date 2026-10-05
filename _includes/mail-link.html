@@ -2,15 +2,16 @@
   Spam-protected mailto link that also works by keyboard and touch.
   The address is assembled by script at load time, so it never appears in the
   HTML; without JavaScript the link shows the address in readable form.
-  Usage: {% include mail-link.html user="info" domain="arc42.de" label="E-Mail schreiben" %}
+  Label and subject are optional; each link keeps its own.
+  Usage: {% include mail-link.html user="info" domain="arc42.de" label="E-Mail schreiben" subject="Betreff" %}
 {%- endcomment -%}
-<a class="mail-link" data-u="{{ include.user | split: '' | reverse | join: '' }}" data-d="{{ include.domain | split: '' | reverse | join: '' }}" href="{{ '/contact/' | relative_url }}">{{ include.user }} (at) {{ include.domain | replace: '.', ' (punkt) ' }}</a>
+<a class="mail-link" data-u="{{ include.user | split: '' | reverse | join: '' }}" data-d="{{ include.domain | split: '' | reverse | join: '' }}"{% if include.label %} data-l="{{ include.label | escape }}"{% endif %}{% if include.subject %} data-s="{{ include.subject | escape }}"{% endif %} href="{{ '/contact/' | relative_url }}">{{ include.user }} (at) {{ include.domain | replace: '.', ' (punkt) ' }}</a>
 <script>
   document.querySelectorAll('a.mail-link[data-u]').forEach(function (a) {
     var r = function (s) { return s.split('').reverse().join(''); };
     var addr = r(a.dataset.u) + '@' + r(a.dataset.d);
-    a.href = 'mailto:' + addr;
-    a.textContent = {{ include.label | default: '' | jsonify }} || addr;
+    a.href = 'mailto:' + addr + (a.dataset.s ? '?subject=' + encodeURIComponent(a.dataset.s) : '');
+    a.textContent = a.dataset.l || addr;
     a.removeAttribute('data-u');
   });
 </script>

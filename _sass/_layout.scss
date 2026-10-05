@@ -123,6 +123,59 @@ $home-neutral: #ffd401;
   margin: 1em 0 2.5em;
 }
 
+// "Ich habe eine Idee …" sits in the free space beside the intro on wide
+// screens and below it on narrow ones.
+.home-idea {
+  margin: 0 0 2.5em;
+  padding: 1em 1.25em 1.25em;
+  border-top: 4px solid $muted;
+  background-color: #f6f4ee;
+
+  h2 {
+    margin: 0 0 0.5em;
+    padding: 0;
+    border: 0;
+    font-size: 1.125em;
+  }
+
+  p {
+    margin: 0 0 1em;
+    font-size: 0.9em;
+  }
+
+  .home-idea__action {
+    margin: 0;
+  }
+
+  .mail-link,
+  .mail-link:visited {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #1d1d1b;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .mail-link:hover {
+    background-color: lighten(#1d1d1b, 15%);
+    color: #fff;
+  }
+}
+
+@media (min-width: 50em) {
+  .home-lower {
+    display: flex;
+    align-items: flex-start;
+    gap: 3em;
+  }
+
+  .home-idea {
+    flex: 0 1 20em;
+    margin-top: 1em;
+  }
+}
+
 // The training box follows the pager on pattern pages; the pager floats like
 // the theme's page parts, so the box has to clear and float as well.
 .pattern-pager + .subtle-ad {
