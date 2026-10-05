@@ -10,7 +10,7 @@ classes: wide
 
 ---
 
-## 2018: Knigge, 3. Auflage
+## Knigge, 3. Auflage
 
 ![Cover: Knigge für Softwarearchitekten, 3. Auflage (2018)](/images/books/knigge3.jpg){: .align-left}
 
@@ -23,10 +23,12 @@ Motivation des Themas _Qualität_ mit diversen praktischen Ratschlägen zu deren
 Und nach knallig-grün und leuchtend-rot bot sich jetzt das Sonnengelb
 als Farbe an.
 
+[Buch in Deiner Buchhandlung bestellen](https://www.genialokal.de/Produkt/Gernot-Starke-Peter-Hruschka/Knigge-fuer-Softwarearchitekten_lid_33228563.html) (kostenfreie Lieferung via geniaLokal)
+
 <hr/>
 
 
-## 2014: Knigge, reloaded
+## Knigge, reloaded
 ![Cover: Knigge für Softwarearchitekten – Reloaded (2014)](/images/books/knigge-reloaded.jpg){: .align-right}
 
 Gernot Starke und Peter Hruschka: Knigge für Softwarearchitekten - reloaded. 2. Auflage, 2014
@@ -38,7 +40,7 @@ aufgenommen.
 
 <hr/>
 
-## 2012: Knigge, 1. Auflage
+## Knigge, 1. Auflage
 ![Cover: Knigge für Softwarearchitekten, 1. Auflage](/images/books/knigge1.jpg){: .align-left}
 
 Gernot Starke und Peter Hruschka: Knigge für Softwarearchitekten, 1. Auflage, 2012.
