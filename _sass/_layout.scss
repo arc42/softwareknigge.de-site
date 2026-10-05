@@ -123,28 +123,6 @@ $home-neutral: #ffd401;
   margin: 1em 0 2.5em;
 }
 
-.pattern-graph {
-  margin: 0 0 3em;
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  figcaption {
-    margin-top: 0.75em;
-    font-family: inherit;   // the theme sets captions in a serif face
-    font-size: 0.85em;
-    color: $muted;
-
-    a,
-    a:visited {
-      color: #235e70;
-    }
-  }
-}
-
 // The training box follows the pager on pattern pages; the pager floats like
 // the theme's page parts, so the box has to clear and float as well.
 .pattern-pager + .subtle-ad {

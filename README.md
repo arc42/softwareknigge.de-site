@@ -89,7 +89,12 @@ Dateien überschreiben bzw. ergänzen es – bei einem Theme-Update prüfen:
 | `_includes/skip-links.html` | Sprunglinks ohne Überschrift, deutsch |
 | `_includes/search/lunr-search-scripts.html`, `assets/js/lunr/*` | deutsche Suche (Stemming, Zusammenfassung als Treffertext) |
 | `_includes/pattern-index.html` | Register der Übersichtsseiten |
+| `_includes/pattern-graph.html`, `_data/pattern_graph.yml` | klickbare Muster-Grafik auf der Startseite: PNG plus ein Link je Kasten (Positionen in Prozent, aus dem PNG vermessen) |
 | `_sass/_*.scss` (Import in `assets/css/main.scss`) | Layout, Farben, Box, Footer, Mobil |
+
+Wird die Muster-Grafik neu exportiert und ändert sich das Layout, müssen die
+Kasten-Positionen in `_data/pattern_graph.yml` neu vermessen werden (Quelle:
+`originals/pattern-language/Knigge-Pattern-Language-4-Site.graffle`).
 
 Kategoriefarben: positiv `#a0bf80`, negativ `#c6041b`, neutral `#ffd401`
 (`_sass/_hero.scss`). Neue Musterseiten brauchen keine Trainings-Box im

@@ -1,0 +1,230 @@
+# Clickable boxes of the pattern-language graph on the homepage
+# (images/pattern-language/Knigge-Pattern-Language-4-Site.png, 1816x1166).
+# Box positions in percent of the image, measured from the PNG itself (box
+# fills detected per colour, matched to the labels in
+# originals/pattern-language/Knigge-Pattern-Language-4-Site.graffle, max error
+# < 1px). If the PNG is re-exported with a new layout, these must be re-measured.
+# Rendered by _includes/pattern-graph.html.
+boxes:
+  - label: "Kommunikatorin"
+    url: /20-kommunikatorin
+    x: 1.65
+    y: 0.09
+    w: 9.75
+    h: 4.80
+  - label: "Notationskrieger"
+    url: /09-notationskrieger
+    x: 16.80
+    y: 0.26
+    w: 9.75
+    h: 4.63
+  - label: "Ständig Lernende"
+    url: /19-staendig-lernende
+    x: 83.54
+    y: 1.37
+    w: 7.54
+    h: 5.66
+  - label: "Flexibilisator"
+    url: /32-flexibilisator
+    x: 71.42
+    y: 5.15
+    w: 7.54
+    h: 4.55
+  - label: "Zuviel des Guten"
+    url: /07-zuviel-des-guten
+    x: 54.68
+    y: 5.49
+    w: 6.66
+    h: 5.75
+  - label: "Vereinfachungs-kobold"
+    url: /12-vereinfachungskobold
+    x: 26.93
+    y: 15.78
+    w: 9.75
+    h: 4.97
+  - label: "Schmökerer"
+    url: /24-schmoekerer
+    x: 83.54
+    y: 16.21
+    w: 9.09
+    h: 4.55
+  - label: "Edle Ritter"
+    url: /23-edler-ritter
+    x: 38.88
+    y: 19.21
+    w: 8.31
+    h: 4.29
+  - label: "Lektorin"
+    url: /16-lektorin
+    x: 4.74
+    y: 19.30
+    w: 6.66
+    h: 4.03
+  - label: "Prozessprediger"
+    url: /15-prozessprediger
+    x: 68.56
+    y: 26.50
+    w: 7.60
+    h: 5.66
+  - label: "Saubermann"
+    url: /27-saubermann
+    x: 45.98
+    y: 28.47
+    w: 9.09
+    h: 4.03
+  - label: "Toolistan"
+    url: /22-toolistan
+    x: 81.55
+    y: 28.47
+    w: 7.54
+    h: 4.55
+  - label: "Technischer Risikomanager"
+    url: /14-risikomanager
+    x: 32.93
+    y: 30.45
+    w: 9.31
+    h: 5.57
+  - label: "Blick in den Rückspiegel"
+    url: /06-blick-in-den-rueckspiegel
+    x: 7.16
+    y: 32.33
+    w: 7.60
+    h: 5.66
+  - label: "API-tektin"
+    url: /35-apitektin
+    x: 91.63
+    y: 33.45
+    w: 7.98
+    h: 4.29
+  - label: "Elfenbeinturm"
+    url: /02-elfenbeinturm
+    x: 22.91
+    y: 38.94
+    w: 8.26
+    h: 4.20
+  - label: "Strukturierte Faulheit"
+    url: /04-strukturierte-faulheit
+    x: 61.67
+    y: 40.31
+    w: 7.60
+    h: 5.66
+  - label: "Schmutzfink"
+    url: /28-schmutzfink
+    x: 45.93
+    y: 40.91
+    w: 7.98
+    h: 4.55
+  - label: "arc42"
+    url: /36-arc42-elevator-pitch
+    x: 77.92
+    y: 41.68
+    w: 5.67
+    h: 5.75
+  - label: "Entscheider"
+    url: /18-entscheider
+    x: 88.60
+    y: 45.63
+    w: 7.98
+    h: 4.37
+  - label: "Proaktive"
+    url: /01-proaktive
+    x: 7.65
+    y: 49.49
+    w: 6.61
+    h: 4.55
+  - label: "Ignorant"
+    url: /21-ignorant
+    x: 29.57
+    y: 51.97
+    w: 7.98
+    h: 4.20
+  - label: "Kammerjäger"
+    url: /29-kammerjaeger
+    x: 47.96
+    y: 55.15
+    w: 9.31
+    h: 4.03
+  - label: "Vielsehende"
+    url: /03-vielsehende
+    x: 68.56
+    y: 58.75
+    w: 7.60
+    h: 5.66
+  - label: "Fahnder"
+    url: /26-fahnder
+    x: 14.15
+    y: 59.86
+    w: 6.66
+    h: 4.55
+  - label: "Codeheld"
+    url: /10-codeheld
+    x: 38.82
+    y: 62.61
+    w: 7.60
+    h: 4.37
+  - label: "Diktator"
+    url: /05-diktator
+    x: 88.00
+    y: 64.24
+    w: 6.66
+    h: 4.63
+  - label: "Ändern als Normalfall"
+    url: /25-aendern-ist-normalfall
+    x: 29.35
+    y: 64.32
+    w: 7.54
+    h: 5.66
+  - label: "Industrie 4.0"
+    url: /30-industrie40
+    x: 8.09
+    y: 73.67
+    w: 6.66
+    h: 5.66
+  - label: "Agilitekten"
+    url: /34-agilitekten
+    x: 89.10
+    y: 79.67
+    w: 7.98
+    h: 4.37
+  - label: "Bimodale IT"
+    url: /31-bimodale-it
+    x: 3.85
+    y: 82.25
+    w: 6.66
+    h: 5.66
+  - label: "Fortschritt oder Verschlimmbesserung"
+    url: /37-fortschritt-statt-verschlimmbesserung
+    x: 33.65
+    y: 82.25
+    w: 13.00
+    h: 5.66
+  - label: "Die Qualitätsverbesserer"
+    url: /33-qualitaetsverbesserer
+    x: 14.87
+    y: 82.59
+    w: 11.01
+    h: 5.32
+  - label: "Perfektionist"
+    url: /13-perfektionist
+    x: 55.78
+    y: 83.70
+    w: 7.98
+    h: 5.66
+  - label: "Verschätzer"
+    url: /17-verschaetzer
+    x: 76.38
+    y: 83.70
+    w: 7.98
+    h: 5.75
+  - label: "Multilinguist"
+    url: /08-multilinguist
+    x: 0.39
+    y: 94.51
+    w: 9.14
+    h: 4.37
+  - label: "Jongleuse"
+    url: /11-jongleuse
+    x: 26.43
+    y: 94.68
+    w: 7.54
+    h: 4.03
