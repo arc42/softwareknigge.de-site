@@ -5,7 +5,7 @@ header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
 
 permalink: /18-entscheider
-summary: "Das Entwicklungsteam muss ein GUI-Framework auswählen, die Manager fragen, welche Hardware sie einkaufen sollen. Jemand muss bestimmen, welches Protokoll zwischen den Serverkomponenten gesprochen wird, und die Konzernsicherheit verlangt eine Entscheidung zum Thema Authentifizierung mit SAML oder OAuth ... Fragen über Fragen, und alle liegen bei den Softwarearchitekten auf dem Tisch."
+summary: "Das Entwicklungsteam muss ein GUI-Framework auswählen, die Manager fragen, welche Hardware sie einkaufen sollen. Jemand muss bestimmen, welches Protokoll zwischen den Serverkomponenten gesprochen wird, und die Konzernsicherheit verlangt eine Entscheidung zum Thema Authentifizierung mit SAML oder OAuth ... Fragen über Fragen, und alle liegen bei den Softwarearchitekt:innen auf dem Tisch."
 
 excerpt: ""
 classes: wide
@@ -13,7 +13,7 @@ classes: wide
 ---
 {% include you-read-an-extract.html %}
 
-Das Entwicklungsteam muss ein GUI-Framework auswählen, mit dem die Benutzeroberfläche künftig entwickelt werden soll. Die Manager fragen, welche Hardware sie einkaufen sollen. Jemand muss bestimmen, welches Protokoll zwischen den Serverkomponenten gesprochen werden soll. Schließlich kommt die Konzernsicherheit und verlangt eine Entscheidung zum Thema Authentifizierung mit SAML oder OAuth ... Fragen über Fragen, und alle liegen bei den Softwarearchitekten auf dem Tisch.
+Das Entwicklungsteam muss ein GUI-Framework auswählen, mit dem die Benutzeroberfläche künftig entwickelt werden soll. Das Management fragt, welche Hardware es einkaufen soll. Jemand muss bestimmen, welches Protokoll zwischen den Serverkomponenten gesprochen werden soll. Schließlich kommt die Konzernsicherheit und verlangt eine Entscheidung zum Thema Authentifizierung mit SAML oder OAuth ... Fragen über Fragen, und alle liegen bei den Softwarearchitekt:innen auf dem Tisch.
 
 
 ## Was ist das Problem?

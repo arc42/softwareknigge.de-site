@@ -5,7 +5,7 @@ header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
 
 permalink: /34-agilitekten
-summary: 'Brauchen agile Teams überhaupt Architekten? Wir meinen "ja, auf jeden Fall", und möchten hier die Rolle der _Agilitekten_ vorstellen, die agiles Vorgehen mit ordentlicher Architekturarbeit verbinden'
+summary: 'Brauchen agile Teams überhaupt Architekt:innen? Wir meinen "ja, auf jeden Fall", und möchten hier die Rolle der _Agilitekten_ vorstellen, die agiles Vorgehen mit ordentlicher Architekturarbeit verbinden'
 
 excerpt: ""
 classes: wide
@@ -13,7 +13,7 @@ classes: wide
 ---
 {% include you-read-an-extract.html %}
 
-Brauchen agile Teams überhaupt Architekten? Wir meinen "ja, auf jeden Fall", und möchten hier die Rolle der _Agilitekten_ vorstellen, die agiles Vorgehen mit ordentlicher Architekturarbeit verbinden.
+Brauchen agile Teams überhaupt Architekt:innen? Wir meinen "ja, auf jeden Fall", und möchten hier die Rolle der _Agilitekten_ vorstellen, die agiles Vorgehen mit ordentlicher Architekturarbeit verbinden.
 
 ## Analogie: Restaurant
 Greifen wir mal ein gut geführtes Restaurant als Metapher für ein Softwareentwicklungsteam auf. Dort sind die Zuständigkeiten für die Arbeit im Team klar verteilt. Die Sauciere sorgt für die Soßen, der Patissier ist für Feingebäck und Süßspeisen verantwortlich, die Oberkellnerin kümmert sich um die Begrüßung und die Vergabe der Sitzplätze, der Sommelier konzentriert sich auf den Wein, und der Küchenjunge spült das Geschirr. Wenn man die Arbeitsmuster eine Weile beobachtet, wird man feststellen, wie sich jede Person auf den Arbeitsbereich konzentriert, für den sie zuständig ist. Die Kellnerin kommt mit einer Bestellung
@@ -28,7 +28,7 @@ Stellen Sie sich vor, das Team in einem Restaurant würde so arbeiten.
 Während die Köchin die Soufflés backt, würde sie sich um die Reservierungen Sorgen machen, der Kellner würde noch etwas Salz in die Suppe werfen, der Oberkellner würde das übrige Geschirr waschen, aus Sorge, es könnte nicht genügend für Tisch 22 vorhanden sein – jeder würde sich um alles kümmern (oder in alles einmischen) und möglicherweise nichts besonders gut machen.
 
 ## Agilitekten
-Agilitekten tragen die Verantwortung für die Qualität der Lösung. Das bedeutet, dass sie mit Kollegen gemeinsam an Aufgaben arbeiten, bei Bedarf um Unterstützung bitten oder andere relevante Quellen als Hilfe heranziehen. Entscheidend ist, dass echte Verantwortung nur sehr schwer zwischen Personen teilbar ist.
+Agilitekten tragen die Verantwortung für die Qualität der Lösung. Das bedeutet, dass sie mit anderen im Team gemeinsam an Aufgaben arbeiten, bei Bedarf um Unterstützung bitten oder andere relevante Quellen als Hilfe heranziehen. Entscheidend ist, dass echte Verantwortung nur sehr schwer zwischen Personen teilbar ist.
 
 ## Autorität sein und Autorität haben
 Kompetenz zieht Ansehen im Team nach sich.
@@ -42,7 +42,7 @@ Im Gegensatz dazu sind bei der Architekturentwicklung – einer geistigen Arbeit
 Wenn eine Entscheidung vollständig innerhalb des Teams getroffen werden kann, sollte sie dort von den jeweilig spezialisierten Personen getroffen werden.
 
 ## Agile Vorgehensmuster...
-Stefan Toth zeigt verschiedene Interpretationen der Architektenrolle[^toth],
+Stefan Toth zeigt verschiedene Interpretationen der Architekturrolle[^toth],
 die wir alle in der Praxis mehr oder weniger verbreitet wiederfinden.
 Uns gefällt die Variante des 2- oder 3-Teams von "Architekturagenten" am besten,
 dessen Mitwirkgende alle als "Agilitekten" in unserer Sprechweise auftreten können.

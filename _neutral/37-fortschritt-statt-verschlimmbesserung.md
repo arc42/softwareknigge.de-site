@@ -24,7 +24,7 @@ Bevor wir Ihnen Auswege aus dieser Misere verraten, wollen wir Ihnen die beiden 
 Alternativ könnten wir daran arbeiten, die **innere Qualität** unserer Systeme systematisch zu verbessern: dafür sorgen, dass der Source Code sauber gehalten
 wird, die Modularität verbessert wird, die Wiederverwendbarkeit für zukünftige
 Systeme einen hohen Stellenwert bekommt, oder dass die Dokumentation aktuell bleibt
-und neue Mitarbeiter sich leicht einarbeiten können. Als Entwickler wünschen wir
+und neue Teammitglieder sich leicht einarbeiten können. In der Entwicklung wünschen wir
 uns solche Verbesserung der zweiten Art.
 
 Wir schaffen es zwar (unter Druck) meistens, die von Auftraggebern oder Management gewünschten (besser sollten wir sagen: _verlangten_) neuen Features und Performanceverbesserungen zu liefern, aber **oft auf Kosten der inneren Qualität**.
@@ -33,7 +33,7 @@ Wir schaffen es zwar (unter Druck) meistens, die von Auftraggebern oder Manageme
 
 Die Komplexität steigt, es bleibt keine Zeit fürs Refactoring, technische Schulden wachsen immer weiter. Kurzum: Die Erweiterbarkeit, Änderbarkeit und Verständlichkeit unseres Systems wird immer schlechter.
 
-Wenn die innere Qualität abnimmt, dann wird Ihr Management schnell feststellen, dass die Kosten pro geliefertem Feature von Release zu Release drastisch steigen. Wir können nicht mehr so produktiv arbeiten wie früher, das Leben als Entwickler/-in wird ständig schwerer.
+Wenn die innere Qualität abnimmt, dann wird Ihr Management schnell feststellen, dass die Kosten pro geliefertem Feature von Release zu Release drastisch steigen. Wir können nicht mehr so produktiv arbeiten wie früher, das Leben in der Entwicklung wird ständig schwerer.
 
 ## Wir kennen (viele) Ursachen
 Dabei wissen wir (Softwerker-innen) doch ziemlich genau, welche typischen Fehler
@@ -51,8 +51,8 @@ hierfür sind **technische Schulden**.
 so wörtlich, „ja keine neuen Features liefere“.
 
 
-* Lokale statt globale Optimierung: Entwickler besitzen einen fast unbändigen Drang zur Verbesserung, den sie gerne in Form von Refactorings oder lokalen „Verbesserungen“ ausleben. Solange umfassende und komplett automatisierte Tests
-diese Veränderungen auf mögliche Nebenwirkungen überprüfen, ist das gut. Manchmal verlieren Entwickler jedoch den Überblick über die negativen Konsequenzen ihrer lokalen Änderungen auf andere Teile des System.
+* Lokale statt globale Optimierung: Entwicklungsteams besitzen einen fast unbändigen Drang zur Verbesserung, den sie gerne in Form von Refactorings oder lokalen „Verbesserungen“ ausleben. Solange umfassende und komplett automatisierte Tests
+diese Veränderungen auf mögliche Nebenwirkungen überprüfen, ist das gut. Manchmal verlieren Entwicklungsteams jedoch den Überblick über die negativen Konsequenzen ihrer lokalen Änderungen auf andere Teile des System.
 
 * Over-Engineering: Dinge zu allgemeingültig, zu generisch, zu viele Abstraktionen,
 goldene Wasserhähne... liegt oft an den oben genannten schlechten Anforderungen.
@@ -87,14 +87,14 @@ lösen oder beheben. Zwischen Maßnahmen und Problemen respektive Ursachen best
 
 4. Auch Maßnahmen haben Kosten, die Sie systematisch ermitteln oder schätzen müssen (aim42 nennt das „Improvement Backlog“).
 
-5. Die Gegenüberstellung von den Kosten der Maßnahmen und den Kosten des Problems gibt wertvolle Entscheidungshilfe für Budget- oder fachlich Verantwortliche. Damit müssen Softwarearchitekten endlich nicht mehr mit den schwer vermittelbaren inneren Qualitäten, Kopplung, Kohäsion oder Implementierungsdetails argumentieren, sondern können in „Businesssprache“ argumentieren.
+5. Die Gegenüberstellung von den Kosten der Maßnahmen und den Kosten des Problems gibt wertvolle Entscheidungshilfe für Budget- oder fachlich Verantwortliche. Damit müssen Softwarearchitekt:innen endlich nicht mehr mit den schwer vermittelbaren inneren Qualitäten, Kopplung, Kohäsion oder Implementierungsdetails argumentieren, sondern können in „Businesssprache“ argumentieren.
 
 ## Verbessern funktioniert iterativ
 Bewertungen von Problemen und Maßnahmen können sich über die Zeit ändern, wie sich in modernen Entwicklungsprozessen auch die Prioritäten von beispielsweise Anforderungen oder Zielen über die Zeit ändern können. Eine regelmäßige (iterative) Überprüfung der Issue List und des Improvement Backlog stellen deren Aktualität sicher.
 
 >**Systematische Verbesserung**
 >Der iSAQB e.V. schließt mit dem Modul „IMPROVE“ eine Lücke in der
-klassischen Aus- und Weiterbildung für Softwarearchitekten; IMPROVE bietet einen kompakten Einstieg in die systematische Verbesserung unter realen Randbedingungen (knappe Budgets und enge Zeitvorgaben). Sie lernen, systematisch Systeme zu analysieren, Probleme, Risiken und Aufwände unter wirtschaftlichen Aspekten zu bewerten sowie Ideen, Strategien und Taktiken für evolutionäre Weiterentwicklungen, Modernisierungen und Verbesserungen zu entwickeln, zu planen und zielgerichtet umzusetzen.
+klassischen Aus- und Weiterbildung für Softwarearchitekt:innen; IMPROVE bietet einen kompakten Einstieg in die systematische Verbesserung unter realen Randbedingungen (knappe Budgets und enge Zeitvorgaben). Sie lernen, systematisch Systeme zu analysieren, Probleme, Risiken und Aufwände unter wirtschaftlichen Aspekten zu bewerten sowie Ideen, Strategien und Taktiken für evolutionäre Weiterentwicklungen, Modernisierungen und Verbesserungen zu entwickeln, zu planen und zielgerichtet umzusetzen.
 
 
 

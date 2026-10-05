@@ -5,7 +5,7 @@ header:
   overlay_image: /images/header/softwareknigge-site-header-red.png
 
 permalink: /05-diktator
-summary: "Besserwisser, Bevormunder und Begründungsverweigerer genießen unter Kopfarbeitern so ziemlich die geringstmögliche Wertschätzung und werden – mit Recht – boykottiert, ignoriert und/oder unterminiert. Falls Softwarearchitekten sich so verhalten droht Desaster."
+summary: "Besserwisser, Bevormunder und Begründungsverweigerer genießen unter Kopfarbeitern so ziemlich die geringstmögliche Wertschätzung und werden – mit Recht – boykottiert, ignoriert und/oder unterminiert. Falls Softwarearchitekt:innen sich so verhalten droht Desaster."
 
 excerpt: ""
 classes: wide
@@ -14,7 +14,7 @@ classes: wide
 {% include you-read-an-extract.html %}
 
 
-Besserwisser, Bevormunder und Begründungsverweigerer genießen unter Kopfarbeitern so ziemlich die geringstmögliche Wertschätzung und werden – mit Recht – boykottiert, ignoriert und/oder unterminiert. Falls Softwarearchitekten sich so verhalten droht Desaster.
+Besserwisser, Bevormunder und Begründungsverweigerer genießen unter Kopfarbeitern so ziemlich die geringstmögliche Wertschätzung und werden – mit Recht – boykottiert, ignoriert und/oder unterminiert. Falls Softwarearchitekt:innen sich so verhalten droht Desaster.
 
 ## _Architator_
 

@@ -15,19 +15,19 @@ classes: wide
 
 Sicher kennen Sie Murphy: Ein Fehler tritt immer dann auf, wenn Sie es am wenigsten gebrauchen können. Und der Rauch zieht immer zum Nichtraucher.
 
-In jedem Projekt oder System drohen solche „Murphy-Effekte“, egal mit welcher Technologie, Infrastruktur oder Organisationsform Sie arbeiten. Erfolgreiche ArchitektInnen gehen ganz bewusst mit Murphy (= Risiken) um. Zwischen „Yes, we can“ und „Das haben wir schon immer so gemacht“ finden sie einen angemessenen Weg.
+In jedem Projekt oder System drohen solche „Murphy-Effekte“, egal mit welcher Technologie, Infrastruktur oder Organisationsform Sie arbeiten. Erfolgreiche Architekt:innen gehen ganz bewusst mit Murphy (= Risiken) um. Zwischen „Yes, we can“ und „Das haben wir schon immer so gemacht“ finden sie einen angemessenen Weg.
 
-## Architekten = Berater der Managements
+## Architekt:innen beraten das Management
 
-Was haben Softwarearchitekten mit Risikomanagement zu tun? Diese
+Was haben Softwarearchitekt:innen mit Risikomanagement zu tun? Diese
 Aufgabe erfüllen doch die Projektleitung, oder? Wir sehen das auch so –
-aber Softwarearchitekten müssen die technischen und architektonischen _Murphy-Drohungen_ in Systemen finden und behandeln.
+aber Softwarearchitekt:innen müssen die technischen und architektonischen _Murphy-Drohungen_ in Systemen finden und behandeln.
 
-Softwarearchitekten sollten das Management auf technische Risiken aufmerksam machen und bezüglich des Umgangs mit ihnen beraten.
+Softwarearchitekt:innen sollten das Management auf technische Risiken aufmerksam machen und bezüglich des Umgangs mit ihnen beraten.
 
 ## Risiken durch Bewertung finden
 Ein Risiko (= _Murphy-Drohung_) ist ein potenzielles Problem. Und ein Problem ist ein eingetretenes Risiko. Wie finden Sie jedoch die Risiken in Ihrer Architektur? Im Muster
-[_Blick in den Rückspiegel_](/06-blick-in-den-rueckspiegel) haben wir Ihnen systematische Architekturbewertung ans Herz gelegt. Sie bringt vor allem Risiken (und Chancen!) Ihrer Architektur ans Tageslicht. Integrieren Sie also qualitative Bewertung, etwa mit ATAM, zur Offenlegung von Stärken und Schwächen, Chancen und Risiken in Ihre Arbeit als Softwarearchitekt.
+[_Blick in den Rückspiegel_](/06-blick-in-den-rueckspiegel) haben wir Ihnen systematische Architekturbewertung ans Herz gelegt. Sie bringt vor allem Risiken (und Chancen!) Ihrer Architektur ans Tageslicht. Integrieren Sie also qualitative Bewertung, etwa mit ATAM, zur Offenlegung von Stärken und Schwächen, Chancen und Risiken in Ihre Arbeit als Softwarearchitekt:in.
 
 ## Was tun mit Risiken?
 Eine Übersicht der technischen Risiken ist die notwendige Voraussetzung, um gezielt mit ihnen umgehen zu können. Sie können grundsätzlich eine der folgenden vier Möglichkeiten für jedes Risiko ergreifen:

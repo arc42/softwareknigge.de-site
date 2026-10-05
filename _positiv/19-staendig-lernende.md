@@ -5,7 +5,7 @@ header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
 
 permalink: /19-staendig-lernende
-summary: "Gute Softwarearchitekten lernen ständig weiter, sowohl in fachlicher wie auch technischer Hinsicht. "
+summary: "Gute Softwarearchitekt:innen lernen ständig weiter, sowohl in fachlicher wie auch technischer Hinsicht. "
 
 excerpt: ""
 classes: wide
@@ -13,11 +13,11 @@ classes: wide
 ---
 {% include you-read-an-extract.html %}
 
-Gute Softwarearchitekten lernen ständig weiter, sowohl in fachlicher wie auch technischer Hinsicht.
+Gute Softwarearchitekt:innen lernen ständig weiter, sowohl in fachlicher wie auch technischer Hinsicht.
 
 Die Grundlagen unserer Disziplin sind seit einigen Jahren zum Glück durch ein unabhängiges Gremium, den [iSAQB e. V.](https://isaqb.org), recht gut standardisiert – wir empfehlen diesbezüglich dringend einen Blick auf die [Homepage](https://isaqb.org) zu werfen.
 
-Der iSAQB definiert für die Grundlagenausbildung für Softwarearchitekten einen Lehrplan, dessen Zusammensetzung in der nachfolgenden Abbildung zu sehen ist. Damit haben Sie dann solide Grundlagen, auf denen Sie Ihr ständiges Lernen prima aufbauen können!
+Der iSAQB definiert für die Grundlagenausbildung für Softwarearchitekt:innen einen Lehrplan, dessen Zusammensetzung in der nachfolgenden Abbildung zu sehen ist. Damit haben Sie dann solide Grundlagen, auf denen Sie Ihr ständiges Lernen prima aufbauen können!
 
 ![Struktur des iSAQB Foundation Lehrplan](/images/19-isaqb-foundation-struktur.png)
 
@@ -26,7 +26,7 @@ Wir empfehlen Ihnen, bei Ihrer Aus- und Weiterbildung ein T-ähnliches Modell z
 
 ![T-Shaped Kompetenzmodell](/images/19-t-shape.jpg)
 
-Der Querbalken dieses Ts symbolisiert die breiten Grundlagen, die Sie auf jeden Fall kennen sollten. Der senkrechte Balken bezieht sich auf Spezialwissen, dass Ihnen in einem oder mehreren Bereichen den Expertenstatus sichert. Diese Kombination charakterisiert unserer Erfahrung nach gute SoftwarearchitektInnen – wobei die Art der Spezialisierung kaum eine Rolle spielt.
+Der Querbalken dieses Ts symbolisiert die breiten Grundlagen, die Sie auf jeden Fall kennen sollten. Der senkrechte Balken bezieht sich auf Spezialwissen, dass Ihnen in einem oder mehreren Bereichen den Expertenstatus sichert. Diese Kombination charakterisiert unserer Erfahrung nach gute Softwarearchitekt:innen – wobei die Art der Spezialisierung kaum eine Rolle spielt.
 
 Das T-Modell finden Sie übrigens bei Stefan Zörner[^zoerner] und
 Elisabeth Heinemann[^heinemann] erläutert. Scott Ambler[^ambler] hat es als „_generalisierender Spezialist_“ bezeichnet.
@@ -72,7 +72,7 @@ Interessante Dinge - die Sie bis ans Ende aller Tage intensiv beschäftigen kön
 ## Sonstiges Handwerkszeug
 
 * Entwicklungsumgebungen, Editoren und Debugger haben Sie sicherlich schon beim Programmieren kennen und lieben gelernt. Für professionelles Arbeiten benötigen Sie Versionsverwaltung (Subversion, Git, Mercurial & Co), Buildmanagement (make, ant, maven), sowie eine grundsolide Testautomatisierung (für Unit-, System- und Lasttests).
-* Der Himmel möge es Ihnen ersparen, aber es könnte durchaus geschehen, dass Sie als Softwarearchitekt gleichzeitig in die Rolle des technischen Managers kommen oder gar des technischen Projektleiters. Für solche Fälle wappnen Sie sich mit den Grundlagen von Projekt- und Risikomanagement und einer Prise Betriebswirtschaft.
+* Der Himmel möge es Ihnen ersparen, aber es könnte durchaus geschehen, dass Sie als Softwarearchitekt:in gleichzeitig ins technische Management kommen oder gar in die technische Projektleitung. Für solche Fälle wappnen Sie sich mit den Grundlagen von Projekt- und Risikomanagement und einer Prise Betriebswirtschaft.
 * Wenn Sie noch ein paar Grundlagen agiler Vorgehensweisen (Scrum, Kanban) sowie
 möglicher Rollen (Product-Owner, Scrum-Master)
 

@@ -5,7 +5,7 @@ header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
 
 permalink: /26-fahnder
-summary: "Architekten als Fahnder sucht nach Softwareverbrechen, Codesünden
+summary: "Als _Fahnder_ suchen Architekt:innen nach Softwareverbrechen, Codesünden
 oder risikoträchtigen Teilen der Software."
 
 excerpt: ""
@@ -14,7 +14,7 @@ classes: wide
 ---
 {% include you-read-an-extract.html %}
 
-Architekten als Fahnder sucht nach Softwareverbrechen, Codesünden
+Als _Fahnder_ suchen Architekt:innen nach Softwareverbrechen, Codesünden
 oder risikoträchtigen Teilen der Software.
 
 ## Mehr als nur Motiv und Gelegenheit
@@ -45,7 +45,7 @@ andererseits über _Spurensicherung_ am echten System.
 ## Opfer und Zeugen vernehmen
 Den Tatort, oder besser den „Gegenstand der Verbrechen“, inspizieren Sie am besten aus unterschiedlichen Perspektiven. Zuerst sollten Sie sich live ein Bild von seinem Zustand machen – am besten haben Sie vorher aus Berichten der Beteiligten den ursprünglichen Zweck des Systems verstanden.
 
-Jetzt sind Sie gut gerüstet für die Vernehmung der ersten Opfer und Zeugen: Befragen Sie Anwender, Betreiber und Auftraggeber. Führen Sie Interviews mit Entwicklern und Testern des Systems bzw. direkter Nachbarsysteme. Fragen Sie nach deren Einschätzung der „schlimmsten Sünden“, fragen Sie ob Technologie und Organisation überhaupt zu den Anforderungen passen.
+Jetzt sind Sie gut gerüstet für die Vernehmung der ersten Opfer und Zeugen: Befragen Sie Nutzende, Betrieb und Auftraggeber. Führen Sie Interviews mit den Entwicklungs- und Testteams des Systems bzw. direkter Nachbarsysteme. Fragen Sie nach deren Einschätzung der „schlimmsten Sünden“, fragen Sie ob Technologie und Organisation überhaupt zu den Anforderungen passen.
 
 ## Spurensicherung
 Mit den gezielten Hinweisen der betroffenen Stakeholder sind Sie bestens gewappnet für die Spurensuche am System selbst. Wir empfehlen Ihnen dringend, auch hier unterschiedliche Fahndungsansätze zu verfolgen: Zuerst untersuchen Sie die qualitativen Sünden: Die pragmatische Anwendung der erprobten ATAM-Methode hilft Ihnen, die geforderten und real vorhandenen Qualitätseigenschaften des Systems detailliert zu untersuchen.

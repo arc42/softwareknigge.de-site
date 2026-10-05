@@ -30,7 +30,7 @@ kräftiges _Bashing_ von Flexibilisatoren betreiben.
 Es ist die **Laufzeit-Flexibilität**, der wir uns an dieser Stelle primär widmen.
 
 ## Overly Configurable... ORCS
-Wenn der Flexibilisator voll zuschlägt, schenkt er den späteren Nutzern seiner Software eine Menge Freiheit, allerdings setzt er sie gleichzeitig gravierenden Risiken aus. Aber, denkt sich der meist jugendlich-leichtsinnige Flexibilisator, _no risk, no fun_.
+Wenn der Flexibilisator voll zuschlägt, schenkt er den späteren Nutzenden seiner Software eine Menge Freiheit, allerdings setzt er sie gleichzeitig gravierenden Risiken aus. Aber, denkt sich der meist jugendlich-leichtsinnige Flexibilisator, _no risk, no fun_.
 
 Hochgradig generisch oder allgemein verwendbar bedeutet, auf jede Menge Leitplanken zu verzichten, auf (teilweise sinnvolle oder sogar notwendige) Grenzen. Nennen wir die ultraflexiblen Produkte des Flexibilisators mal _übermäßig laufzeitkonfigurierbare Systeme_,
 englisch _Overly Runtime Configurable Systems_, kurz **ORCS**.

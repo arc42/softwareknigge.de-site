@@ -16,13 +16,13 @@ classes: wide
 
 > „Ritterlichkeit umfasst einen Katalog von tugendhaftem Verhalten oder bestimmten Tugenden; es bezeichnet das einem Ritter geziemende Verhalten.“ (Wikipedia)
 
-Als Softwarearchitekt vertreten Sie die hohen Werte
+Als Softwarearchitekt:in vertreten Sie die hohen Werte
 (sprich: die Qualitätsanforderungen) Ihrer Kunden und Auftraggeber gegenüber
-Eindringlingen, Feinden oder Sparteufeln. Sie setzen gegenüber Projektleitern, Politikern, Buchhaltern und Kurzfristdenkern die langfristig gute, angemessene Lösung durch.
+Eindringlingen, Feinden oder Sparteufeln. Sie setzen gegenüber Projektleitung, Politik, Buchhaltung und allen Kurzfristdenkenden die langfristig gute, angemessene Lösung durch.
 
 Bis an die Zähne bewaffnet mit methodischer, technischer und auch fachlicher „Ausrüstung“ begleiten Sie Kunden, Auftraggeber und das Entwicklungsteam durch die oftmals gefährliche Reise durch die raue Wirklichkeit.
 
-Dort lauern Gefahren in allen Ecken: Gemeine Querulanten verüben hinterlistige Angriffe auf das Team und Ihre kostbare Lösung. Heimlich eingeschleust verbreitet sich schlechter Quellcode wie eine Seuche, die Ihre Entwickler verblendet.
+Dort lauern Gefahren in allen Ecken: Gemeine Querulanten verüben hinterlistige Angriffe auf das Team und Ihre kostbare Lösung. Heimlich eingeschleust verbreitet sich schlechter Quellcode wie eine Seuche, die Ihr Entwicklungsteam verblendet.
 
 ## Leid ertragen
 Vom Himmel regnet es unzureichende Anforderungen, die die Sinne Ihrer Kunden vernebeln und sie nach goldenen Wasserhähnen rufen lassen.

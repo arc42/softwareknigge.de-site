@@ -16,7 +16,7 @@ after_footer_scripts:
 
 # Site Settings
 locale          : "de"
-title           : "Knigge für Softwarearchitekten"
+title           : "Knigge für Softwarearchitektur"
 title_separator : "-"
 name            : ""
 description     : "Typische (gute und schlechte) Verhaltensmuster."

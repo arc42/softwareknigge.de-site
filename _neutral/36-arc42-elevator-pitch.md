@@ -18,7 +18,7 @@ oder falls Sie im Aufzug mit Ihrem IT-Boss über die Einführung pragmatischer
 
 * arc42 enthält ein praktisches und pragmatisches Template zur Entwicklung, Dokumentation und Kommunikation von Softwarearchitekturen.
 * arc42 schlägt einen Prozess zur Entwicklung und Konstruktion effektiver Softwarearchitekturen vor.
-* arc42 unterstützt Software- und Systemarchitekten. Es kommt aus der Praxis und basiert auf Erfahrungen aus vielen Architekturprojekten sowie Rückmeldungen vieler Anwender.
+* arc42 unterstützt Software- und Systemarchitekt:innen. Es kommt aus der Praxis und basiert auf Erfahrungen aus vielen Architekturprojekten sowie Rückmeldungen vieler Nutzender.
 * arc42 eignet sich für beliebige Technologien und Werkzeuge.
 * Sie dürfen arc42 kostenfrei verwenden, auch für den kommerziellen
 Einsatz. Wirklich und ohne Kleingedrucktes.

@@ -52,7 +52,7 @@ isaqb:
        alt: iSAQB
        title: Softwarearchitektur lernen
        excerpt: 'Beide sind (Mit-)Gründer des [iSAQB e.V.](https://isaqb.org), dem gemeinnützigen Verein
-    zur Etablierung und Standardisierung der Ausbildung von Softwarearchitekten.'
+    zur Etablierung und Standardisierung der Ausbildung von Softwarearchitekt:innen.'
 
 
 training:

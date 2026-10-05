@@ -5,7 +5,7 @@ header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
 
 permalink: /24-schmoekerer
-summary: "Gerne geben wir Ihnen ein paar Tipps für nützliche, unterhaltsame oder coole Softwarearchitektenliteratur - in den Kategorien AAB, FMASFAU, MWNAG, EPAHL und SCHAMLEW – die Sie sicherlich schon kennen."
+summary: "Gerne geben wir Ihnen ein paar Tipps für nützliche, unterhaltsame oder coole Literatur für Softwarearchitekt:innen - in den Kategorien AAB, FMASFAU, MWNAG, EPAHL und SCHAMLEW – die Sie sicherlich schon kennen."
 
 excerpt: ""
 classes: wide
@@ -13,7 +13,7 @@ classes: wide
 ---
 {% include you-read-an-extract.html %}
 
-Gerne möchten wir Ihnen noch ein paar weitere Tipps für nützliche, unterhaltsame oder coole Softwarearchitektenliteratur geben - in den Kategorien AAB, FMASFAU, MWNAG, EPAHL und SCHAMLEW – die Sie sicherlich schon kennen.
+Gerne möchten wir Ihnen noch ein paar weitere Tipps für nützliche, unterhaltsame oder coole Literatur für Softwarearchitekt:innen geben - in den Kategorien AAB, FMASFAU, MWNAG, EPAHL und SCHAMLEW – die Sie sicherlich schon kennen.
 
 ## AAB
 Architektonische Allgemeinbildung. Hilfreich, um Ihre technischen Fähigkeiten abzurunden.

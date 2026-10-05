@@ -5,7 +5,7 @@ header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
 
 permalink: /29-kammerjaeger
-summary: "Die Situation sollten Sie kennen: Kurz vor der Auslieferung tritt ein kritischer Fehler auf. Die spontane Reaktion lautet: _Kann gar nicht sein_. Weder ein _Clean Build_ noch ein _Reboot_ helfen. Sie haben nur noch wenig Zeit, bis die Software ausgeliefert werden soll. Ihr Chef sitzt Ihnen im Nacken und ruft lautstark nach der Lösung. Die ganze Situation ist Ihnen unangenehm, leider fehlt Ihnen (noch) jegliche Idee, woher dieses Fehlverhalten kommen könnte. "
+summary: "Die Situation sollten Sie kennen: Kurz vor der Auslieferung tritt ein kritischer Fehler auf. Die spontane Reaktion lautet: _Kann gar nicht sein_. Weder ein _Clean Build_ noch ein _Reboot_ helfen. Sie haben nur noch wenig Zeit, bis die Software ausgeliefert werden soll. Die Chefetage sitzt Ihnen im Nacken und ruft lautstark nach der Lösung. Die ganze Situation ist Ihnen unangenehm, leider fehlt Ihnen (noch) jegliche Idee, woher dieses Fehlverhalten kommen könnte. "
 
 excerpt: ""
 classes: wide
@@ -13,7 +13,7 @@ classes: wide
 ---
 {% include you-read-an-extract.html %}
 
-Die Situation sollten Sie kennen: Kurz vor der Auslieferung tritt ein kritischer Fehler auf. Die spontane Reaktion lautet: _Kann gar nicht sein_. Weder ein _Clean Build_ noch ein _Reboot_ helfen. Sie haben nur noch wenig Zeit, bis die Software ausgeliefert werden soll. Ihr Chef sitzt Ihnen im Nacken und ruft lautstark nach der Lösung. Die ganze Situation ist Ihnen unangenehm, leider fehlt Ihnen (noch) jegliche Idee, woher dieses Fehlverhalten kommen könnte.
+Die Situation sollten Sie kennen: Kurz vor der Auslieferung tritt ein kritischer Fehler auf. Die spontane Reaktion lautet: _Kann gar nicht sein_. Weder ein _Clean Build_ noch ein _Reboot_ helfen. Sie haben nur noch wenig Zeit, bis die Software ausgeliefert werden soll. Die Chefetage sitzt Ihnen im Nacken und ruft lautstark nach der Lösung. Die ganze Situation ist Ihnen unangenehm, leider fehlt Ihnen (noch) jegliche Idee, woher dieses Fehlverhalten kommen könnte.
 
 Es schlägt die große Stunde des Kammerjägers – die Bugs dieser Welt erzittern vor Furcht.
 
@@ -29,7 +29,7 @@ Nein? Dann wird es Zeit, diese Informationen zu beschaffen. Wir wollen einen kon
 Können Sie sich einen echten Jäger vorstellen, der hektisch durch sein Jagdrevier keucht, laut flucht und alle paar Sekunden die Richtung ändert? Dessen Jagderfolg wird nahe Null bleiben. Daher empfehlen wir Ihnen
 ruhige Chill-out-Musik[^chillout] und entspanntes Zurücklehnen.
 
-Falls Ihnen nette Kollegen jetzt noch einen ordentlichen Espresso (oder grünen Tee) spendieren – umso bessere Voraussetzungen. Schicken Sie Ihren hektischen Chef auf irgendeine wichtige Managementmission,
+Falls Ihnen nette Menschen aus dem Team jetzt noch einen ordentlichen Espresso (oder grünen Tee) spendieren – umso bessere Voraussetzungen. Schicken Sie die hektische Chefetage auf irgendeine wichtige Managementmission,
 stellen Sie Telefon, Chat- und Twitter-Client aus.
 
 Am besten suchen Sie sich eine gut gelaunte Kollegin zur Unterstützung.
@@ -41,7 +41,7 @@ Starten Sie das System und vollziehen sämtliche Schritte der Fehlersituation n
 
 Sie müssen den Fehler in Ihrer Entwicklungsumgebung selbst erleben können, sonst werden Sie ihn niemals finden!
 
-Dadurch stellen Sie sicher, dass Sie den gleichen Bug jagen, den Ihre Anwender gemeldet haben.
+Dadurch stellen Sie sicher, dass Sie den gleichen Bug jagen, den die Nutzenden gemeldet haben.
 
 [^chillout]: [Chillout bei radio.de](https://1fmchillout.radio.de/)
 
@@ -49,7 +49,7 @@ Dadurch stellen Sie sicher, dass Sie den gleichen Bug jagen, den Ihre Anwender g
 Das Antipattern der Fehlersuche lautet „falsche Annahme“:
 Sie nehmen an, der Fehler lauert in Baustein X. Ihre Suche und Gedanken kreisen um dieses X, weil Sie andere Ursachen kategorisch ausschließen.
 
-Viele Fehler sind in Wirklichkeit aber Konsequenzen (auch genannt „Folgefehler“). Diese lenken geschickt vom eigentlichen Problem ab, das ursprünglich an einer völlig anderen Stelle in völlig anderer Form auftrat. Stellen Sie daher Ihre Annahmen ausdrücklich in Frage. Erklären Sie Ihre Annahmen beispielsweise einem Kollegen – dieses „Vier-Augen-Prinzip“ hilft oftmals, irrige Annahmen als solche zu identifizieren.
+Viele Fehler sind in Wirklichkeit aber Konsequenzen (auch genannt „Folgefehler“). Diese lenken geschickt vom eigentlichen Problem ab, das ursprünglich an einer völlig anderen Stelle in völlig anderer Form auftrat. Stellen Sie daher Ihre Annahmen ausdrücklich in Frage. Erklären Sie Ihre Annahmen beispielsweise jemandem aus dem Team – dieses „Vier-Augen-Prinzip“ hilft oftmals, irrige Annahmen als solche zu identifizieren.
 
 ## Szenario kennen
 Sie müssen im System den Kontext des Fehlers kennen. Genauer: Sie müssen die Funktionen aller betroffenen Bausteine im System kennen, von Beginn der letztlich fehlerhaften Aufgabe bis zum Auftreten des Fehlers selbst.

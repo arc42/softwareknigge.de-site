@@ -5,7 +5,7 @@ header:
   overlay_image: /images/header/softwareknigge-site-header-red.png
 
 permalink: /07-zuviel-des-guten
-summary: "Softwarearchitekten verfügen über ein ganz besonderes Portfolio möglicher Exzesse: Zu viele Fesseln, zu viele Freiheiten, zu viel Dokumentation und so weiter... "
+summary: "Softwarearchitekt:innen verfügen über ein ganz besonderes Portfolio möglicher Exzesse: Zu viele Fesseln, zu viele Freiheiten, zu viel Dokumentation und so weiter... "
 
 excerpt: ""
 classes: wide
@@ -14,20 +14,20 @@ classes: wide
 {% include you-read-an-extract.html %}
 
 
-Softwarearchitekten verfügen über ein ganz besonderes Portfolio möglicher Exzesse: Zu viele Fesseln, zu viele Freiheiten oder zu viel Dokumentation. Doch eins nach dem anderen ...
+Softwarearchitekt:innen verfügen über ein ganz besonderes Portfolio möglicher Exzesse: Zu viele Fesseln, zu viele Freiheiten oder zu viel Dokumentation. Doch eins nach dem anderen ...
 
-Zu den schwersten Aufgaben von Softwarearchitekten gehört die Entscheidung, welche Maßnahme und wie viel davon in einer bestimmten Situation angemessen ist. Also nicht zu viel und nicht zu wenig. Für viele von Ihnen klingt das bestimmt wie der Ratschlag der guten Köchin: Würze so lange nach, bis es lecker schmeckt (aber wehe, Sie würzen zu viel – dann war’s das mit dem Süppchen).
+Zu den schwersten Aufgaben von Softwarearchitekt:innen gehört die Entscheidung, welche Maßnahme und wie viel davon in einer bestimmten Situation angemessen ist. Also nicht zu viel und nicht zu wenig. Für viele von Ihnen klingt das bestimmt wie der Ratschlag der guten Köchin: Würze so lange nach, bis es lecker schmeckt (aber wehe, Sie würzen zu viel – dann war’s das mit dem Süppchen).
 
 ## Zu viele Fesseln: Ideenstau
 
 Ihr Team besteht aus jeder Menge kreativer und erfahrener Köpfe, die nur darauf brennen, ihre Ideen und Vorkenntnisse zum Wohl des Projekts oder Systems einbringen zu können. Dafür allerdings brauchen diese Köpfe ein gewisses Maß an Freiheit, diese Kreativität entfaltenzu können: Neue Ideen müssen reifen und ausprobiert (in IT-Slang: „evaluiert“) werden, bevor sie als gute Ideen in die Architektur einfließen können.
 
-Geben Sie als Architekt zu viele Fesseln vor, so unterbindet das jegliche Form der positiven Kreativität. Ihr Team wird dann nur noch nach solchen Ideen suchen, die diese Fesseln, Vorgaben und Randbedingungen möglichst erträglich und schmerzfrei machen.
+Geben Sie als Architekt:in zu viele Fesseln vor, so unterbindet das jegliche Form der positiven Kreativität. Ihr Team wird dann nur noch nach solchen Ideen suchen, die diese Fesseln, Vorgaben und Randbedingungen möglichst erträglich und schmerzfrei machen.
 
 ## Zu viel Freiheit: Anarchie
 
-Wir haben schon erlebt, dass innerhalb eines recht kleinen Teams jeder Entwickler in seiner aktuell favorisierten Programmiersprache entwickelt hat
-(wir fanden Perl, C, SQL-StoredProcedures, Java und XSLT), weil die Architekten des Systems sämtliche mögliche Freiheiten gelassen hatten. Diese Überfreiheit ist sicherlich in den meisten Fällen auch nicht angemessen.
+Wir haben schon erlebt, dass innerhalb eines recht kleinen Teams alle in ihrer jeweils favorisierten Programmiersprache entwickelt haben
+(wir fanden Perl, C, SQL-StoredProcedures, Java und XSLT), weil die Architekt:innen des Systems sämtliche mögliche Freiheiten gelassen hatten. Diese Überfreiheit ist sicherlich in den meisten Fällen auch nicht angemessen.
 
 Das Team wird viel Zeit darauf verschwenden, sinnvolle Grenzen selbst zu definieren, statt gute Lösungsideen zu entwickeln und umzusetzen.
 Setzen Sie also Grenzen – aber fesseln Sie Ihr Team nicht!

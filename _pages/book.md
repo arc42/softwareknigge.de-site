@@ -50,6 +50,6 @@ Folgen der "Knigge-Kolumne", die Peter und Gernot über mehr als ein Jahr
 im JavaMagazin geschrieben haben.
 
 In diesem Buch zeigen wir Ihnen unterhaltsame und praxisgerechte Wege zu besseren Softwarearchitekturen – wirkungsvoll, zeitlos und technologieneutral!
-Sie finden typische Verhaltensmuster von Softwarearchitekten, gute und schlechte. Aus Erfolgsmuster lernen Sie, bessere Systeme zu konstruieren und effektiver zu arbeiten. Aus den „Anti-Patterns“ leiten Sie Abhilfen gegen schlechte Architekturmanieren ab. Ein besonderes Augenmerk liegt auf der Evolution und der Änderung von Systemen.
+Sie finden typische Verhaltensmuster von Softwarearchitekt:innen, gute und schlechte. Aus Erfolgsmuster lernen Sie, bessere Systeme zu konstruieren und effektiver zu arbeiten. Aus den „Anti-Patterns“ leiten Sie Abhilfen gegen schlechte Architekturmanieren ab. Ein besonderes Augenmerk liegt auf der Evolution und der Änderung von Systemen.
 
 {% include training-dates.html %}

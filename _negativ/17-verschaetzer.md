@@ -33,14 +33,14 @@ Entwickler: (flüstert) _Jaja, red’ du nur..._
 
 ## Zahlen bieten (vermeintliche) Sicherheit
 
-Projektleiter, Auftraggeber oder sonstige Manager fordern von Softwarearchitekten oftmals Zahlen ein: Schätzungen, Bewertungen oder sonstige quantitative Aussagen zu allen möglichen Themen. Meist geht es dabei um erwartete Aufwände, aber auch um mögliche Antwortzeiten, Verfügbarkeiten und/oder Kosten.
+Projektleitung, Auftraggeber oder sonstiges Management fordern von Softwarearchitekt:innen oftmals Zahlen ein: Schätzungen, Bewertungen oder sonstige quantitative Aussagen zu allen möglichen Themen. Meist geht es dabei um erwartete Aufwände, aber auch um mögliche Antwortzeiten, Verfügbarkeiten und/oder Kosten.
 
 Verschätzer antworten freimütig, schnell und vermeintlich präzise auf alle Fragen nach Aufwand, Zeit, Geld oder anderen numerischen Größen. Dadurch suggerieren sie Sachkenntnis und Souveränität. Leider werden Verschätzer regelmäßig von der harten Realität eingeholt und ihre Schätzungen ad absurdum geführt.
 
-Verantwortungsbewusste Softwarearchitekten legen ihre Unsicherheiten bei Schätzungen offen. Sie benennen Risiken und begründen, warum manche Teile von Schätzungen unsicher sind.
+Verantwortungsbewusste Softwarearchitekt:innen legen ihre Unsicherheiten bei Schätzungen offen. Sie benennen Risiken und begründen, warum manche Teile von Schätzungen unsicher sind.
 
 ## Verschätzer erzeugen Stress
-Falls Verschätzer im Auftrag der Projektleitung Entwicklungsaufwände schätzen, kann das bei den betroffenen Entwicklern gehörigen Stress auslösen: Verschätzer ignorieren technische oder fachliche Details, treffen grob vereinfachte
+Falls Verschätzer im Auftrag der Projektleitung Entwicklungsaufwände schätzen, kann das im betroffenen Entwicklungsteam gehörigen Stress auslösen: Verschätzer ignorieren technische oder fachliche Details, treffen grob vereinfachte
 Annahmen und gehen von idealen Bedingungen aus
 (_und glauben an den Weihnachtsmann_).
 

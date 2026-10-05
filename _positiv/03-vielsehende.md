@@ -5,7 +5,7 @@ header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
 
 permalink: /03-vielsehende
-summary: "Erfolgreiche Architekten nutzen verschiedene Sichten auf Systeme,
+summary: "Erfolgreiche Architekt:innen nutzen verschiedene Sichten auf Systeme,
 um unterschiedliche Aspekte in den Vordergrund zu rücken. Sie wechseln
 je nach Bedarf diese Sichten, um ein gegebenes Problem aus mehreren
 Perspektiven zu beleuchten und so zu einer tragfähigen Lösung zu kommen."
@@ -16,7 +16,7 @@ classes: wide
 ---
 {% include you-read-an-extract.html %}
 
-Erfolgreiche Architekten nutzen verschiedene Sichten auf Systeme,
+Erfolgreiche Architekt:innen nutzen verschiedene Sichten auf Systeme,
 um unterschiedliche Aspekte in den Vordergrund zu rücken. Sie wechseln
 je nach Bedarf diese Sichten, um ein gegebenes Problem aus mehreren
 Perspektiven zu beleuchten und so zu einer tragfähigen Lösung zu kommen.
@@ -24,7 +24,7 @@ Perspektiven zu beleuchten und so zu einer tragfähigen Lösung zu kommen.
 Versetzen Sie sich in die Lage des Regisseurs einer Fernsehshow. Sie sitzen im Kontrollraum, wo die Bilder vieler Kameras zusammenlaufen. Sie haben ständig eine große Auswahl unterschiedlicher Perspektiven und können frei entscheiden, welche dieser Aufnahmen die momentane Situation am besten wiedergibt: Mal die Totale, mal die Großaufnahme des Stars von der tragbaren Handkamera neben der Bühne.
 
 ## Perspektiven in Software
-Diese Möglichkeiten eines Fernsehregisseurs nutzen auch Softwarearchitekten – nur dass es sich bei ihnen nicht um Kamerabilder handelt, sondern um verschiedene Darstellungen oder Abstraktionen des Systems, an dem sie gerade arbeiten.
+Diese Möglichkeiten eines Fernsehregisseurs nutzen auch Softwarearchitekt:innen – nur dass es sich bei ihnen nicht um Kamerabilder handelt, sondern um verschiedene Darstellungen oder Abstraktionen des Systems, an dem sie gerade arbeiten.
 
 Die Grundgedanken hat Philippe Kruchten bereits 1995 in kurzer Form
 veröffentlicht[^kruchten].
@@ -56,7 +56,7 @@ bzw. Benutzerrollen zeigt.
 ## In der Mischung liegt die Kraft
 Die Bausteinsicht ist unserer Erfahrung nach die wichtigste Perspektive, so wie für den Regisseur diejenige Kamera, mit der er von der Totalen bis hin zum kleinsten Detail zoomen kann. Dabei genügt durchaus eine hohe Abstraktionsebene, die etwa die Subsysteme oder größten Komponenten zeigt - gepaar mit den verwendete technischen oder querschnittlichen Konzepten.
 
-Oftmals unterstützen die anderen Sichten Architekten dabei, Durchblick im Dickicht komplexer Strukturen zu gewinnen. Wechseln von Perspektiven macht Architekturen schneller stabil, weil verschiedene Einflussfaktoren besser ans Tageslicht kommen.
+Oftmals unterstützen die anderen Sichten Architekt:innen dabei, Durchblick im Dickicht komplexer Strukturen zu gewinnen. Wechseln von Perspektiven macht Architekturen schneller stabil, weil verschiedene Einflussfaktoren besser ans Tageslicht kommen.
 
 
 ## Verwandte Muster

@@ -5,7 +5,7 @@ header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
 
 permalink: /33-qualitaetsverbesserer
-summary: "Systematische Architekturbewertung gehört zu den Aufgaben verantwortungsbewusster SoftwarearchitektInnen. Leider sind ATAM und Co. relativ formal und aufwendig, sodass wir Ihnen eine pragmatische Alternative für den Alltagseinsatz vorstellen möchten, die wir _Mikrobewertung_ nennen."
+summary: "Systematische Architekturbewertung gehört zu den Aufgaben verantwortungsbewusster Softwarearchitekt:innen. Leider sind ATAM und Co. relativ formal und aufwendig, sodass wir Ihnen eine pragmatische Alternative für den Alltagseinsatz vorstellen möchten, die wir _Mikrobewertung_ nennen."
 
 excerpt: ""
 classes: wide
@@ -13,7 +13,7 @@ classes: wide
 ---
 {% include you-read-an-extract.html %}
 
-Systematische Architekturbewertung gehört zu den Aufgaben verantwortungsbewusster SoftwarearchitektInnen. Leider sind ATAM[^atam] und Co. relativ formal und aufwendig, sodass wir Ihnen eine pragmatische Alternative für den Alltagseinsatz vorstellen möchten, die wir Mikrobewertung nennen.
+Systematische Architekturbewertung gehört zu den Aufgaben verantwortungsbewusster Softwarearchitekt:innen. Leider sind ATAM[^atam] und Co. relativ formal und aufwendig, sodass wir Ihnen eine pragmatische Alternative für den Alltagseinsatz vorstellen möchten, die wir Mikrobewertung nennen.
 
 [^atam]: ATAM steht für **Architecture Tradeoff Analysis Method**, und stammt vom [SEI](https://www.sei.cmu.edu/architecture/tools/evaluate/atam.cfm). Wikipedia hat einen kurzen Artikel über „[Szenariobasierte Architekturbewertung](https://de.wikipedia.org/wiki/Szenariobasierte_Architekturbewertung), der ATAM recht gut beschreibt.
 

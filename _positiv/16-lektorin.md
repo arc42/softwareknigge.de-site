@@ -5,7 +5,7 @@ header:
   overlay_image: /images/header/softwareknigge-site-header-green.png
 
 permalink: /16-lektorin
-summary: "Da die Schriftsprache immer noch ein bevorzugte Mittel langfristiger menschlicher Kommunikation und Dokumentation bildet, sollten Sie als Architekt einige Grundregeln dazu beherzigen."
+summary: "Da die Schriftsprache immer noch ein bevorzugte Mittel langfristiger menschlicher Kommunikation und Dokumentation bildet, sollten Sie als Architekt:in einige Grundregeln dazu beherzigen."
 
 excerpt: ""
 classes: wide
@@ -13,7 +13,7 @@ classes: wide
 ---
 {% include you-read-an-extract.html %}
 
-Da die Schriftsprache immer noch ein bevorzugte Mittel langfristiger menschlicher Kommunikation und Dokumentation bildet, sollten Sie als Architekt einige Grundregeln dazu beherzigen.
+Da die Schriftsprache immer noch ein bevorzugte Mittel langfristiger menschlicher Kommunikation und Dokumentation bildet, sollten Sie als Architekt:in einige Grundregeln dazu beherzigen.
 
 ## Nehmen Sie Sprache ernst
 Legen Sie großen Wert auf verständliche, klare und einfache Sprache. Sie schreiben für Ihre Leser und Leserinnen, nicht zum Selbstzweck. Das alles halten Sie für selbstverständlich? Wir auch.
@@ -31,7 +31,7 @@ Wolf Schneider[^schneider] gelesen und einige Ratschläge daraus zusammengestel
 [^schneider]: Wolf Schneider: _Deutsch für Profis. Wege zu gutem Stil_, Goldmannn, 2001
 
 ## Schaffen Sie Klarheit – in Kürze
-Kurze Texte machen Ihren Lesern weniger Arbeit – Grund genug, auf Füllstoff möglichst zu verzichten. Wenn Sie Ihre Gedanken möglichst klar ausdrücken möchten, hilft eine kurze Erklärung statt einer langen. Verzichten Sie in technischer Dokumentation auf Spannungsbögen und blumige Umschreibung.
+Kurze Texte machen Ihrer Leserschaft weniger Arbeit – Grund genug, auf Füllstoff möglichst zu verzichten. Wenn Sie Ihre Gedanken möglichst klar ausdrücken möchten, hilft eine kurze Erklärung statt einer langen. Verzichten Sie in technischer Dokumentation auf Spannungsbögen und blumige Umschreibung.
 
 Klarheit bedeutet auch, treffende Worte zu finden.
 In der Programmierung kennen wir alle die Notwendigkeit „sprechender Bezeichner“ – Gleiches gilt für Ihre schriftliche Kommunikation. Besonders warnen wir Sie vor missverständlichen oder mehrfach belegten Wörtern – etwa _Komponente, System, Anwendung_ oder _Funktionalität_. Solche Begriffe haben in verschiedenen Kontexten unterschiedliche Bedeutung. Suchen Sie nach exakten, genau zutreffenden Wörtern.
